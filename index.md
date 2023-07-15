@@ -1,7 +1,4 @@
 
-<h1 align="center"> The Deconstructed Learning System Homepage </h1>
-
-
 <p align="center">
 
 <img src="https://i.imgur.com/Yky4kVY.png">
@@ -9,10 +6,7 @@
 </p>
 
 
-
-
-## What is the deconstructed learning system ?
-
+<h2 align="center"> What is the deconstructed learning system ? </h2>
 
 
 **In plain english:**
