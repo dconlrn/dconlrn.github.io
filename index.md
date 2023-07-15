@@ -1,13 +1,19 @@
+
+<h1 align="center"> The Deconstructed Learning System Homepage </h1>
+
+
 <p align="center">
 
-# The Deconstructed Learning System Homepage
-
 <img src="https://i.imgur.com/Yky4kVY.png">
+
 </p>
 
 <table>
+
 <tr>
+
 <td>
+
 <center>
 
 ## What is the deconstructed learning system ?
@@ -96,7 +102,12 @@ I hope at this point you are starting to connect the dots of how we are begginin
 If we keep deconstructing the engine what we will do from this point is start looking at every piece the engine is made up of and then we will finally identify the most important core components.
 Thats the starting idea, concept and mindset behind the DLS (Deconstructed Learning System).
 
-</table>
-</tr>
-</td>
+
 </center>
+
+</table>
+
+</tr>
+
+</td>
+
