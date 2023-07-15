@@ -10,9 +10,10 @@
 
 - It's a free to use system that anyone could apply towards learning something.
 - It's a system which shows you how to find the core building blocks of whatever it is your trying to learn.
--
 
-
+Sometimes applying this system to something can be really tricky. Especially things you can't really get a good visual on. Things like computer programming or computer operating systems (Whatever the heck those are).
+It would be nice to have someone who is very knowledgable in specific disciplines break things down using DLS.
+Thankfully for, things in the computer world at least, I got you covered.
 
 This is the system.
 (Keep in mind this is a process that needs to be written, typed or drawn out and revised till you feel comfortable with the results)
