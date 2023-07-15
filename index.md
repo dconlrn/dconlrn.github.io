@@ -1,8 +1,14 @@
+<p align="center">
+
 # The Deconstructed Learning System Homepage
 
-<p align="center">
 <img src="https://i.imgur.com/Yky4kVY.png">
 </p>
+
+<table>
+<tr>
+<td>
+<center>
 
 ## What is the deconstructed learning system ?
 
@@ -89,3 +95,8 @@ Ok so we have established that an engine is typically a hunk of metal made uo of
 I hope at this point you are starting to connect the dots of how we are beggining to deconstruct what something is.
 If we keep deconstructing the engine what we will do from this point is start looking at every piece the engine is made up of and then we will finally identify the most important core components.
 Thats the starting idea, concept and mindset behind the DLS (Deconstructed Learning System).
+
+</table>
+</tr>
+</td>
+</center>
