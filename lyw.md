@@ -171,7 +171,7 @@ Once you make it through the basics move on to things below that you have not le
 
 <a id="what-is-linux-?"></a>
 
-
+</br>
 
 
 
