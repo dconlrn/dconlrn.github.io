@@ -1,7 +1,7 @@
 # The Deconstructed Learning System Homepage
 
 <p align="center">
-<img src="https://i.imgur.com/Yky4kVY.png"></img>
+<img src="https://i.imgur.com/Yky4kVY.png">
 </p>
 
 ## What is the deconstructed learning system ?
