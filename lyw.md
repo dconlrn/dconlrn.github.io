@@ -175,6 +175,10 @@ Once you make it through the basics move on to things below that you have not le
 
 <a id="what-is-linux-?"></a>
 
+
+
+
+
 ## What is Linux ?
 
 Linux is an open source operating system based on an older proprietary operating system called Unix.
