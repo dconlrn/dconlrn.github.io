@@ -1,7 +1,3 @@
-<table>
-<tr>
-<td>
-<center>
 
 # Linux Your Welcome
 
@@ -639,9 +635,3 @@ Neofetch
 ttyd
 asciinema
 xfce4-screenshooter
-
-
-</table>
-</tr>
-</td>
-</center>

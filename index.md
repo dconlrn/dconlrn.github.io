@@ -8,11 +8,7 @@
 
 </p>
 
-<table>
 
-<tr>
-
-<td>
 
 <center>
 
@@ -105,9 +101,4 @@ Thats the starting idea, concept and mindset behind the DLS (Deconstructed Learn
 
 </center>
 
-</table>
-
-</tr>
-
-</td>
 
