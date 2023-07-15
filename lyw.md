@@ -168,6 +168,7 @@ Once you make it through the basics move on to things below that you have not le
 - About different editors.
 - About different user, system, and application configuration files as well as where they are located.
 
+<a id="what-is-linux-?"></a>
 
 ## What is Linux ?
 
