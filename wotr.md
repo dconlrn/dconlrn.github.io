@@ -146,8 +146,20 @@ Shadow People:
 <img src="https://imgur.com/UqsUITW.png">
 
 - Use the palantir to play any one of the event cards top side effects.
+- You could also use a palantir to draw one card from either event deck.
+
+*Note: There is a hand limit of only 6 cards. You **must** immediately discard cards if you exceed that number. Always discard cards face down.* 
+
+**IF EITHER DECK RUNS OUT OF CARDS DO NOT SHUFFLE THE DISCARD PILE BACK IN THAT DECK IS SIMPLY DEPLETED**
 
 <img src="https://imgur.com/6WMb1Fw.png">
+
+**Playing a card**
+
+- Sometimes the card will have prerequisites in bold.
+- If you can play the card however, follow its instructions and then discards the card face down.
+- If the card says **Play on the table** it means the cards effects are on going.
+> Leave the card on the table untill it is discarded. The trigger for which will be described on the card. 
 
 - The bottom side is used during combat.
 
