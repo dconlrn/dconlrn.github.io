@@ -7,8 +7,13 @@
 ## How to play
 
 - [Setup](#setup)
-- [The basics / Phases of play](#basics)
-- [Action Resolution](#action-resolution)
+- [The basics](#basics)
+- [Phases](#phases)
+> - [Phase Five](#phase-five)
+> > - [Palantir Dice](#palantir-dice)
+> > - [Army Symbol Dice](#army-symbol)
+> > - [Muster Action Dice](#muster-dice)
+> > - [Character Action Dice](#character-action)
 - [Setup](#setup)
 - [Setup](#setup)
 - [Setup](#setup)
@@ -19,7 +24,7 @@
 - [Setup](#setup)
 - [Setup](#setup)
 - [Setup](#setup)
-- [Setup](#setup)
+
 
 
 
@@ -110,20 +115,24 @@ Shadow People:
 
 #### Phases
 
-- **1.** Recover Action Dice / Draw Event Cards
+- **1.** Phase One (Recover Action Dice / Draw Event Cards)
 
 > - You recover your spent action dice and draw event cards, on the first turn there are no dice to recover so ignore it only for the first turn. 
 > - Draw one card from each of your event decks
 
 
 
-- **2.** Fellowship Phase
-- **3.** Hunt Allocation
-- **4.** Action Roll
+- **2.** Phase Two (Fellowship Phase)
+- **3.** Phase Three (Hunt Allocation)
+- **4.** Phase Four (Action Roll)
 > Roll the dice !
 - For the shadow players, every eye you roll is immediately placed into the hunt box.
 
-- **5.** Action Resolution
+
+<a id="phase-five"></a>
+
+
+- **5.** Phase Five (Action Resolution)
 - This phase is largely what is considered to be the actual game.
 - Starting with the free peoples side:
 > Each player will alternate using one of their dice to take an action.
@@ -139,9 +148,14 @@ Shadow People:
 
 <img src="https://imgur.com/bWwJaKC.png">
 
+
+<a id="palantir-dice"></a>
+
 *As you can see each sets of die has several icons on them and while they look a little different between boths sets of dice the actions they represent are largely the same.*
 
-**Palantir**
+
+
+**Palantir Dice**
 
 <img src="https://imgur.com/UqsUITW.png">
 
@@ -165,7 +179,10 @@ Shadow People:
 
 <img src="https://imgur.com/SHd3KJ8.png">
 
-**The army symbol**
+
+<a id="army-symbol"></a>
+
+**The Army Symbol Dice**
 
 <img src="https://imgur.com/120YBee.png">
 
@@ -187,10 +204,76 @@ When you take an army action you have 3 options:
 <img src="https://imgur.com/ZGM9ltz.png">
 
 
-**The Muster Die**
+
+<a id="muster-dice"></a>
+
+**The Muster Dice**
 
 <img src="https://imgur.com/ciNwOXr.png">
 
-- **6.** Victory Check
+- Play a Muster card
+
+<img src="https://imgur.com/4I38biA.png">
+
+- Can also be used to make a dipolomatic action.
+
+> This means going over to the political track and moving one nation one step closer to being at war.
+
+<img src="https://imgur.com/5jhIyXo.png">
+
+> - A nation could not move to the war tile until it is activated.
+> - Once a nation is at war they can use the muster die to recruit units.
+> > Looking at the map you will notice a bunch of little diamonds.
+
+<img src="https://imgur.com/p39jMRF.png">
+
+- These Diamonds are settlements
+> - Recruit units (Place recruitment pieces on the board) here if:
+> > - You can control them
+> > - They are not being seiged
+
+*Event cards can allow you to break these rules*
+
+<img src="https://imgur.com/g2JFzCp.png">
+
+When using the muster to recruit you can choose to:
+
+- Take one elite piece
+- Or two other units regular and or leader from your reinforcements and put them into play (Place them on the board).
+
+<img src="https://imgur.com/EOHYbud.png">
+
+
+- If you recruit two units they must be placed into different settlements.
+- You can recruit in settlements of two different nations as long as they are both at war.
+> > Make sure the corresponding units are used for each place.
+> > - ie. Dwarves cant go in Rivendell
+
+- Nasgul are considered sauron leaders they can only be recruited in a sauron stronghold.
+
+<img src="https://imgur.com/2U4fzrK.png">
+
+Lastly:
+
+**For the shadow only!**
+
+- You can Use a muster to bring one of your characters into play
+- As long as the prerequisites on their cards are satisfied.
+- Bringing them into play allows you to roll an additional die at the beginning of the turn.
+> > You have three minions
+> > - Saurman
+> > - The Mouth of Sauron
+> > - The Witch-King (Both a character and a Nasgul)
+
+<img src="https://imgur.com/MFSRjm0.png">
+
+
+<a id="character-action"></a>
+
+**The Character Dice**
+
+<img src="https://imgur.com/9cfjzxO.png">
+
+- **6.** Phase Six (Victory Check)
 
 <a id="action-resolution"></a>
