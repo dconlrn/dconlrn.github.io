@@ -272,7 +272,18 @@ Lastly:
 
 **The Character Dice**
 
+
 <img src="https://imgur.com/9cfjzxO.png">
+
+
+Use a character die to play a character event card
+
+<img src="https://imgur.com/zZ1zCcf.png">
+
+
+
+
+
 
 - **6.** Phase Six (Victory Check)
 
