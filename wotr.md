@@ -110,20 +110,20 @@ Shadow People:
 
 #### Phases
 
-1. Recover Action Dice / Draw Event Cards
+- **1.** Recover Action Dice / Draw Event Cards
 
 > - You recover your spent action dice and draw event cards, on the first turn there are no dice to recover so ignore it only for the first turn. 
 > - Draw one card from each of your event decks
 
 
 
-2. Fellowship Phase
-3. Hunt Allocation
-4. Action Roll
+- **2.** Fellowship Phase
+- **3.** Hunt Allocation
+- **4.** Action Roll
 > Roll the dice !
 - For the shadow players, every eye you roll is immediately placed into the hunt box.
 
-5. Action Resolution
+- **5.** Action Resolution
 - This phase is largely what is considered to be the actual game.
 - Starting with the free peoples side:
 > Each player will alternate using one of their dice to take an action.
@@ -165,7 +165,32 @@ Shadow People:
 
 <img src="https://imgur.com/SHd3KJ8.png">
 
+**The army symbol**
 
-6. Victory Check
+<img src="https://imgur.com/120YBee.png">
+
+*Note: The shadow players have a die face dedicated to this action, however the free people only have the combined muster/army side*
+
+When you take an army action you have 3 options:
+
+- *1.* Play an event card with the army symbol on it.
+
+<img src="https://imgur.com/xuUFKjg.png">
+
+- *2.* Move up to two different armies to free adjacent regions.
+
+<img src="https://imgur.com/5Kzwrc7.png">
+
+
+- *3.* Make one of your armies attack an adjacent enemy army.
+
+<img src="https://imgur.com/ZGM9ltz.png">
+
+
+**The Muster Die**
+
+<img src="https://imgur.com/ciNwOXr.png">
+
+- **6.** Victory Check
 
 <a id="action-resolution"></a>
