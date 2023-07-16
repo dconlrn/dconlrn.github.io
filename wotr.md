@@ -41,6 +41,9 @@ Notes and objective to be organized:
 > Each companion has a card associated with them
 - Take the Gandalf the Grey card and place it face up on top of the deck.
 - Remove the Gandalf the White, Aragorn and Gollum cards along with the Gollum figure and place them to the side.
+
+<img src="https://imgur.com/5PZcbDK.png">
+
 - Place the ring bearers figure in Rivendell.
 - Take each of the hunt tiles and seperate the gray ones and place them in some kind of a vessel that could be drawn from without looking.
 - Place the other seperated hunt tiles to the side for now.
@@ -85,6 +88,7 @@ Political Tokens:
 - You play a series of turns until one side has won the game
 - Each turn consists of 6 phases
 - Action dice largely determine what you are able to do in the game
+> *This is in relation to the Action Resolution phase. Discussed later.*
 
 *As the fellowship moves through middle earth their progress and corruption is counted on the fellowship track.*
 
@@ -105,5 +109,51 @@ Shadow People:
 
 
 #### Phases
+
+1. Recover Action Dice / Draw Event Cards
+
+> - You recover your spent action dice and draw event cards, on the first turn there are no dice to recover so ignore it only for the first turn. 
+> - Draw one card from each of your event decks
+
+
+
+2. Fellowship Phase
+3. Hunt Allocation
+4. Action Roll
+> Roll the dice !
+- For the shadow players, every eye you roll is immediately placed into the hunt box.
+
+5. Action Resolution
+- This phase is largely what is considered to be the actual game.
+- Starting with the free peoples side:
+> Each player will alternate using one of their dice to take an action.
+
+<img src="https://imgur.com/L7x18WZ.png">
+
+> If you have fewer dice then the other player you can choose to not take an action and pass.
+> As long as one player/team has less dice they can continue to choose to pass but as soon as both players/teams have the same amount of dice the passing option is no longer available and you have to take an action.
+
+> Alternatively if one player/team runs out of dice first the other player/team can take action after action untill they run out.
+
+**So what can you do ? What kind of action can you take**
+
+<img src="https://imgur.com/bWwJaKC.png">
+
+*As you can see each sets of die has several icons on them and while they look a little different between boths sets of dice the actions they represent are largely the same.*
+
+**Palantir**
+
+<img src="https://imgur.com/UqsUITW.png">
+
+- Use the palantir to play any one of the event cards top side effects.
+
+<img src="https://imgur.com/6WMb1Fw.png">
+
+- The bottom side is used during combat.
+
+<img src="https://imgur.com/SHd3KJ8.png">
+
+
+6. Victory Check
 
 <a id="action-resolution"></a>
