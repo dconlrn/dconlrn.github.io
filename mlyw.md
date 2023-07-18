@@ -1,30 +1,62 @@
-# important Terms
-    ___________________________________________________________________________________________________________
-    Data Types:
-                Numerical: Numbers
-                Categorical: Categories ie. (Plants, Customer A, Customer B, Dangerous, Safe, Something Binary)
-    -----------------------------------------------------------------------------------------------------------
-    Feature(s):
-                Column(s) with the data in the column(s) including the column(s) name(s)
-    -----------------------------------------------------------------------------------------------------------
-    An Observation:
-                Just a row in a data set.
-    -----------------------------------------------------------------------------------------------------------
-    Independent Variable:
-                        A feature
-                        (AKA) -> Predictor, Input Variable, Vector
-    Dependent Variable:
-                        The thing that gets created or is influenced by the independent variables.
-                        (AKA) -> Response / Outcome / Target Variables, The Target, Output, Supervisory Signal,
-                        The Label.
-    (Y) Actual Value:
-                    When the value of a dependent variable is already known from a data set.
-    Y Hat (Predicted Value):
-                            When the value of a dependent variable is predicted based on
-                            Features/Independent Variables in a data set.
+# Machine Learning Your Welcome
 
-    -----------------------------------------------------------------------------------------------------------
-# Supervised Learning:
+
+
+## Navigation
+
+- [Terminology](#terminology)
+- [Supervised Learning](#supervised)
+- [Unsupervised Learning](#unsupervised)
+
+
+## Terminology
+
+___________________________________________________________________________________________________________
+
+**Data Types:**
+
+            Numerical: Numbers
+            Categorical: Categories ie. (Plants, Customer A, Customer B, Dangerous, Safe, Something Binary)
+
+-----------------------------------------------------------------------------------------------------------
+
+**Feature(s):**
+
+            Column(s) with the data in the column(s) including the column(s) name(s)
+
+-----------------------------------------------------------------------------------------------------------
+
+**An Observation:**
+
+            Just a row in a data set.
+-----------------------------------------------------------------------------------------------------------
+
+**Independent Variable:**
+
+                    A feature
+                    (AKA) -> Predictor, Input Variable, Vector
+
+**Dependent Variable:**
+
+                    The thing that gets created or is influenced by the independent variables.
+                    (AKA) -> Response / Outcome / Target Variables, The Target, Output, Supervisory Signal,
+                    The Label.
+
+**(Y) Actual Value:**
+
+                When the value of a dependent variable is already known from a data set.
+
+**Y Hat (Predicted Value):**
+
+                        When the value of a dependent variable is predicted based on
+                        Features/Independent Variables in a data set.
+
+-----------------------------------------------------------------------------------------------------------
+
+
+<a id="supervised"></a>
+
+## Supervised Learning:
 
                         Is a machine learning approach for working with data that
                         already shares some relationship with an output which is
@@ -80,7 +112,12 @@
                                 Regression:
 
 
-# Unsupervised Learning:
+
+<a id="unsupervised"></a>
+
+
+
+## Unsupervised Learning:
 
                         A kind of machine learning where a model must look for patterns in a dataset
                         with no labels and with minimal human supervision. This is in contrast
