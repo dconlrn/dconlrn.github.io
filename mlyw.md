@@ -83,14 +83,13 @@ or features:
 Label outputs to start training a model. What does this look like?*
 
 **Ex.**(                  INDEPENDENT VARIABLES             ) | LABEL |
-    ________________________________________________________________________
-   | Age | Weight | Sex | Income | Education | Marital Status |{Screen Time}| <-DEPENDENT 
-    ------------------------------------------------------------------------
-1  | 21  | 180lbs | M   |   25k  | HighSchool|   Not Married  | 6hrs 22mins | 
-    ------------------------------------------------------------------------
-                                                                | ^TARGET^ |
-                                                                THING WE WANT
-                                                                 TO PREDICT
+
+Dependent Variable: RED
+TARGET ( The thing we want to predict): BLUE
+
+| Age | Weight | Sex | Income | Education | Marital Status |<span style="color:red">{Screen Time}</span>| 
+|:---:|:------:|:---:|:------:|----------:|:--------------:|:-----------:|
+| 21  | 180lbs | M   |   25k  | HighSchool|   Not Married  | <span style="color:blue">6hrs 22mins</span>| 
 
 Pretend we have a hundred rows of data like this.
 This means we already know how long all of these people are looking at their
