@@ -11,25 +11,21 @@
 
 ## Terminology
 
-___________________________________________________________________________________________________________
 
 **Data Types:**
 
             Numerical: Numbers
             Categorical: Categories ie. (Plants, Customer A, Customer B, Dangerous, Safe, Something Binary)
 
------------------------------------------------------------------------------------------------------------
 
 **Feature(s):**
 
             Column(s) with the data in the column(s) including the column(s) name(s)
 
------------------------------------------------------------------------------------------------------------
 
 **An Observation:**
 
             Just a row in a data set.
------------------------------------------------------------------------------------------------------------
 
 **Independent Variable:**
 
@@ -51,65 +47,66 @@ ________________________________________________________________________________
                         When the value of a dependent variable is predicted based on
                         Features/Independent Variables in a data set.
 
------------------------------------------------------------------------------------------------------------
 
 
 <a id="supervised"></a>
 
 ## Supervised Learning:
 
-                        Is a machine learning approach for working with data that
-                        already shares some relationship with an output which is
-                        labeled, or that we have put a label on, in order to make
-                        predictions.
+Is a machine learning approach for working with data that
+already shares some relationship with an output which is
+labeled, or that we have put a label on, in order to make
+predictions.
 
-                        The Bias-Variance Tradeoff is relevant for supervised 
-                        machine learning – specifically for predictive modeling.
-                        It’s a way to diagnose the performance of an algorithm by
-                        breaking down its prediction error.
+The Bias-Variance Tradeoff is relevant for supervised 
+machine learning – specifically for predictive modeling.
+It’s a way to diagnose the performance of an algorithm by
+breaking down its prediction error.
 
-                        Ex.
-                        Suppose we want to predict daily screen time usage for cell phone owners.
-                                 _                      ____________
-                                |_  Screen Time         ____________|<- Label (Dependent Variable)
+**Ex.**
+Suppose we want to predict daily screen time usage for cell phone owners.
+         _                      ____________
+        |_  Screen Time         ____________|<- Label (Dependent Variable)
 
-                        In order to take the supervised learning approach to
-                        be able to predict this we would likely need some of the following data
-                        or features:
-                                 _                      ____________
-                                |   age                             |
-                                |   weight                          |
-                                |   sex                             |<- Features (Independent Variables)
-                                |   income                          |
-                                |   education                       |
-                                |_  marital status      ____________|
+In order to take the supervised learning approach to
+be able to predict this we would likely need some of the following data
+or features:
+         _                      ____________
+        |   age                             |
+        |   weight                          |
+        |   sex                             |<- Features (Independent Variables)
+        |   income                          |
+        |   education                       |
+        |_  marital status      ____________|
 
-                        In Supervised Learning we need a data set that already has all of the
-                        Label outputs to start training a model. What does this look like?
+*In Supervised Learning we need a data set that already has all of the
+Label outputs to start training a model. What does this look like?*
 
-                    Ex.(->                  INDEPENDENT VARIABLES               <-) | LABEL |
-                        ________________________________________________________________________
-                       | Age | Weight | Sex | Income | Education | Marital Status |{Screen Time}| <-DEPENDENT 
-                        ------------------------------------------------------------------------
-                    1  | 21  | 180lbs | M   |   25k  | HighSchool|   Not Married  | 6hrs 22mins | 
-                        ------------------------------------------------------------------------
-                                                                                    | ^TARGET^ |
-                                                                                    THING WE WANT
-                                                                                     TO PREDICT
-                    Pretend we have a hundred rows of data like this.
-                    This means we already know how long all of these people are looking at their
-                    phones daily. So screen time is dependent on all of these independent variables.
-                    Now we can train a supervised machine learning model with this data in order
-                    to predict how much daily screen time someone might have who is
-                    45 years old 160lbs Female, makes 60k a year, has Some college and is married.
-                    This is supervised learning. 
-                    Its supervised because we are teaching the machine learning model by holding
-                    its hand, in the sense that, like a baby it doesnt already know how to connect
-                    the dots so its our job to show it how based on related things.
-    
-    Supervised Learning Techniques: (There are two)
-                                Classification:
-                                Regression:
+**Ex.**(                  INDEPENDENT VARIABLES             ) | LABEL |
+    ________________________________________________________________________
+   | Age | Weight | Sex | Income | Education | Marital Status |{Screen Time}| <-DEPENDENT 
+    ------------------------------------------------------------------------
+1  | 21  | 180lbs | M   |   25k  | HighSchool|   Not Married  | 6hrs 22mins | 
+    ------------------------------------------------------------------------
+                                                                | ^TARGET^ |
+                                                                THING WE WANT
+                                                                 TO PREDICT
+
+Pretend we have a hundred rows of data like this.
+This means we already know how long all of these people are looking at their
+phones daily. So screen time is dependent on all of these independent variables.
+Now we can train a supervised machine learning model with this data in order
+to predict how much daily screen time someone might have who is
+45 years old 160lbs Female, makes 60k a year, has Some college and is married.
+This is supervised learning. 
+Its supervised because we are teaching the machine learning model by holding
+its hand, in the sense that, like a baby it doesnt already know how to connect
+the dots so its our job to show it how based on related things.
+
+**Supervised Learning Techniques: (There are two)**
+
+            Classification:
+            Regression:
 
 
 
