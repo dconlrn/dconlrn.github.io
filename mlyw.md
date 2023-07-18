@@ -82,10 +82,15 @@ or features:
 *In Supervised Learning we need a data set that already has all of the
 Label outputs to start training a model. What does this look like?*
 
-**Ex.**(                  INDEPENDENT VARIABLES             ) | LABEL |
+**Ex.**
 
-Dependent Variable: RED
-TARGET ( The thing we want to predict): BLUE
+|Independent variable |Independent variable|Dependent variable|
+|:-------------------:|:------------------:|:----------------:|
+|  data from variable | data from variable | data want predict|
+
+**Dependent Variable: RED**
+
+**TARGET (The thing we want to predict): BLUE**
 
 | Age | Weight | Sex | Income | Education | Marital Status |<span style="color:red">{Screen Time}</span>| 
 |:---:|:------:|:---:|:------:|----------:|:--------------:|:-----------:|
