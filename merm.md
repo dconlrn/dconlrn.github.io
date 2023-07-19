@@ -3,22 +3,22 @@
 
 ```mermaid
 flowchart TD
-A[PareidoliaNet.cs] --> B{PF_PLAYFAB.cs}
-A --> C[PF_IAP.cs]
-D[PareidoliaNet_Admin.cs] --> B
-subgraph O[LOGIC]
-B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| J>METHOD CALL:<br>PlayFabAdminAPI.'MethodName']
-J -->|GENERAL STRUCTURE<br> OF ARGUMENTS| L((new 'MethodNameRequest'<br>ie. PlayFabId = VAR <br>Response/Result =><br> Error Lambda =>))
-B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| K>METHOD CALL:<br>PlayFabClientAPI.'MethodName']
-K --> |GENERAL STRUCTURE<br> OF ARGUMENTS| L
-end
-L --> |METHOD CALL| E[PlayFabAdminAPI.cs]
-L --> |METHOD CALL| F[PlayFabClientAPI.cs]
-E[PlayFabAdminAPI.cs] -->  G[PlayFabAdminModels.cs]
-F[PlayFabClientAPI.cs] --> H[PlayFabClientModels.cs]
-G --> |CALL CONVERTED TO <br> API REQUEST| g[PlayFabHttp.MakeApiCall]
-H --> |CALL CONVERTED TO <br> API REQUEST| g
-C[PF_IAP.cs] --> I[Unity.EnginePurchasing]
+    A[PareidoliaNet.cs] --> B{PF_PLAYFAB.cs};
+    A --> C[PF_IAP.cs];
+    D[PareidoliaNet_Admin.cs] --> B;
+    subgraph O[LOGIC];
+    B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| J>METHOD CALL:<br>PlayFabAdminAPI.'MethodName'];
+    J -->|GENERAL STRUCTURE<br> OF ARGUMENTS| L((new 'MethodNameRequest'<br>ie. PlayFabId = VAR <br>Response/Result =><br> Error Lambda =>));
+    B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| K>METHOD CALL:<br>PlayFabClientAPI.'MethodName'];
+    K --> |GENERAL STRUCTURE<br> OF ARGUMENTS| L;
+    end;
+    L --> |METHOD CALL| E[PlayFabAdminAPI.cs];
+    L --> |METHOD CALL| F[PlayFabClientAPI.cs];
+    E[PlayFabAdminAPI.cs] -->  G[PlayFabAdminModels.cs];
+    F[PlayFabClientAPI.cs] --> H[PlayFabClientModels.cs];
+    G --> |CALL CONVERTED TO <br> API REQUEST| g[PlayFabHttp.MakeApiCall];
+    H --> |CALL CONVERTED TO <br> API REQUEST| g;
+    C[PF_IAP.cs] --> I[Unity.EnginePurchasing];
 ```
 
 ## PLAYFAB API NAMESPACE METHOD CALL EXAMPLE
