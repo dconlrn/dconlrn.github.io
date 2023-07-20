@@ -22,6 +22,8 @@ How can we understand the subject matter:
 
 **Generally the person/peole that do this are called:**
 
+(Two sets of the following)
+
 > - (TA) Translation Advisor(s) aka an "Exegete"
 > > - Typically one person 
 > > - Needs to be literate
@@ -46,6 +48,10 @@ How can we understand the subject matter:
 
 ## (PEER REVIEW LOOP)
 
+Symbol for peer review
+
+<img src="https://imgur.com/BJa5I4m.png">
+
 **The Team!**
 
 *There can be multiple teams with the following format*
@@ -55,6 +61,7 @@ How can we understand the subject matter:
 The people who do part A and B of this loop:
 
 > - (MTT) Mother Tongue Translator(s)
+> > - Team 1 checks Team 2's work and vice versa
 
 The people who are in charge of part C:
 
