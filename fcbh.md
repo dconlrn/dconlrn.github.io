@@ -14,7 +14,7 @@ How can we understand the subject matter:
 
 (Where translation can begin)
 
-- (DRAFT LOOP)
+## (DRAFT LOOP)
 
 > - Exegesis: interpreting the Bible correctly. Give examples of what this looks like
 > > - Examples of what this looks like
@@ -25,8 +25,9 @@ How can we understand the subject matter:
 > - Draft: Where The translation will be recorded in audio/text aka Drafted
 > > - Examples of what this looks like
 
+---------------------------------------------------------------------------------------
 
-- (PEER REVIEW LOOP)
+## (PEER REVIEW LOOP)
 
 > - Review Key Terms (A):
 > > - Examples of what this looks like
@@ -37,3 +38,4 @@ How can we understand the subject matter:
 > - Community Testing (C):
 > > - Examples of what this looks like
 
+--------------------------------------------------------------------------------------
