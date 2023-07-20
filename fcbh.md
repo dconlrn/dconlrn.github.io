@@ -46,6 +46,21 @@ How can we understand the subject matter:
 
 ## (PEER REVIEW LOOP)
 
+**The Team!**
+
+*There can be multiple teams with the following format*
+
+**Generally the person/peole that do this are called:**
+
+The people who do part A and B of this loop:
+
+> - (MTT) Mother Tongue Translator(s)
+
+The people who are in charge of part C:
+
+> - Community Checkers
+> > - Can be illiterate
+
 - **BEGIN LOOP:**
 
 > - Review Key Terms (A):
