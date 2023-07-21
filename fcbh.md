@@ -20,9 +20,6 @@ How can we understand the subject matter:
 - [Peer Review Loop](#peer)
 - [Back Translate](#backtrans)
 - [Consultant Check Loop](#ccheck)
-- [Final Read and Listen Through](#finalandlisten)
-- [Final Edits and Revisions](#finalandrevisions)
-- [Copy and Duplicate](#copydup)
 - [Publishing](#publishing)
 
 
@@ -33,8 +30,9 @@ How can we understand the subject matter:
 
 (*Where translation can begin*)
 
-## (DRAFT LOOP)
+## DRAFT LOOP
 
+*The point of the draft loop is understanding the scripture you want to translate, internalizing it and finally translating-recording it.*
 
 
 **The Team!**
@@ -60,14 +58,17 @@ How can we understand the subject matter:
 
 - **BEGIN LOOP:**
 
-> - Exegesis (A): interpreting the Bible correctly. Give examples of what this looks like
-> > - Examples of what this looks like
+> - Exegesis (A): interpreting the Bible correctly. Using software like Paratext and Logos/Translator's Workplace,study a passage and collect what you learn in documents we have titles "Book Notes" and "Set Notes". This information is communicated to the team through conversation.
+> > - Maybe pictures of what this looks like or screenshots of the worksheets or the software.
 >
 > - Internalization (B): know the story by heart in your own words.
-> > - Examples of what this looks like
+> > Examples:
+> > - Videos
+> > - Drawing pictures or dramsa ie. Acting it out.
 >
 > - Draft (C): Where The translation will be recorded in audio/text aka Drafted
-> > - Examples of what this looks like
+> > Examples:
+> > - Recording in the target language. (Can put a video of someone recording on a mic)
 
 - **END LOOP (*IF NEED BE GO TO BEGIN*):**
 
@@ -79,7 +80,10 @@ How can we understand the subject matter:
 
 ---------------------------------------------------------------------------------------
 
-## (PEER REVIEW LOOP)
+## Peer Review LOOP
+
+*The point of the peer review loop is to obtain input from other people who were not involved in the drafting process/loop. The input relates to things like CANA is it clear is it natural is it acceptable to the audience. First you pay attention to those 3 things and then you worry about the accuracy.*
+
 
 *Consists of 3 parts and is linked to the [Consultant Check Loop](#ccheck)*
 
@@ -108,15 +112,18 @@ The people who are in charge of part C:
 
 > - Review Key Terms (A):
 > > - Question certain phrases or words. How would this thing be said properly in the target language.
-> > - Examples of what this looks like
+> > Examples:
+> > - A screenshot of the Paratext software.
 >
 > - Peer/Team Check (B):
-> > - Examples of what this looks like
+> > Examples:
+> > - Any picture of people looking like they are working.
 >
 > - Community Testing (C):
 > > - Native people reviewing the material and criticing it.
 > > - Natives saying things like, we dont say things like this, this doesnt make sense etc..
-> > - Examples of what this looks like
+> > Examples:
+> > - Pictures of native looking people reviewing something.
 
 - **END LOOP (*IF NEED BE GO TO BEGIN*):**
 
@@ -130,19 +137,31 @@ The people who are in charge of part C:
 
 ## Back Translation
 
-- Review the translated material
-- Take the translated material and translate it back to your native language
+**DO BEFORE CONSULTANT CHECK LOOP**
+
+*The point of this is to get it ready for the consultant check, so the consultant could hear the final story in the language they understand*
+
+There are 2 options for the backtranslation step, ultimately these are up to the consultant.
+
+1. Retell:
+> - Videos Demonstation.
+> - Explored in greater detail when you learn Render.
+
+2. Breath pause:
+> - Video Demonstation.
+> - Explored in greater detail when you learn Render.
+
 - Examples of this look like this:
-> - Talk about what this looks like. Real examples relative to the training.
+> - Illustrations of people who represent the backtranslator and the consultant with like arrows or whatever the hell.
 
 
 
 <a id="ccheck"></a>
 
---------------------------------------------------------------------------------------
-
 
 ## Consultant Check Loop
+
+*The point of this is that a very educated and trained consultant vouches for this audio as true scripture because it ends up being faithful to the original message. If not the consultant sends it back for revisions.*
 
 *Consists of 2 parts and is linked to the [Peer Review Loop](#peer)*
 
@@ -152,10 +171,12 @@ The people who are in charge of part C:
 - **BEGIN LOOP:**
 
 > - Consultant Check (A):
-> > - Examples of what this looks like.
+> > Examples:
+> > - Illustration of people. A person that represents a consultant.
 >
 > - Test and Revise (B):
-> > - Examples of what this looks like.
+> > Examples:
+> > - Evaluate generally overtime whether communites are using the audio bibles or not.
 >
 
 
@@ -166,36 +187,15 @@ The people who are in charge of part C:
 
 
 
-<a id="finalandlisten"></a>
 
 ---------------------------------------------------------------------------------------
 
 
-## Final Read and Listen Through
-
-
-
-
-<a id="finalandrevisions"></a>
-
-----------------------------------------------------------------------------------------
-
-## Final Edits and Revisions
-
-
-
-<a id="copydup"></a>
-
-----------------------------------------------------------------------------------------
-
-
-## Copy and Duplicate
-
-
-<a id="publishing"></a>
-
----------------------------------------------------------------------------------------
 
 ## Publishing
+
+- Final approval and dissemination of the thing
+
+
 
 --------------------------------------------------------------------------------------
