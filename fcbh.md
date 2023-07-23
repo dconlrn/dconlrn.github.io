@@ -2,6 +2,10 @@
 
 ## Pre-Notes
 
+Redefine translation in the context of OBT because we can't think of another word to use for reference.
+
+In the context of OBT translation is redefined as converting something from one language to another language in either text or audio form.
+
 How can we understand the subject matter:
 
 1. SME: Subject Matter Expert
@@ -28,9 +32,10 @@ How can we understand the subject matter:
 
 ---------------------------------------------------------------------------------------
 
-(*Where translation can begin*)
 
-## DRAFT LOOP
+## Draft LOOP
+
+(*Essentially, this is where "translation" begins*)
 
 *The point of the draft loop is understanding the scripture you want to translate, internalizing it and finally translating-recording it.*
 
@@ -151,7 +156,7 @@ There are 2 options for the backtranslation step, ultimately these are up to the
 > - Video Demonstation.
 > - Explored in greater detail when you learn Render.
 
-- Examples of this look like this:
+> Examples:
 > - Illustrations of people who represent the backtranslator and the consultant with like arrows or whatever the hell.
 
 
@@ -161,7 +166,7 @@ There are 2 options for the backtranslation step, ultimately these are up to the
 
 ## Consultant Check Loop
 
-*The point of this is that a very educated and trained consultant vouches for this audio as true scripture because it ends up being faithful to the original message. If not the consultant sends it back for revisions.*
+*The point of this is that a very educated and trained consultant vouches for this audio as true scripture because it ends up being faithful to the original message. If not the consultant sends it back for revisions (The peer review loop).*
 
 *Consists of 2 parts and is linked to the [Peer Review Loop](#peer)*
 
