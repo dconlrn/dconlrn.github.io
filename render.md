@@ -3,7 +3,12 @@
 ### Prelim Notes:
 
 
+Likely the best way to learn Render
 
+[The Actual Documentation](https://renderpartners.freshdesk.com/support/home)
+
+
+On a typical project there are two Exegetes.
 
 A direct link to download render:
 
@@ -19,3 +24,17 @@ The reason your viewing it like this is because in terms of the training they wa
 
 Normally if you were starting a fresh render session you would just see the configure button and the bottom left projects button that looks like a box, the bottom right sync button, and the top right 3 dots button next to the logout button.
 
+
+If you were to click on the configure button. This weird box would pop up.
+
+<img src="https://i.imgur.com/81yPXWv.png">
+
+This box with all the dots is really just a password box.
+If you click on the dots they will highlight.
+A specific sequence of selected "dot boxes" corresponds to a password that gets created, which anyone could create, when you first run render.
+This is something that was not explained.
+
+
+Once you enter the correct password, if there is one, youll get the configure menu.
+
+<img src="https://i.imgur.com/RqWNVw2.png">
