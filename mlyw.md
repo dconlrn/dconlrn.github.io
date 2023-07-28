@@ -11,41 +11,55 @@
 
 ## Terminology
 
+________________________________________________________________________
+
 
 **Data Types:**
 
-            Numerical: Numbers
-            Categorical: Categories ie. (Plants, Customer A, Customer B, Dangerous, Safe, Something Binary)
+Numerical: 
+
+- Numbers
+> - Things that are numbers (self explanitory)
+
+- Categorical: 
+> Categories ie.
+> - Plants 
+> - Customer A
+> - Customer B
+> - Dangerous
+> - Safe
+> - Something Binary ie. ( 0 or 1, yes or no etc..)
 
 
 **Feature(s):**
 
-            Column(s) with the data in the column(s) including the column(s) name(s)
+*Column(s) with the data in the column(s) including the column(s) name(s)*
 
 
 **An Observation:**
 
-            Just a row in a data set.
+*Just a row in a data set.*
 
 **Independent Variable:**
 
-                    A feature
-                    (AKA) -> Predictor, Input Variable, Vector
+*(A feature)*
+
+- (AKA) -> Predictor, Input Variable, Vector
 
 **Dependent Variable:**
 
-                    The thing that gets created or is influenced by the independent variables.
-                    (AKA) -> Response / Outcome / Target Variables, The Target, Output, Supervisory Signal,
-                    The Label.
+*The thing that gets created or is influenced by the independent variables.*
+
+- (AKA) -> Response / Outcome / Target Variables, The Target, Output Supervisory Signal, The Label.
 
 **(Y) Actual Value:**
 
-                When the value of a dependent variable is already known from a data set.
+*When the value of a dependent variable is already known from a data set.*
 
 **Y Hat (Predicted Value):**
 
-                        When the value of a dependent variable is predicted based on
-                        Features/Independent Variables in a data set.
+*When the value of a dependent variable is predicted based on
+Features/Independent Variables in a data set.*
 
 
 
