@@ -67,6 +67,11 @@ Features/Independent Variables in a data set.*
 
 ## Supervised Learning:
 
+
+_________________________________________________________________
+
+**What is it ?**
+
 Is a machine learning approach for working with data that
 already shares some relationship with an output which is
 labeled, or that we have put a label on, in order to make
@@ -77,8 +82,20 @@ machine learning – specifically for predictive modeling.
 It’s a way to diagnose the performance of an algorithm by
 breaking down its prediction error.
 
+
+**How these examples are structured**
+
+For these examples we want to view data as if its in some kind of table structure like excell or something similar. Just assume it has the following layout for all the examples.
+
+
+|Some Column Title |Some Column Title|Yet Another Column Title|
+|:-------------------:|:------------------:|:----------------:|
+|  data for this column | data for this column | data for this column|
+
+
 **Ex.**
 Suppose we want to predict daily screen time usage for cell phone owners.
+
          _                      ____________
         |_  Screen Time         ____________|<- Label (Dependent Variable)
 
