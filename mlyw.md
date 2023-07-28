@@ -7,12 +7,20 @@
 - [Terminology](#terminology)
 - [Supervised Learning](#supervised)
 - [Unsupervised Learning](#unsupervised)
-
+- [Biase Variance Section](#Biase)
 
 ## Terminology
 
 ________________________________________________________________________
 
+*In Machine learning there are alot of terms. Many times there are multiple terms for the same thing. This is something that makes understanding machine learning a pain and a big barrier*
+
+In this section I do my best to organize terminology that your going to hear a lot in machine learning talk.
+
+
+**Biase Variance Tradeoff**
+
+[See this section](#Bias)
 
 **Data Types:**
 
@@ -72,15 +80,29 @@ _________________________________________________________________
 
 **What is it ?**
 
-Is a machine learning approach for working with data that
-already shares some relationship with an output which is
-labeled, or that we have put a label on, in order to make
-predictions.
+It's a machine larning approach for working with data that already shares some kind of relationship with another piece of data.
+
+**EX.**
+- Age and Health
+
+Age and health are linked (they have a relationship). As you get older your health gets worse, unless your not human or discovered some kind of magic your not sharing with the rest of us.
+
+For the above example of age and health a data table might look something like this:
+
+|Age| Health|
+|:-:|:-----:|
+|60|Fair|
+
+
+
+
+
+**Bias Variance Note:**
 
 The Bias-Variance Tradeoff is relevant for supervised 
-machine learning – specifically for predictive modeling.
-It’s a way to diagnose the performance of an algorithm by
-breaking down its prediction error.
+machine learning
+
+– specifically for predictive modeling. It’s a way to diagnose the performance of an algorithm by breaking down its prediction error.
 
 
 **How these examples are structured**
@@ -93,22 +115,40 @@ For these examples we want to view data as if its in some kind of table structur
 |  data for this column | data for this column | data for this column|
 
 
+*Where "Some column title" is an actual column title like "Age" or "Height" ;and where " data for this column" is 33 for age and 5,8" for height.*
+
+
 **Ex.**
+
 Suppose we want to predict daily screen time usage for cell phone owners.
 
-         _                      ____________
-        |_  Screen Time         ____________|<- Label (Dependent Variable)
+
+|Screen Time|
+|:----------------:|
+|The data we want to predict|
+
+In the above example Screen Time is the "Dependent Variable".
+
+*The dependent variable in a supervised learning model is the thing we want to predict.*
+
+**Why is the thing called a dependent variable ?**
+
+*Because the data can vary and it will vary based on, or "depending on", other factors or other "variables" ie . other things that vary*
+
+Screen time could vary based on:
+
+- Age
+- Weight
+- Sex
+- Income
+- Education
+- Marital Status
+
+
 
 In order to take the supervised learning approach to
-be able to predict this we would likely need some of the following data
-or features:
-         _                      ____________
-        |   age                             |
-        |   weight                          |
-        |   sex                             |<- Features (Independent Variables)
-        |   income                          |
-        |   education                       |
-        |_  marital status      ____________|
+be able to predict screentime we may need some, or all of the above "features".
+
 
 *In Supervised Learning we need a data set that already has all of the
 Label outputs to start training a model. What does this look like?*
@@ -119,11 +159,19 @@ Label outputs to start training a model. What does this look like?*
 |:-------------------:|:------------------:|:----------------:|
 |  data from variable | data from variable | data want predict|
 
+
+**Label Output**
+
+Means the thing has some data. The column above which says " data want predict" has to have some kind of data in it. It cant all be blank otherwise we can't train the model. We need data to train the model on to start with for supervised learning. 
+
+*Basically for supervised learning we have a bunch of data thats already been collected for something and we feed that data into a specific algorithm. The algorithm then can try and predict what a new output might look like based on different independent values.*
+
+
 **Dependent Variable: RED**
 
 **TARGET (The thing we want to predict): BLUE**
 
-| Age | Weight | Sex | Income | Education | Marital Status |<span style="color:red">{Screen Time}</span>| 
+| Age | Weight | Sex | Income | Education | Marital Status |<span style="color:red">Screen Time</span>| 
 |:---:|:------:|:---:|:------:|----------:|:--------------:|:-----------:|
 | 21  | 180lbs | M   |   25k  | HighSchool|   Not Married  | <span style="color:blue">6hrs 22mins</span>| 
 
@@ -200,6 +248,9 @@ the dots so its our job to show it how based on related things.
 
 
     ----------------------------------------------------------------------------------------------------------
+## Bias Variance Trade Off
+
+
 Deeper underlying understanding of algorithms and machine learning models.
     Bias and Variance Trade Off:
                                 Similar to the concept of overfitting and underfitting.
