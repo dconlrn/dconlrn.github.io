@@ -186,10 +186,13 @@ Its supervised because we are teaching the machine learning model by holding
 its hand, in the sense that, like a baby it doesnt already know how to connect
 the dots so its our job to show it how based on related things.
 
+
+_______________________________________________________________________
+
 **Supervised Learning Techniques: (There are two)**
 
-            Classification:
-            Regression:
+- Classification:
+- Regression:
 
 
 
