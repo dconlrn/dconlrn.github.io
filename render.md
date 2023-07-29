@@ -38,3 +38,11 @@ This is something that was not explained.
 Once you enter the correct password, if there is one, youll get the configure menu.
 
 <img src="https://i.imgur.com/RqWNVw2.png">
+
+
+
+
+## How to structure the slides
+
+You need to do something similar to the obt slides.
+The render website has all of the roles listed and definitions of the roles.
