@@ -534,6 +534,11 @@ Fail2ban
 **Nano**
 
 **Vim**
+
+If you want to learn Vim through a playing a little game.
+[Here you go.](https://vim-adventures.com/)
+
+
 Copy to clipboard
 
 Enter visual mode
