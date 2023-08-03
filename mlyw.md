@@ -1,7 +1,7 @@
 <table rules=none>
  <tr>
 <td> <img src="https://i.imgur.com/CfWaqUg.png"></td>
-<td> <h2><a href="https://joshjetson.github.io">Machine Learning<br>Your Welcome</a></h2><br>A Very Machine Learning Guide And Reference</td>
+<td> <h2><a href="https://joshjetson.github.io">Machine Learning<br>Your Welcome</a></h2><br>A Machine Learning Guide And Reference</td>
 </tr>
 </table>
 
@@ -15,7 +15,7 @@
 
 ## Terminology
 
-________________________________________________________________________
+--------------------------------------------
 
 *In Machine learning there are alot of terms. Many times there are multiple terms for the same thing. This is something that makes understanding machine learning a pain and a big barrier*
 
