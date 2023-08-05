@@ -14,18 +14,48 @@
 - It's a free to use system that anyone could apply towards learning something.
 - It's a system which shows you how to find the core building blocks of whatever it is your trying to learn.
 
-Sometimes applying this system to something can be really tricky. Especially things you can't really get a good visual on. Things like computer programming or computer operating systems (Whatever the heck those are).
+Sometimes applying this system to certain things can be really tricky. Especially things you can't really get a good visual on. Things like computer programming or computer operating systems (Whatever the heck those are).
 It would be nice to have someone who is very knowledgable in specific disciplines break things down using DLS.
 Thankfully for, things in the computer world at least, I got you covered.
 
-This is the system.
-(Keep in mind this is a process that needs to be written, typed or drawn out and revised till you feel comfortable with the results)
+------------------------------------------------
 
-Starting from the most fundamental components of whatever it is you’re trying to learn .
+## The System
 
-Define the basics:
+*(Keep in mind this is a process that needs to be written, typed or drawn out and revised till you feel comfortable with the results)*
+
+We want to try and identify the core thing in whatever it is we are trying to learn ,the **Cornerstone**, that if removed will make the rest of the thing not work or change it into something different.
+Lets call this process "**Core Identification.**"
+
+Core Identification:
+
+**1. Simplify**
+
+Ex.
+
+- A car:
+> A car is really just a kind of vehicle with four wheels on a frame and a motor
+
+
+**2. Unravel The Simplification**
+
+Ask some questions about the different parts of whatever has been simplified in an effort to identify the cornerstone.
+
+- A car: 
+> - Is a car still a car without a motor ?
+> Answer: Kind of.
+> - Is a car still a car without wheels on a frame ?
+> Answer: No, it is not a car without at least a certain amount of wheels on a frame.
+
+Now over simplify again
+
+- A thing that takes you from point A to point B
+
+**2. Define The Basics:**
+
 > This is best done by creating some kind of hierarchy tree where you organize concepts like building blocks.
-In the same way that a building will collapse if you remove the first floor from it you need to identify what concept or idea or mechanism is at the base of your hierarchy. This has to be an idea that without understand or grasping fully everything else will fall apart.
+In the same way that a building will collapse if you remove the first floor from it you need to identify what concept or idea or mechanism is at the base of your hierarchy. This has to be an idea or set of ideas that without understanding or grasping fully, everything else will fall apart.
+
 
 Let’s use a car for this example. Personally I don’t know much about cars so this should be fun.
 
