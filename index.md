@@ -28,8 +28,16 @@ We want to try and identify the core thing in whatever it is we are trying to le
 Lets call this process "**Core Identification.**"
 
 
+
+Lets apply the system to learning about a couple things to give you two examples of how you can use the system on something.
+
+- A car
+- The Python Programming Language
+
+
 **1. Define The Basics:**
 
+*A car*
 
 - A body
 - Doors
@@ -40,9 +48,22 @@ Lets call this process "**Core Identification.**"
 - Electronic components
 - Something that makes the steering wheel work and, for arguments sake we will pretend, we have no clue how.
 
-Core Identification:
+
+
+*Python*
+
+This is going to be the same for any programming language.
+
+
+
+
+
 
 **2. Simplify**
+
+
+Core Identification:
+
 
 Ex.
 
