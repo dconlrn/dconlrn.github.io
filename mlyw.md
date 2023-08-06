@@ -82,6 +82,11 @@ In this section I do my best to organize terminology that your going to hear a l
 > *When the value of a dependent variable is predicted based on
 > Features/Independent Variables in a data set.*
 
+- **Underfit Model**
+> The model has not been trained on enough data to be able to make accurate enough predictions.
+
+- **Overfit Model**
+> The model has been trained on too much data that is too similar to eachother and as a result the model does not do good at making predictions on outliers or data that is too dissimilar to the data it was trained on.
 
 
 <a id="supervised"></a>
@@ -224,7 +229,7 @@ Of course we dont know how to go about that process yet but we will...
 
 <details><summary>Definition</summary>
 
-*A kind of machine learning where a model must look for patterns in a dataset with no labels and with minimal human supervision. This is in contrast with supervised learning because an unsupervised learning model wont necessarily know that the data shares any kind of similarities and its going to have to look for things in the data that are similar in order to group similar data together.With unsupervised learning its more that we are trying to predict what things are similar and with supervised learning its more that we are trying to predict things based on the output of known data which we already have. Basically unsupervised machine learning tries to bring order to a dataset and make sense of it.*
+A kind of machine learning where a model must look for patterns in a dataset with no labels and with minimal human supervision. This is in contrast with supervised learning because an unsupervised learning model wont necessarily know that the data shares any kind of similarities and its going to have to look for things in the data that are similar in order to group similar data together.With unsupervised learning its more that we are trying to predict what things are similar and with supervised learning its more that we are trying to predict things based on the output of known data which we already have. Basically unsupervised machine learning tries to bring order to a dataset and make sense of it.
 
 </details>
 
@@ -263,9 +268,43 @@ Of course we dont know how to go about that process yet but we will...
 ## Bias Variance Trade Off
 
 
-Deeper underlying understanding of algorithms and machine learning models.
-    Bias and Variance Trade Off:
-                                Similar to the concept of overfitting and underfitting.
+> Deeper underlying understanding of algorithms and machine learning models.
+
+**Bias and Variance Trade Off:**
+- Similar to the concept of overfitting and underfitting.
+
+
+**Bias:**
+- Is the difference between your models expected prediciton and the true values.
+
+**Low Bias:**
+- A low bias model will closely match the training data set.
+
+**High Bias:**
+- A model with a higher bias would not match the data set closely.
+> Characteristics of a high bias model include:
+> - Failure to capture proper data trends
+> - Potential towards underfitting
+> - More generalized/overly simplified
+> - High error rate
+
+
+**Variance:**
+- Refers to an algorithms sensitivity to specific sets of training data.
+
+**Break Down:**
+
+- Variance is really how well the algorithm your using is learning from the data. Maybe certain data sets for whatever reason are just not good or effective at teaching the algorithm how to make predictions (low variance) 
+
+**Characteristics of a high variance model include:**
+- Noise in the data set
+- Potential towards overfitting
+- Complex models
+- Trying to put all data points as close as possible
+
+Models with high bias will have low variance.
+Models with high variance will have a low bias.
+
 
 ## Low variance (high bias):
 
@@ -292,56 +331,6 @@ Deeper underlying understanding of algorithms and machine learning models.
                 This tradeoff in complexity is why there’s a tradeoff in bias and variance – 
                 an algorithm cannot simultaneously be more complex and less complex.
 
-                                Bias:
-                                        Is the difference
-                                        between your
-                                        models expected
-                                        prediciton and
-                                        the true values.
-                                Low Bias:
-                                        A low bias model will closely match
-                                        the training data set.
-
-
-
-                                High Bias:
-                                        A model with a higher bias 
-                                        would not match the data set closely.
-
-                                    Characteristics of a high bias model include:
-                                            Failure to capture proper data trends
-                                            Potential towards underfitting
-                                            More generalized/overly simplified
-                                            High error rate
-
-
-                                Variance:
-                                        Refers to an algos
-                                        sensitivity to 
-                                        specific sets of
-                                        training data
-
-#                                       Break Down:
-                                        Variance is really
-                                        how well the
-                                        algorithm your using
-                                        is learning from the data.
-                                        Maybe certain data sets
-                                        for whatever reason
-                                        are just not good or
-                                        effective at teaching
-                                        the algorithm how to
-                                        make predictions.
-                                        So low variance 
-
-                                    Characteristics of a high variance model include:
-                                            Noise in the data set
-                                            Potential towards overfitting
-                                            Complex models
-                                            Trying to put all data points as close as possible
-                                            
-                                    Models with high bias will have low variance.
-                                    Models with high variance will have a low bias.
 #Linear Regression
 *Theta is also called the parameters or weight vector of the regression equation*
 ##The key point in the linear regression is that or dependent value should be continuous and not be a discrete value'
