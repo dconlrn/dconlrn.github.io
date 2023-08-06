@@ -11,7 +11,7 @@
 - [Terminology](#terminology)
 - [Supervised Learning](#supervised)
 - [Unsupervised Learning](#unsupervised)
-- [Biase Variance Section](#Biase)
+- [Bias Variance Section](#Bias)
 
 ## Terminology
 
@@ -22,11 +22,10 @@
 In this section I do my best to organize terminology that your going to hear a lot in machine learning talk.
 
 
-**Biase Variance Tradeoff**
+**Bias Variance Tradeoff**
 
-[See this section](#Bias)
 
-**Data Types:**
+- **Data Types:**
 
 Numerical: 
 
@@ -179,16 +178,24 @@ Means the thing has some data. The column above which says " data want predict" 
 |:---:|:------:|:---:|:------:|----------:|:--------------:|:-----------:|
 | 21  | 180lbs | M   |   25k  | HighSchool|   Not Married  | <span style="color:blue">6hrs 22mins</span>| 
 
-Pretend we have a hundred rows of data like this.
-This means we already know how long all of these people are looking at their
-phones daily. So screen time is dependent on all of these independent variables.
-Now we can train a supervised machine learning model with this data in order
-to predict how much daily screen time someone might have who is
-45 years old 160lbs Female, makes 60k a year, has Some college and is married.
-This is supervised learning. 
-Its supervised because we are teaching the machine learning model by holding
-its hand, in the sense that, like a baby it doesnt already know how to connect
-the dots so its our job to show it how based on related things.
+*Now with one hundred rows of data:*
+
+- We have a documented account of how long all the people in the data set are looking at their phones daily
+- We can assume that their screen time is dependent on the independent variables.
+
+So ok what does this really mean ?
+
+Its means
+
+- Independent Variables influence the dependent variable, some more then others.
+
+We can now use this data to train a machine learning model in attempt to try and get some predicitons out of it.
+
+
+*This is supervised learning. Its supervised because we are going to teach the machine learning model by holding its hand, in the sense that, like a baby it doesnt already know how to connect the dots so its our job to show it how based on related things ie. independent variables and dependent variables.*
+
+Of course we dont know how to go about that process yet but we will...
+
 
 
 _______________________________________________________________________
@@ -255,6 +262,11 @@ _______________________________________________________________________
 
 
     ----------------------------------------------------------------------------------------------------------
+
+
+
+<a id="Bias"></a>
+
 ## Bias Variance Trade Off
 
 
