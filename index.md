@@ -27,9 +27,22 @@ Thankfully for, things in the computer world at least, I got you covered.
 We want to try and identify the core thing in whatever it is we are trying to learn ,the **Cornerstone**, that if removed will make the rest of the thing not work or change it into something different.
 Lets call this process "**Core Identification.**"
 
+
+**1. Define The Basics:**
+
+
+- A body
+- Doors
+- Wheels
+- Something that makes the car go (an engine)
+- Something that makes the car stop
+- A steering wheel
+- Electronic components
+- Something that makes the steering wheel work and, for arguments sake we will pretend, we have no clue how.
+
 Core Identification:
 
-**1. Simplify**
+**2. Simplify**
 
 Ex.
 
@@ -37,91 +50,27 @@ Ex.
 > A car is really just a kind of vehicle with four wheels on a frame and a motor
 
 
-**2. Unravel The Simplification**
+**3. Unravel The Simplification**
 
 Ask some questions about the different parts of whatever has been simplified in an effort to identify the cornerstone.
 
 - A car: 
 > - Is a car still a car without a motor ?
-> Answer: Kind of.
+> Answer: Kind of, you might be able to get somewhere by someone pushing you or maybe having a hill.
 > - Is a car still a car without wheels on a frame ?
-> Answer: No, it is not a car without at least a certain amount of wheels on a frame.
+> Answer: No, it's not a car without at least a certain amount of wheels on a frame.
 
-Now over simplify again
 
 - A thing that takes you from point A to point B
 
-**2. Define The Basics:**
-
-> This is best done by creating some kind of hierarchy tree where you organize concepts like building blocks.
-In the same way that a building will collapse if you remove the first floor from it you need to identify what concept or idea or mechanism is at the base of your hierarchy. This has to be an idea or set of ideas that without understanding or grasping fully, everything else will fall apart.
 
 
-Let’s use a car for this example. Personally I don’t know much about cars so this should be fun.
-
-Let’s approach cars as if we wanted to learn about them.
-
-What does a car have meaning what does a car consist of in a common sense kind of way of looking at them.
-
-Well a car has:
-
-A body
-Doors
-Wheels
-Something that makes the car go (an engine)
-Something that makes the car stop
-A steering wheel
-Electronic components
-Something that makes the steering wheel work and, for arguments sake we will pretend, we have no clue how.
+**4. Examine The Simplification**
 
 
-A car is pretty complicated and there are certainly dozens if not hundreds of more components that make a modern car a car. Right now we don’t really care about those things because we need a place to start that is going to give us a really good base of understanding .
-
-Alright so we have identified some basics when it comes to cars. Let’s think about these basics a little deeper in context of what really makes a car.
-If we take an engine out of a car so we still have a car ? Yea we kind of do still have a car because someone or something could push this thing at it could still in someway be driven.
-Ok so that means understanding how the engine works is going to have to be something we learn later since without it we still kind of have a car.
-What about doors? Without doors do we still have a car ? Yea, sure a doorless car is still a car . Ok doors go on the later list too then.
-Electronic components? Cars for decades didn’t have electronic components they were purely mechanical so yea we could put that on the back burner.
-
-What about a steering wheel ? Well we still have a car without a steering wheel but a car that could only go straight forward or straight backwards so this thing is getting closer to being useless. I think we are identifying the idea that steering and a steering wheel should probably be included in a core basic component since after we remove it we’re getting closer to a static thing.
 
 
-What about wheels ?
-Ok without wheels we definitely don’t have a car we basically have like a vessel or an enclosure or something ok so wheels are pretty damn crucial maybe the most crucial component of a car in many ways even though they seem pretty simple but that’s perfect actually because we need simple we need things stripped away so we can build our way up to more complex components or concepts.
 
-
-Heres another example of using the deconstructed learning system. 
-
-So we have identfied the core building blocks of a car, what makes a car and certain items that if removed (like wheels) unmake a car.
-
-How could we handle breaking down something realy complicated though ? 
-Whats the most complex part of a car ? The engine right !
-
-So lets apply the deconstructed learning system to a cars engine.
-
-First we need to start by definning what an engine is and im not talking about a science book definition or an empirical papers definition. Im talking about a very basic very simple definition of the thing.
-If we fish around on the internet looking for a definiton of what a vehicle engine is we wont have much trouble finding a complicated explanation or an explanation that doesnt really help us too much understanding what it is and how it works.
-
-I found a fairly simple definition that I kepts seeing different versions of on the internet.
-
-Here:
-An engine is a machine designed to use energy, especially heat energy, to make a vehicle move.
-
-Ok personally im still confused. After I read the definition.
-Im not confused about the vehicle part cause thats pretty simple. A vehicle is just a thing you get in that takes you from one place to another. 
-I am confused about the machine and energy part.
-Im confused because I only have a vague understanding of what a machine and energy are.
-So this definition, like too many, is built off of assumptions.
-I could go down the rabbit hole of finding out what a machine is and what energy is simply then to after however long, arrive in the arena of a place that the people who came up with the definition already assumed everyone was in.
-But do I really have to do that ? Maybe at somepoint you will, but maybe not right now.
-
-Lets just look at a car engine.
-Looks like a big hunk of metal to me.
-Upon closer examination I see that this thing IS a big hunk of metal but it looks like its made up of a bunch of smaller metal parts. Why wasnt something like that in the definition ? 
-Ok so we have established that an engine is typically a hunk of metal made uo of a bunch of different metal parts.
-I hope at this point you are starting to connect the dots of how we are beggining to deconstruct what something is.
-If we keep deconstructing the engine what we will do from this point is start looking at every piece the engine is made up of and then we will finally identify the most important core components.
-Thats the starting idea, concept and mindset behind the DLS (Deconstructed Learning System).
 
 
 
