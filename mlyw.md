@@ -6,6 +6,15 @@
 </table>
 
 
+
+## What Is Machine Learning ?
+
+-------------------------------------------------------------
+
+*Machine Learning, in a nut shell, is the idea of creating a program which receives some kind of input that it learns from then attempts to make predictions based on the input.*
+
+-----------------------------------------------------------
+
 ## Navigation
 
 - [Terminology](#terminology)
@@ -22,17 +31,20 @@
 In this section I do my best to organize terminology that your going to hear a lot in machine learning talk.
 
 
-**Bias Variance Tradeoff**
+- **Bias Variance Tradeoff**
 
+*This term has an entire section dedicated to it.*
+
+<div align="left">&#8609; <a href="#Bias" title="Bias Variance">Bias Variance Click Here</a></div>
 
 - **Data Types:**
 
-Numerical: 
+> Numerical: 
 
-- Numbers
+> Numbers
 > - Things that are numbers (self explanitory)
 
-- Categorical: 
+> Categorical: 
 > Categories ie.
 > - Plants 
 > - Customer A
@@ -42,35 +54,33 @@ Numerical:
 > - Something Binary ie. ( 0 or 1, yes or no etc..)
 
 
-**Feature(s):**
+- **Feature(s):**
 
-*Column(s) with the data in the column(s) including the column(s) name(s)*
+> *Column(s) with the data in the column(s) including the column(s) name(s)*
 
 
-**An Observation:**
+- **An Observation:**
 
-*Just a row in a data set.*
+> *Just a row in a data set.*
 
-**Independent Variable:**
+- **Independent Variable:**
 
-*(A feature)*
+> *(A feature)*
+> > (AKA) -> Predictor, Input Variable, Vector
 
-- (AKA) -> Predictor, Input Variable, Vector
+- **Dependent Variable:**
 
-**Dependent Variable:**
+> *The thing that gets created or is influenced by the independent variables.*
+> > (AKA) -> Response / Outcome / Target Variables, The Target, Output Supervisory Signal, The Label.
 
-*The thing that gets created or is influenced by the independent variables.*
+- **(Y) Actual Value:**
 
-- (AKA) -> Response / Outcome / Target Variables, The Target, Output Supervisory Signal, The Label.
+> *When the value of a dependent variable is already known from a data set.*
 
-**(Y) Actual Value:**
+- **Y Hat (Predicted Value):**
 
-*When the value of a dependent variable is already known from a data set.*
-
-**Y Hat (Predicted Value):**
-
-*When the value of a dependent variable is predicted based on
-Features/Independent Variables in a data set.*
+> *When the value of a dependent variable is predicted based on
+> Features/Independent Variables in a data set.*
 
 
 
@@ -78,14 +88,22 @@ Features/Independent Variables in a data set.*
 
 ## Supervised Learning:
 
+-----------------------------------------------------------
 
-_________________________________________________________________
+**Supervised Learning Techniques: (There are two)**
+
+- Classification:
+- Regression:
 
 **What is it ?**
 
 It's a machine larning approach for working with data that already shares some kind of relationship with another piece of data.
 
+*Supervised Learning is very much like teaching someone something by holding their hand. You create a kind of tether for them to cling to.*
+
+
 **EX.**
+
 - Age and Health
 
 Age and health are linked (they have a relationship). As you get older your health gets worse, unless your not human or discovered some kind of magic your not sharing with the rest of us.
@@ -102,8 +120,7 @@ For the above example of age and health a data table might look something like t
 
 **Bias Variance Note:**
 
-The Bias-Variance Tradeoff is relevant for supervised 
-machine learning
+The Bias-Variance Tradeoff is relevant for supervised machine learning, meaning it's something you need to consider when using the technique. 
 
 – specifically for predictive modeling. It’s a way to diagnose the performance of an algorithm by breaking down its prediction error.
 
@@ -118,7 +135,7 @@ For these examples we want to view data as if its in some kind of table structur
 |  data for this column | data for this column | data for this column|
 
 
-*Where "Some column title" is an actual column title like "Age" or "Height" ;and where " data for this column" is 33 for age and 5,8" for height.*
+*Where "Some column title" is an actual column title like "Age" or "Height" and where " data for this column" is 33 for age and 5,8" for height.*
 
 
 **Ex.**
@@ -129,8 +146,6 @@ Suppose we want to predict daily screen time usage for cell phone owners.
 |Screen Time|
 |:----------------:|
 |The data we want to predict|
-
-In the above example Screen Time is the "Dependent Variable".
 
 *The dependent variable in a supervised learning model is the thing we want to predict.*
 
@@ -185,7 +200,7 @@ Means the thing has some data. The column above which says " data want predict" 
 
 So ok what does this really mean ?
 
-Its means
+It means:
 
 - Independent Variables influence the dependent variable, some more then others.
 
@@ -198,72 +213,50 @@ Of course we dont know how to go about that process yet but we will...
 
 
 
-_______________________________________________________________________
-
-**Supervised Learning Techniques: (There are two)**
-
-- Classification:
-- Regression:
-
-
 
 <a id="unsupervised"></a>
 
+----------------------------------------
 
 
 ## Unsupervised Learning:
 
-                        A kind of machine learning where a model must look for patterns in a dataset
-                        with no labels and with minimal human supervision. This is in contrast
-                        with supervised learning because an unsupervised learning model
-                        wont necessarily know that the data shares any kind of similarities
-                        and its going to have to look for things in the data that are similar
-                        in order to group similar data together.
-                        With unsupervised learning its more that we are trying to predict
-                        what things are similar and with supervised learning its more
-                        that we are trying to predict things based on the output
-                        of known data which we already have.
-                        Basically unsupervised machine learning tries to bring order
-                        to a dataset and make sense of it.
 
-                        Unsupervised process >
-                        1.  Explore the structure of the information and detect distinct patterns;
-                        2.  Extract valuable insights;
-                        3.  Implement this into its operation in order to increase the efficiency
-                            of the decision-making process
+<details><summary>Definition</summary>
 
-                        A practical example of unsupervised learning is
-                        Social Network Analysis:
-                            Which is conducted to make clusters of friends depending
-                            on the frequency of a connection between them.
+*A kind of machine learning where a model must look for patterns in a dataset with no labels and with minimal human supervision. This is in contrast with supervised learning because an unsupervised learning model wont necessarily know that the data shares any kind of similarities and its going to have to look for things in the data that are similar in order to group similar data together.With unsupervised learning its more that we are trying to predict what things are similar and with supervised learning its more that we are trying to predict things based on the output of known data which we already have. Basically unsupervised machine learning tries to bring order to a dataset and make sense of it.*
 
-                        Applicable in:
-                            Clustering Problems and association problems
-                            such as pattern recognition.
-                    
-                        Accuracy:
-                            May provide less accurate results because many
-                            times its kind of a shot in the dark since
-                            you might not even know ballpark what your
-                            trying to find or what you want to find.
+</details>
 
-                        Algorithms:
-                            K-Means
-                            Gaussian Models
-                            Frequent patterns (FP) Growth
-                            Principal Component Analysis
+> Unsupervised process:
 
-                        Use Cases:
-                            Recommender Systems
-                            Anomaly Detection
-                            Customer Segmentation
-                            Preparing data for supervised learning.
+1.  Explore the structure of the information and detect distinct patterns;
+2.  Extract valuable insights;
+3.  Implement this into its operation in order to increase the efficiency of the decision-making process
 
+*A practical example of unsupervised learning:*
+- Social Network Analysis:
+> Which is conducted to make clusters of friends depending on the frequency of a connection between them.
 
+**Applicable in:**
+- Clustering Problems and association problems such as pattern recognition.
 
-    ----------------------------------------------------------------------------------------------------------
+**Accuracy:**
+- May provide less accurate results because many times its kind of a shot in the dark since you might not even know ballpark what your trying to find or what you want to find.
 
+**Algorithms:**
+- K-Means
+- Gaussian Models
+- Frequent patterns (FP) Growth
+- Principal Component Analysis
 
+**Use Cases:**
+- Recommender Systems
+- Anomaly Detection
+- Customer Segmentation
+- Preparing data for supervised learning.
+
+-----------------------------------
 
 <a id="Bias"></a>
 
