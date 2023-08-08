@@ -399,6 +399,8 @@ Models with high variance will have a low bias.
 |:-:|:-:|:---:|:------:|:---:|
 |20 |25 | 120 |   144  |  Σ  |
 
+**(a)**
+
 ```
 a = (((ΣY)*(ΣX^2))-((ΣX)*(ΣXY))) / n(rows)*(ΣX^2)-(ΣX)^2 = The Intercept
 ```
@@ -406,6 +408,8 @@ or
 ```
 a = ((25*120) - (20*144)) / (4*120-(20)^2)  = For the table above
 ```
+
+**(b)**
 
 ```
 b = ((n*(ΣXY))-((ΣX)*(ΣY))) / (n*(ΣX^2))-(ΣX)^2 = The Slope
@@ -442,47 +446,77 @@ b = ((4*144)-(20*25)) / (4*120 - (20)^2) = For the table above
 
 - [Under-fit](#underfit)
 
-    Out of sample accuracy:
-        is the percentage of correct predictions that the model makes on data that model has not been trained on.
-        Doing a train and test on the same data set will likely have a low out of sample accuracy due to the liklihood
-        of being over-fit.
-        Its important that our models have high out of sample accuracy because we want the model to be able to
-        make predictions on unknown data.
-        How can we improve out of sample accuracy??? 
-    Tran/Test Split:
-        Training the model on only a portion of the data and omitting a portion of the data to be used in a second
-        test model. This results in a higher level of out of sample accuracy because the original training
-        set has no record of the data in the test set which means we can get a better idea
-        if the model is actully doing its job by comparing the values produced in both training models.
-        So in essence this is truly out of sample testing.
-    K-Fold cross validation:
-        Is another evaluation model which resolves alot of the issues which are left behind in the train/test split evaluation method.
-        Basic concept: You take the entire dataset and split it into 4 portions or 4 folds. You use the first 25% of the data for testing
-        and the rest for training. Then you take the next 25% of the data and do the same thing untill you are at the last 25% of the data.
-        Finally the results of all 4 evaluations are averaged that is the average of each fold is averaged. Keeping the data distinct
-        where no training data is used in another.
-        K-Fold cross validation in its simplest form performs multiple train/test splits.
+**Out of Sample Accuracy:**
+
+- is the percentage of correct predictions that the model makes on data that model has not been trained on.
+> Doing a train and test on the same data set will likely have a low out of sample accuracy due to the liklihood
+of being over-fit.
+> Its important that our models have high out of sample accuracy because we want the model to be able to make predictions on unknown data.
+
+- *How can we improve out of sample accuracy???* 
+
+**Tran/Test Split:**
+
+> Training the model on only a portion of the data and omitting a portion of the data to be used in a second
+test model.
+- This results in a higher level of out of sample accuracy because the original training set has no record of the data in the test set which means we can get a better idea if the model is actully doing its job by comparing the values produced in both training models.
+- So in essence this is truly out of sample testing.
+
+**K-Fold cross validation:**
+
+> Is another evaluation model which resolves alot of the issues which are left behind in the train/test split evaluation method.
+
+- Basic concept: 
+> - You take the entire dataset and split it into 4 portions or 4 folds. 
+> - You use the first 25% of the data for testing
+> - The rest gets used for training. 
+> - Then you take the next 25% of the data and do the same thing untill you are at the last 25% of the data.
+> - Finally the results of all 4 evaluations are averaged that is the average of each fold is averaged. Keeping the data distinct where no training data is used in another.
+
+|   25%   |   25%   |   25%   |   25%   |
+|:-------:|:-------:|:-------:|:-------:|
+|<span style="color:red">TESTING</span>|<span style="color:blue">TRAINING</span>|<span style="color:blue">TRAINING</span>|<span style="color:blue">TRAINING</span>| 
+|:-------:|:-------:|:-------:|:-------:|
+|<span style="color:blue">TESTING</span>|<span style="color:red">TESTING</span>|<span style="color:blue">TRAINING</span>|<span style="color:blue">TRAINING</span>| 
+|:-------:|:-------:|:-------:|:-------:|
+|<span style="color:blue">TRAINING</span>|<span style="color:blue">TRAINING</span>|<span style="color:red">TESTING</span>|<span style="color:blue">TRAINING</span>| 
+|:-------:|:-------:|:-------:|:-------:|
+|<span style="color:blue">TRAINING</span>|<span style="color:blue">TRAINING</span>|<span style="color:blue">TRAINING</span>|<span style="color:red">TESTING</span>| 
+
+
+
+
+K-Fold cross validation in its simplest form performs multiple train/test splits.
 Regression Evaluation Metrics
 
 Best approach for most accurate results in a training model.
     
-#Evaluation Metrics
-(In the context of regression the error of the model is the difference between data points and the trend line generated
-by the algorithm and with multiple data points an error can be determined in multiple ways.)
+## Evaluation Metrics
 
-    Mean absolute error - The mean of the absolute value of the errors.
-        --The easiest of the metrics to understand since its just the avg error.
+*(In the context of regression the error of the model is the difference between data points and the trend line generated by the algorithm and with multiple data points an error can be determined in multiple ways.)*
 
-    Mean squared error -The mean of the squared error.
+**Mean absolute error**
 
-    Root mean squared error -  The square root of the mean squared error. -- Popular because it is interpretable in the same units
-    as the responde vector or Y units.
+- The mean of the absolute value of the errors.
+- The easiest of the metrics to understand since its just the avg error.
 
-    *Relative squared error - is used for calculating R-squared -- a popular metric used for calculating the accuracy of a model.
-    It represents  how close the data values are to the fitted regression line. The higher the r squared the better the 
-    model fits the data.
+**Mean squared error** 
 
-#Multiple Linear Regression (Where Y(dependent variable) is a linear combination of independent variables(X,X...))
+- The mean of the squared error.
+
+**Root mean squared error** 
+
+-  The square root of the mean squared error. 
+-  Popular because it is interpretable in the same units as the responde vector or Y units.
+
+**Relative squared error**
+
+- is used for calculating R-squared -- a popular metric used for calculating the accuracy of a model.
+- It represents how close the data values are to the fitted regression line. 
+- The higher the r squared the better the model fits the data.
+
+## Multiple Linear Regression (Where Y(dependent variable) is a linear combination of independent variables(X,X...))
+
 (is a method of predicting a continuous variable. It uses multiple variables called independent variables or predictors
 that best predict the value of the target variable, 'the dependent variable'.)
     
