@@ -47,7 +47,7 @@
 - Do we have historical examples of things that are related to eachother or are we trying to find things that are related to eachother without any current examples. Meaning we have to start collecting examples somehow.
 - Are we trying to predict something that could be summed up as yes or no, precision numbers, dates or frequency, something in a category, what?
 
-**Preprocessing**
+> **Preprocessing**
 
 
 > - You might need to convert the data, clean the data (cause it might have a bunch of crazy characters in it so gotta get rid off all that junk first), enrich the data (Pull data from multiple places and collect or combine it in an effort to make the data have more details or be more robust) or normalize the data ( make it into a decimal form to get better calculations or to represent the data in a certain way).
@@ -59,19 +59,19 @@
 > - Decide which parts of the library code your going to use to create a model because the kind of model you are going to create is going to be dependent upon the answers to the above questions.
 
 
-**Training and Testing**
+> **Training and Testing**
 
 > You have to decide, based on the data and the model you used, how you want to go about the training and testing process.
 > - You have to train the model on the data so that the model understands the data so you need to feed it certain amounts of the data. How much data do you want to feed it ? All the data you got ?
 > - You have to test the model somehow also. So you trained the thing but how do you know if it works ? Maybe its a good idea to reserve a certain portion of the data to be used to see how well the model can make predictions based on it.
 
-**Evaluating**
+> **Evaluating**
 
 > Ok now we trained and tested our model what are some different techniques to show how good or bad this thing is performing.
 > - It will also help to generate some kind of report that will help you get a visual on the models perofrmance based on how it evaluated.
 
 
-**Final Thoughts**
+> **Final Thoughts**
 
 > At this point your going to have to make a decision.
 > - Do you need to run the data through the ML process again but this time tweak the way you did things ?
@@ -108,6 +108,7 @@ In this section I do my best to organize terminology that your going to hear a l
 <div align="left">&#8609; <a href="#Bias" title="Bias Variance">Bias Variance Click Here</a></div>
 
 - **Data Types:**
+
 > Numerical: 
 > Numbers
 > - Things that are numbers (self explanitory)
@@ -122,13 +123,16 @@ In this section I do my best to organize terminology that your going to hear a l
 
 
 - **Feature(s):**
+
 > *Column(s) with the data in the column(s) including the column(s) name(s)*
 
 
 - **An Observation:**
+
 > *Just a row in a data set.*
 
 - **Independent Variable:**
+
 > *(A feature)*
 > > (AKA) -> Predictor, Input Variable, Vector
 
@@ -138,9 +142,11 @@ In this section I do my best to organize terminology that your going to hear a l
 > > (AKA) -> Response / Outcome / Target Variables, The Target, Output Supervisory Signal, The Label.
 
 - **(Y) Actual Value:**
+
 > *When the value of a dependent variable is already known from a data set.*
 
 - **Y Hat (Predicted Value):**
+
 > *When the value of a dependent variable is predicted based on
 > Features/Independent Variables in a data set.*
 
@@ -149,6 +155,7 @@ In this section I do my best to organize terminology that your going to hear a l
 <a id="underfit"></a>
 
 - **Underfit Model**
+
 > The model has not been trained on enough data to be able to make accurate enough predictions.
 > The model is unable to match the input data to the target data.
 
@@ -157,6 +164,7 @@ In this section I do my best to organize terminology that your going to hear a l
 <a id="overfit"></a>
 
 - **Overfit Model**
+
 > The model has been trained on too much data that is too similar to eachother and as a result the model does not do good at making predictions on outliers or data that is too dissimilar to the data it was trained on.
         
 > - Occurs when the model is not good at making prediction on data that is has not been trained with.
@@ -164,6 +172,7 @@ In this section I do my best to organize terminology that your going to hear a l
 > - The model is overly trained to the dataset, which may capture noise and produce a non generalized model.
 
 - **Discrete data** 
+
 > - countable, individualized, and nondivisible figures in statistics. 
 > - These data points exist only in set increments. 
 > - Data analysts and statisticians visualize discrete data using bar graphs, line charts, histograms, and pie charts.
@@ -172,8 +181,12 @@ In this section I do my best to organize terminology that your going to hear a l
 > For example, if you track the number of push-ups you do each day for a month, an underlying goal is to evaluate your progress and the rate of improvement. With that said, your daily tally is a discrete, isolated number.
 
 - **Continuous Data**
+
 > - Data that can be categorized in a range.
 > - Data that has the possibility of going on forever many time data measured in (Time, Days, Hours, Minutes etc..)
+
+
+
 
 <a id="supervised"></a>
 
@@ -663,20 +676,24 @@ Have any effect on the exam performance of a student ?
 
 **Making predictions with multiple linear regression**
 
+- Model evaluation in regression models:
 
-#Model evaluation in regression models:
 *(The goal of regression is to accurately predict an unknown case to this end 
 we have to perform regression evaluation aftetr building the mode)*
- Two types of evaluation appraoches to achieve this goal are.
-##Train and test on the same data set
-Basically training on the entire data set and building a model using the training set.
-Then we select a sample portion of the data set and create a test model with it. The test set 
-does not contain the labels and instead we simply use the labels to check against the test models predictions.
-In the test model the labels are called actual values.
 
-We compare the actual values Y with the predicted values Y hat.
+- Two types of evaluation appraoches to achieve this goal are.
 
-*This is the simplest evaluation approach*
+1. Train and test on the same data set
+
+- Training on the entire data set 
+- Building a model using the training set.
+- Then select a sample portion of the data set and create a test model with it. 
+- The test set does not contain the labels and instead we simply use the labels to check against the test models predictions.
+- In the test model the labels are called actual values.
+
+> We compare the actual values Y with the predicted values Y hat.
+
+> - *This is the simplest evaluation approach*
 results:
 Has a high training accuracy and low out of sample accuracy.
 Since the model knows all of the testing data from the trainings
@@ -689,7 +706,9 @@ Since the model knows all of the testing data from the trainings
   Out of sample accuracy - The percentage of accurate predcitions that the model makes on data that it has not been trained on.
     -Its important to obtain high out of sample accuracy because the purpose of our model is to make correct predictions
     on unknown data.
-##Train/test split
+
+
+2. Train/test split
 Involves splitting the data set into training and testing sets respectively, which are mutuall exclusive. After which
 you train with the training set and test with the testing set.
 This will provide a more accurate evaluation on out of sample accuracy because the testing data set is not part of 
