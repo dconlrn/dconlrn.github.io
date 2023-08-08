@@ -75,11 +75,24 @@ In this section I do my best to organize terminology that your going to hear a l
 > *When the value of a dependent variable is predicted based on
 > Features/Independent Variables in a data set.*
 
+
+
+<a id="underfit"></a>
+
 - **Underfit Model**
 > The model has not been trained on enough data to be able to make accurate enough predictions.
+> The model is unable to match the input data to the target data.
+
+
+
+<a id="overfit"></a>
 
 - **Overfit Model**
 > The model has been trained on too much data that is too similar to eachother and as a result the model does not do good at making predictions on outliers or data that is too dissimilar to the data it was trained on.
+        
+> - Occurs when the model is not good at making prediction on data that is has not been trained with.
+> - The model can recognize things that are very closely similar to the stuff its been trained with but as soon as you give it something that is outside of that scope it cant make accurate predictions on what its taget value should be.
+> - The model is overly trained to the dataset, which may capture noise and produce a non generalized model.
 
 - **Discrete data** 
 > - countable, individualized, and nondivisible figures in statistics. 
@@ -408,9 +421,12 @@ b = ((4*144)-(20*25)) / (4*120 - (20)^2) = For the table above
 
 > This is taking the entire data set 
 > - building a training model based on it 
+
 > Then to test the accuracy of the model 
+
 > - Take a small sample size from the data set without the labels
 > - Build a test training set with the small sample. 
+
 > *The labels are called actual values of the test set.* 
 > Finally after we run our test model: 
 > - Check the new predicted values with the actual values to get an idea of our models accuracy. 
@@ -422,19 +438,9 @@ b = ((4*144)-(20*25)) / (4*120 - (20)^2) = For the table above
 - However a high training accuracy is not always a good thing.
 
 
-        -Over-fit:  Occurs when the model is not good at making prediction
-                    on data that is has not been trained with.
-                    The model can recognize things that are very
-                    closely similar to the stuff its been trained with
-                    but as soon as you give it something that is
-                    outside of that scope it cant make accurate predictions
-                    on what its taget value should be.
-                    The model is overly trained to the dataset, 
-                    which may capture noise and produce a non 
-                    generalized model.
+- [Over-fit](#overfit)  
 
-        Under-fit:  Occurs when the model is unable to match the input data to
-                    the target data.
+- [Under-fit](#underfit)
 
     Out of sample accuracy:
         is the percentage of correct predictions that the model makes on data that model has not been trained on.
