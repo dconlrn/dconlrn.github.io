@@ -819,79 +819,87 @@ Have any effect on the exam performance of a student ?
 - This example is about a binary classifier with one of two values. 
 > We can also build classifier models for both binary and multi class classification.
     
-##Multiclass classification
-    ex.
-    Data collected on a group of patients that had the same illness and responded to one of three different types of medications
-    they took during the course of their treatment.
-    This labeled dataset can be used with a classification algorithm to build a classification model.
-    Then you can use it to find out which drug might be effective for future patients with the same illness.
-__________________________________________________________________________________________________________________________________________
-#K-Nearest Neighbors algorithm (a specific type of classification)
-*The K-Nearest Neighbors algorithm is a classification algorithm that takes a bunch of 
-labeled points and uses them to learn how to label other points. 
-This algorithm classifies cases based on their similarity to other cases. 
-In K-Nearest Neighbors, data points that are near each other are said to be neighbors. 
-K-Nearest Neighbors is based on this paradigm.*
+**Multiclass classification**
 
-_______Breaking down this transcript_________:
-###Definition:::::::::::::::::::::::::::::::::::::::::::::::::
-The definition of K nearest neighbors is explained well enough.
-Its an algorithm that helps classify data so its a (classification algorithm).
+*Example (Med)*
+
+> Data collected on a group of patients that had the same illness and responded to one of three different types of medications they took during the course of their treatment.
+- This kind of  labeled dataset can be used with a classification algorithm to build a classification model.
+- Then you can use it to find out which drug might be effective for future patients with the same illness.
 
 
-## How does it classify data
-   It classifies data based on that data's similarity to other data.
-   Data that is closely similar to each other, are called neighbors.
-   K represents, (some number), how ever many neighbors that are close to a specific data point.
+**K-Nearest Neighbors algorithm (KNN a specific type of classification)**
 
-   In the tutorials definition its explained that the algorithm takes a bunch of
-   "labeled" points and uses them to learn how to label other points.
-   Labeled points in this case ,based on the example, are different kinds of
-   customer groups or categories that a telecommunications provider created
-   to classify their customers.
-   These groups/categories/classes or "labeled points' are:
-   Basic Service, E Service, Plus Service and Total Service.
+*The K-Nearest Neighbors algorithm is a classification algorithm that takes a bunch of labeled points and uses them to learn how to label other points.* 
 
-   Lets pretend:
-    (A) Basic Service - A moderate user. Doesnt text alot, doesnt make tons of calls etc..
-    (B) E Service - Uses their data more than average, above the amount of a Basic Service user/customer.
-    (C) Plus Service - A customer/user that uses all services above the amount of a Basic Service user/customer.
-    (D) Total Service - A customer/user that uses any service above the amount of a Plus Service user/customer.
+- This algorithm classifies cases based on their similarity to other cases. 
+- In K-Nearest Neighbors, data points that are near each other are said to be neighbors. K-Nearest Neighbors is based on this paradigm.
 
-   Predicting:
-    Now lets say we have a new customer on the phone and we want to know what class/category
-    this customer may fall into. In order to find out we might first want to
-    look at some data/information from customers in all of the service categories
-    so lets start with age and income.
+
+
+> How does it classify data
+
+- It classifies data based on that data's similarity to other data.
+- Data that is closely similar to each other, are called neighbors.
+- K represents, (some number), how ever many neighbors that are close to a specific data point.
+
+> The algorithm takes a bunch of "labeled" points and uses them to learn how to label other points.
+> Labeled points in this case ,based on *(Example Below)* 
+
+- are different kinds of customer groups or categories that a telecommunications provider created to classify their customers.
+
+> These groups/categories/classes or "labeled points' are:
+
+- Basic Service
+- E Service
+- Plus Service 
+- Total Service.
+
+> Lets pretend:
+
+- (A) Basic Service - A moderate user. Doesnt text alot, doesnt make tons of calls etc..
+> - Customers tend to be either over the age of 45 or have an income under 25k or over 125k
+
+- (B) E Service - Uses their data more than average, above the amount of a Basic Service user/customer.
+> - Customers tend to be under 30 years old with an income of under 40k
+
+- (C) Plus Service - A customer/user that uses all services above the amount of a Basic Service user/customer.
+> - Customers tend to be over 30 years old and under 45 years old with an income above 40k
+
+- (D) Total Service - A customer/user that uses any service above the amount of a Plus Service user/customer.
+> - Customers tend to be between the ages of 20 - 36 years old with an income above 60k
+
+*Predicting:*
+
+> Now lets say we have a new customer on the phone and we want to know what class/category this customer may fall into. In order to find out we might first want to
+- Look at some data/information from customers in all of the service categories
+- So lets start with age and income.
     
-   Lets pretend:
-    (A) Basic Service - customers tend to be either over the age of 45 or have an income under 25k or over 125k
-    (B) E Service - customers tend to be under 30 years old with an income of under 40k
-    (C) Plus Service - customers tend to be over 30 years old and under 45 years old with an income above 40k
-    (D) Total Service - customers tend to be between the ages of 20 - 36 years old with an income above 60k
-    
-    We find out our new customer is under 30 and makes 33k a year.
-    With this data can we make a guess as to which service group they may fall into?
-    Yes.
+> Suppose we find out our new customer is under 30 and makes 33k a year.
+- With this data can we make a guess as to which service group they may fall into?
 
-#Evaluation Metrics (used for Classification)::::::::::
-    -Evaluation metrics provide insight into areas that might require improvement.
-        -Help us determine how accurate a given model is by comparing the actual values
-        in a test set with the values predicted by the model.
+Yes, we can!
 
-##  |Different kinds of model evaluation metrics::::::::::::::
+**Evaluation Metrics (used for Classification)**
 
-###     Jaccard Index (Jaccard similarity coefficient)
-            Compares members of two data sets to see which members are shared and which are distinct.
-            It’s a measure of similarity for the two sets of data, with a range from 0% to 100%.
-            The higher the percentage, the more similar the two data sets are.
+- Evaluation metrics provide insight into areas that might require improvement.
+- Help us determine how accurate a given model is by comparing the actual values in a test set with the values predicted by the model.
 
-##          Steps:: ( J(X,Y) = |X∩Y| / |X∪Y| ) <- Formula
-                (1). Count the number of members which are shared between both sets.
-                (2). Count the total number of members in both sets (shared and un-shared).
-                (3). Divide the number of shared members (1) by the total number of members (2).
-                (4). Multiply the number you found in (3) by 100.
-                __This percentage tells you how similar the two sets are.__
+- **Different kinds of model evaluation metrics**
+
+> Jaccard Index (Jaccard similarity coefficient)
+- Compares members of two data sets to see which members are shared and which are distinct.
+- It’s a measure of similarity for the two sets of data, with a range from 0% to 100%.
+- The higher the percentage, the more similar the two data sets are.
+
+> Steps ( J(X,Y) = |X∩Y| / |X∪Y| ) (Formula)
+
+1. Count the number of members which are shared between both sets.
+2. Count the total number of members in both sets (shared and un-shared).
+3. Divide the number of shared members (1) by the total number of members (2).
+4. Multiply the number you found in (3) by 100.
+
+> - __This percentage tells you how similar the two sets are.__
 
 ##          Caveat::
                 Although it’s easy to interpret, it is extremely sensitive to small samples
