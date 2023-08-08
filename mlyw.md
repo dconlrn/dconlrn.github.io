@@ -231,7 +231,7 @@ Of course we dont know how to go about that process yet but we will...
 ## Unsupervised Learning:
 
 
-<details><summary>Definition</summary>
+<details><summary>Definition (Click here for definition)</summary>
 
 A kind of machine learning where a model must look for patterns in a dataset with no labels and with minimal human supervision. This is in contrast with supervised learning because an unsupervised learning model wont necessarily know that the data shares any kind of similarities and its going to have to look for things in the data that are similar in order to group similar data together.With unsupervised learning its more that we are trying to predict what things are similar and with supervised learning its more that we are trying to predict things based on the output of known data which we already have. Basically unsupervised machine learning tries to bring order to a dataset and make sense of it.
 
@@ -374,37 +374,53 @@ Models with high variance will have a low bias.
 *How do we get (a) ?* 
 *How do we get (b) ?*
 
-| X | Y | X^2 | (X)(Y) |'#'s'| 
+| X | Y | X^2 | (X)(Y) |     | 
 |:-:|:-:|:---:|:------:|:---:|
-| 2 | 3 |  4  |   6    |  0
+| 2 | 3 |  4  |   6    |  
 |:-:|:-:|:---:|:------:|:---:|
-| 4 | 7 | 16  |   28   |  1
+| 4 | 7 | 16  |   28   |  
 |:-:|:-:|:---:|:------:|:---:|
-| 6 | 5 | 36  |   30   |  2
+| 6 | 5 | 36  |   30   |  
 |:-:|:-:|:---:|:------:|:---:|
-| 8 |10 | 64  |   80   |  3
+| 8 |10 | 64  |   80   |  
 |:-:|:-:|:---:|:------:|:---:|
 |20 |25 | 120 |   144  |  Σ  |
 
-##Ex.<- a = (((ΣY)*(ΣX^2))-((ΣX)*(ΣXY))) / n(rows)*(ΣX^2)-(ΣX)^2 -> The Intercept
+```
+a = (((ΣY)*(ΣX^2))-((ΣX)*(ΣXY))) / n(rows)*(ΣX^2)-(ΣX)^2 = The Intercept
+```
+or
+```
+a = ((25*120) - (20*144)) / (4*120-(20)^2)  = For the table above
+```
 
-OR ->   a = ((25*120) - (20*144)) / (4*120-(20)^2)  <- For the table above
+```
+b = ((n*(ΣXY))-((ΣX)*(ΣY))) / (n*(ΣX^2))-(ΣX)^2 = The Slope
+```
+or
+```
+b = ((4*144)-(20*25)) / (4*120 - (20)^2) = For the table above
+```
 
-##Ex.<- b = ((n*(ΣXY))-((ΣX)*(ΣY))) / (n*(ΣX^2))-(ΣX)^2
+## Model Evaluation Approaches
 
-OR ->   b = ((4*144)-(20*25)) / (4*120 - (20)^2) <- For the table above
+**Train and test on the same data set:**
 
-##Model evaluation approaches:
-    Train and test on the same data set:
-        This is taking the entire data set and building a training model based on it and then
-        to test the accuracy of the model you take a small sample size from the data set without
-        the labels and build a test training set. The labels are called actual values of the test set. Finally after
-        we run our test model we check the new predicted values with the actual values to get an idea
-        of our models accuracy. The error of the model is calculated by the average difference between the predicted and
-        actual values for all of the rows.
-    -Training accuracy: is the percentage of correct predictions that the model
-                        makes when using the dataset.
-                        -However a high training accuracy is not always a good thing.
+> This is taking the entire data set 
+> - building a training model based on it 
+> Then to test the accuracy of the model 
+> - Take a small sample size from the data set without the labels
+> - Build a test training set with the small sample. 
+> *The labels are called actual values of the test set.* 
+> Finally after we run our test model: 
+> - Check the new predicted values with the actual values to get an idea of our models accuracy. 
+> - The error of the model is calculated by the average difference between the predicted and actual values for all of the rows.
+
+
+> Training accuracy: 
+- is the percentage of correct predictions that the model makes when using the dataset.
+- However a high training accuracy is not always a good thing.
+
 
         -Over-fit:  Occurs when the model is not good at making prediction
                     on data that is has not been trained with.
