@@ -544,49 +544,33 @@ test model.
 
 **Examples:**
 
-- Does revision time 
-- test anxiety
-- lecture attendance 
-- gender 
+- Does revision time, test anxiety, lecture attendance and gender have any effect on the exam performance of a student ?
+> - Independent variables effectiveness on prediction
 
-Have any effect on the exam performance of a student ?
-
-> - Consider the independent variables effectiveness on prediction
-
-**Question?**
-
+- **Question?**
 > What is the dependent and what are the independent variables in the above example?
-- The dependent variable or label is the (performance of a student) - *also called the outcome variable*
-- The independent variables or features are (anxiety, lecture attendance and gender)
+            The dependent variable or label is is (performance of a student) - *also called the outcome variable*
+            The independent variables or features are (anxiety, lecture attendance and gender)
 
 
-**Predicting impacts of changes**
-            
-- Ex. How much does blood pressure go up (or down) for every unit increase
-- or (decrease) in the BMI of a patient?
+        Predicting impacts of changes
+            Ex. How much does blood pressure go up (or down) for every unit increase
+            or (decrease) in the BMI of a patient?
+#Estimating multiple linear regression parameters
+-We want to be able to find the best parameters(theta, independent variables) to feed into our multiple
+linear regression model so we can generate the most accurate predictions in our outcome variable.
+So in essence we want to try and use the features which will result in the lowest mean squared error.
 
+Question: How do we find the parameter or coefficients for multiple linear regression?
+    Ordinary least squares - (used on data sets with less than 10,000 lines or smaller data sets)
+        Attempts to estimate the values of the coefficients by minimizing the mean squar error MSE.
+        This approach uses the data as a matrix and uses #Linear Algebra# operations to estimate the
+        optimal values for the theta(independent variable).
 
-**Estimating multiple linear regression parameters**
-
-> We want to be able to find the best parameters(theta, independent variables) to feed into our multiple linear regression model so we can generate the most accurate predictions in our outcome variable.
-
-- So in essence we want to try and use the features which will result in the lowest mean squared error.
-
-**Question?** 
-
-> How do we find the parameter or coefficients for multiple linear regression?
-> **Ordinary least squares** 
-> - (used on data sets with less than 10,000 lines or smaller data sets)
-> - Attempts to estimate the values of the coefficients by minimizing the mean squar error MSE.
-> - This approach uses the data as a matrix and uses #Linear Algebra# operations to estimate the optimal values for the theta(independent variable).
-
-> **Optimization approach** 
-> - (used on larger data sets)
-> - Some kind of optimization algorithm
-> - Gradient Descent
->
-
-*Note: After we found the parameters of the linear equation we can move on to the prediction phase.*
+    Optimization approach - (used on larger data sets)
+        -Some kind of optimization algorithm
+            -Gradient Descent
+Note: After we found the parameters of the linear equation we can move on to the prediction phase.
 
 #Making predictions with multiple linear regression
 #Model evaluation in regression models:
