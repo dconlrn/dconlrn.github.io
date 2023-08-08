@@ -11,7 +11,76 @@
 
 -------------------------------------------------------------
 
-*Machine Learning, in a nut shell, is the idea of creating a program which receives some kind of input that it learns from then attempts to make predictions based on the input.*
+*Machine Learning, in a nutshell, is the idea of creating a program which receives some kind of input that it learns from then attempts to make predictions based on the input.*
+
+**A Quick Deconstruced View**
+
+
+> When you get into Machine Learning you are forced to learn a ton of concepts, mostly related to statistics.
+> The concepts are useful but here are some things to consider.
+
+- It is highly unlikely that you yourself will ever be ACTUALLY coding your own ML model or algorithm.
+- It is highly likely that your just going to be using someone elses code to get stuff done
+> - ie. Library Code , Modules
+
+
+**The process of "Machine Learning"**
+
+- Import the library code likely one or some of the following along with Numpy and likely Pandas:
+> - Scipy
+> - Scikit-learn
+> - TensorFlow
+> - Theano
+> - Keras
+> - PyTorch
+
+*The above modules already have all of the code in them for you to spin up a ML model that can take input and make predictions. This means that your going to have to know the libraries a little and be familiar with object oriented programming because your gonna access all of the library code you import using dot notation.*
+
+
+> Ok cool. We imported our ML libraries. Now what ?
+> Now comes the part where understanding the theory behind ML and statistics is going to help.
+
+> **The Questions!**
+
+- What are we trying to predict, learn or gain insights on ?
+- How many things are we trying to predict ? One thing? Multiple things?
+- Do we have historical examples of things that are related to eachother or are we trying to find things that are related to eachother without any current examples. Meaning we have to start collecting examples somehow.
+- Are we trying to predict something that could be summed up as yes or no, precision numbers, dates or frequency, something in a category, what?
+
+**Preprocessing**
+
+
+> - You might need to convert the data, clean the data (cause it might have a bunch of crazy characters in it so gotta get rid off all that junk first), enrich the data (Pull data from multiple places and collect or combine it in an effort to make the data have more details or be more robust) or normalize the data ( make it into a decimal form to get better calculations or to represent the data in a certain way).
+
+> **The Model**
+
+> Once you have the above questions answered and based on them
+> - Import the dataset first or initialize the data your gonna feed into this model, get it ready.
+> - Decide which parts of the library code your going to use to create a model because the kind of model you are going to create is going to be dependent upon the answers to the above questions.
+
+
+**Training and Testing**
+
+> You have to decide, based on the data and the model you used, how you want to go about the training and testing process.
+> - You have to train the model on the data so that the model understands the data so you need to feed it certain amounts of the data. How much data do you want to feed it ? All the data you got ?
+> - You have to test the model somehow also. So you trained the thing but how do you know if it works ? Maybe its a good idea to reserve a certain portion of the data to be used to see how well the model can make predictions based on it.
+
+**Evaluating**
+
+> Ok now we trained and tested our model what are some different techniques to show how good or bad this thing is performing.
+> - It will also help to generate some kind of report that will help you get a visual on the models perofrmance based on how it evaluated.
+
+
+**Final Thoughts**
+
+> At this point your going to have to make a decision.
+> - Do you need to run the data through the ML process again but this time tweak the way you did things ?
+
+
+[Click here to see an example of what this process could look like in code form](https://github.com/joshjetson/rain_prediction_model/blob/master/Rain_Prediction_Model.py)
+
+
+To get a more in depth understanding read-on!
 
 -----------------------------------------------------------
 
@@ -287,14 +356,13 @@ A kind of machine learning where a model must look for patterns in a dataset wit
 
 > Deeper underlying understanding of algorithms and machine learning models.
 
-**Bias and Variance Trade Off:**
 
 - Similar to the concept of overfitting and underfitting.
 
 
 **Bias:**
 
-- Is the difference between your models expected prediciton and the true values.
+- Is the difference between your models expected prediciton and the actual values.
 
 **Low Bias:**
 
@@ -575,20 +643,27 @@ Have any effect on the exam performance of a student ?
 **Question?** 
 
 > How do we find the parameter or coefficients for multiple linear regression?
+>
 > **Ordinary least squares** 
-> - (used on data sets with less than 10,000 lines or smaller data sets)
+>
+> (used on data sets with less than 10,000 lines or smaller data sets)
+>
 > - Attempts to estimate the values of the coefficients by minimizing the mean squar error MSE.
 > - This approach uses the data as a matrix and uses #Linear Algebra# operations to estimate the optimal values for the theta(independent variable).
 
 > **Optimization approach** 
-> - (used on larger data sets)
+>
+> (used on larger data sets)
+>
 > - Some kind of optimization algorithm
 > - Gradient Descent
 >
 
-*Note: After we found the parameters of the linear equation we can move on to the prediction phase.*
+*Note: After we find the parameters of the linear equation we can move onto the prediction phase.*
 
-#Making predictions with multiple linear regression
+**Making predictions with multiple linear regression**
+
+
 #Model evaluation in regression models:
 *(The goal of regression is to accurately predict an unknown case to this end 
 we have to perform regression evaluation aftetr building the mode)*
