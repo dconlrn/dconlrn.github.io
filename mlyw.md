@@ -21,6 +21,7 @@
 - [Supervised Learning](#supervised)
 - [Unsupervised Learning](#unsupervised)
 - [Bias Variance Section](#Bias)
+- [Linear Regression](#linreg)
 
 ## Terminology
 
@@ -38,12 +39,9 @@ In this section I do my best to organize terminology that your going to hear a l
 <div align="left">&#8609; <a href="#Bias" title="Bias Variance">Bias Variance Click Here</a></div>
 
 - **Data Types:**
-
 > Numerical: 
-
 > Numbers
 > - Things that are numbers (self explanitory)
-
 > Categorical: 
 > Categories ie.
 > - Plants 
@@ -55,16 +53,13 @@ In this section I do my best to organize terminology that your going to hear a l
 
 
 - **Feature(s):**
-
 > *Column(s) with the data in the column(s) including the column(s) name(s)*
 
 
 - **An Observation:**
-
 > *Just a row in a data set.*
 
 - **Independent Variable:**
-
 > *(A feature)*
 > > (AKA) -> Predictor, Input Variable, Vector
 
@@ -74,11 +69,9 @@ In this section I do my best to organize terminology that your going to hear a l
 > > (AKA) -> Response / Outcome / Target Variables, The Target, Output Supervisory Signal, The Label.
 
 - **(Y) Actual Value:**
-
 > *When the value of a dependent variable is already known from a data set.*
 
 - **Y Hat (Predicted Value):**
-
 > *When the value of a dependent variable is predicted based on
 > Features/Independent Variables in a data set.*
 
@@ -88,6 +81,17 @@ In this section I do my best to organize terminology that your going to hear a l
 - **Overfit Model**
 > The model has been trained on too much data that is too similar to eachother and as a result the model does not do good at making predictions on outliers or data that is too dissimilar to the data it was trained on.
 
+- **Discrete data** 
+> - countable, individualized, and nondivisible figures in statistics. 
+> - These data points exist only in set increments. 
+> - Data analysts and statisticians visualize discrete data using bar graphs, line charts, histograms, and pie charts.
+>
+>
+> For example, if you track the number of push-ups you do each day for a month, an underlying goal is to evaluate your progress and the rate of improvement. With that said, your daily tally is a discrete, isolated number.
+
+- **Continuous Data**
+> - Data that can be categorized in a range.
+> - Data that has the possibility of going on forever many time data measured in (Time, Days, Hours, Minutes etc..)
 
 <a id="supervised"></a>
 
@@ -271,16 +275,20 @@ A kind of machine learning where a model must look for patterns in a dataset wit
 > Deeper underlying understanding of algorithms and machine learning models.
 
 **Bias and Variance Trade Off:**
+
 - Similar to the concept of overfitting and underfitting.
 
 
 **Bias:**
+
 - Is the difference between your models expected prediciton and the true values.
 
 **Low Bias:**
+
 - A low bias model will closely match the training data set.
 
 **High Bias:**
+
 - A model with a higher bias would not match the data set closely.
 > Characteristics of a high bias model include:
 > - Failure to capture proper data trends
@@ -290,6 +298,7 @@ A kind of machine learning where a model must look for patterns in a dataset wit
 
 
 **Variance:**
+
 - Refers to an algorithms sensitivity to specific sets of training data.
 
 **Break Down:**
@@ -297,6 +306,7 @@ A kind of machine learning where a model must look for patterns in a dataset wit
 - Variance is really how well the algorithm your using is learning from the data. Maybe certain data sets for whatever reason are just not good or effective at teaching the algorithm how to make predictions (low variance) 
 
 **Characteristics of a high variance model include:**
+
 - Noise in the data set
 - Potential towards overfitting
 - Complex models
@@ -306,75 +316,75 @@ Models with high bias will have low variance.
 Models with high variance will have a low bias.
 
 
-## Low variance (high bias):
+**Low variance (high bias):**
 
-                                algorithms tend to be less complex,
-                                with simple or rigid underlying 
-                                structure.
-                                They train models that are consistent,
-                                but inaccurate on average.
-                                These include: 
-#   <-                          linear or parametric algorithms such
-#     <-                        as regression and naive Bayes.
+- Algorithms tend to be less complex, with simple or rigid underlying structure.
+- They train models that are consistent, but inaccurate on average.
+- These include: 
+> Linear or parametric algorithms such as regression and naive Bayes.
 
-#<-                             On the other hand 
-#                               Low bias (high variance):
-                                algorithms tend to be more complex, 
-                                with flexible underlying structure.
-                                They train models that are accurate
-                                on average, but inconsistent.
-                                These include:
-#   <-                          non-linear or non-parametric 
-#    <-                         algorithms such as decision trees 
-#     <-                        and nearest neighbors.
-                
-                This tradeoff in complexity is why there’s a tradeoff in bias and variance – 
-                an algorithm cannot simultaneously be more complex and less complex.
+**Low bias (high variance):**
+                                
+- Algorithms tend to be more complex, with flexible underlying structure.
+- They train models that are accurate on average, but inconsistent.
+- These include:
+> Non-linear or non-parametric algorithms such as decision trees and nearest neighbors.
 
-#Linear Regression
-*Theta is also called the parameters or weight vector of the regression equation*
-##The key point in the linear regression is that or dependent value should be continuous and not be a discrete value'
-'' The Independent variable can be measured on either a categorical or continuous measurement scale''
-There are two types of linear regression:(when there is only one independent variable present)
-    Simple linear regression:
-        Predict co2emission vs EngineSize of all cars
-            -Independent Variable (x): Engine Size
-            -Dependent variable (y): co2emission
 
-Multiple linear regression:(when there are more then one independent variable present)
-    Predict co2emissions vs EngineSize and Cylinders of all cars
-        -Independent variable (x): Enginesize, cylinders, etc..
-        -Dependent variable (y): co2emission
+*This tradeoff in complexity is why there’s a tradeoff in bias and variance – an algorithm cannot simultaneously be more complex and less complex.*
 
->NOTE:
+<a id="linreg"></a>
+
+## Linear Regression
+
+*SideNote: Theta is also called the parameters or weight vector of the regression equation*
+
+**Prereq**
+
+- Linear Regression is contigent upon the idea that the dependent value should be continuous and not discrete.
+> *However, the Independent variable can be measured on either a categorical or continuous measurement scale*
+
+**There are two types of linear regression:(when there is only one independent variable present)**
+
+- Simple linear regression:
+> Predict co2emission vs EngineSize of all cars
+> - Independent Variable (x): Engine Size
+> - Dependent variable (y): co2emission
+
+- Multiple linear regression:(when there are more then one independent variable present)
+> Predict co2emissions vs EngineSize and Cylinders of all cars
+> - Independent variable (x): Enginesize, cylinders, etc..
+> - Dependent variable (y): co2emission
+
+> NOTE:
 *In the line equation (y = mx + c), m is a slope and c is the y-intercept of the line*
-|_*In the given equation, theta-0 is the y-intercept and theta-1 is the slope of the regression line.*
+> *In the given equation, theta-0 is the y-intercept and theta-1 is the slope of the regression line.*
 
 
-##  Formula of a line aka how to draw a straight line through a sample
-    Formula = a + bx1
-    a = The intercept (Y intercept)
-    b = The slope of the line
-    x = The independent variable(s)
-    y = The dependent variable
-    Σ = The sum of multiple items
+**Formula of a line** 
+*aka how to draw a straight line through a sample*
 
-    How do we get (a) the damn Intercept? 
-    How do we get (b) the damn slope of the line?
+- Formula = a + bx1
+> - a = The intercept (Y intercept)
+> - b = The slope of the line
+> - x = The independent variable(s)
+> - y = The dependent variable
+> - Σ = The sum of multiple items
 
-    Ex. ________________________
-##      | X | Y | X^2 | (X)(Y) |  <- Column Names
-        ------------------------
-        | 2 | 3 |  4  |   6    |  0
-        ------------------------
-        | 4 | 7 | 16  |   28   |  1
-        ------------------------
-        | 6 | 5 | 36  |   30   |  2
-        ------------------------
-        | 8 |10 | 64  |   80   |  3
-        ------------------------
-##      |20 |25 | 120 |   144  |  Σ <- SUM OF COLUMN
-        ------------------------
+*How do we get (a) ?* 
+*How do we get (b) ?*
+
+| X | Y | X^2 | (X)(Y) |'#'s'| 
+|:-:|:-:|:---:|:------:|:---:|
+| 2 | 3 |  4  |   6    |  0
+|:-:|:-:|:---:|:------:|:---:|
+| 4 | 7 | 16  |   28   |  1
+|:-:|:-:|:---:|:------:|:---:|
+| 6 | 5 | 36  |   30   |  2
+|:-:|:-:|:---:|:------:|:---:|
+| 8 |10 | 64  |   80   |  3
+|:-:|:-:|:---:|:------:|:---:|
+|20 |25 | 120 |   144  |  Σ  |
 
 ##Ex.<- a = (((ΣY)*(ΣX^2))-((ΣX)*(ΣXY))) / n(rows)*(ΣX^2)-(ΣX)^2 -> The Intercept
 
