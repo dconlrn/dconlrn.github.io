@@ -427,6 +427,37 @@ Models with high variance will have a low bias.
 
 *This tradeoff in complexity is why there’s a tradeoff in bias and variance – an algorithm cannot simultaneously be more complex and less complex.*
 
+
+
+## Types of regression models
+
+**Simple Linear regression**
+
+- When one independent variable is used to estimate a dependent variable.
+
+> Ex. Predict CO2 emission vs enginesize of all cars.
+
+- Independent Variable: 
+> - (x) Engine Size
+
+- Dependent Variable:
+> - (y) CO2emissions
+
+
+**Multiple linear regression**
+
+- When more than one independent variable is used / when multiple independent variables are present.
+
+> Independent variables effectiveness on prediction
+> Ex. Does revision time, test anxiety , lecture attendance and gender have any effect on the exam performance of the student.
+
+> Predicting impacts of changes:
+- Understanding how the dependent variable changes when we change the independent variables.
+
+
+
+
+
 <a id="linreg"></a>
 
 -------------------------------------------------
@@ -502,6 +533,10 @@ or
 b = ((4*144)-(20*25)) / (4*120 - (20)^2) = For the table above
 ```
 
+
+
+<a id="evalapps"></a>
+
 ---------------------------------------------------
 
 ## Model Evaluation Approaches
@@ -576,7 +611,11 @@ test model.
 - K-Fold cross validation in its simplest form performs multiple train/test splits.
 
 - Perhaps the best approach for most accurate results in a training model.
-    
+
+
+<a id="evalmets"></a>
+
+
 ---------------------------------------
 
 ## Evaluation Metrics
@@ -678,8 +717,7 @@ Have any effect on the exam performance of a student ?
 
 - Model evaluation in regression models:
 
-*(The goal of regression is to accurately predict an unknown case to this end 
-we have to perform regression evaluation aftetr building the mode)*
+*(The goal of regression is to accurately predict an unknown case to this end we have to perform regression evaluation aftetr building the mode)*
 
 - Two types of evaluation appraoches to achieve this goal are.
 
@@ -694,103 +732,92 @@ we have to perform regression evaluation aftetr building the mode)*
 > We compare the actual values Y with the predicted values Y hat.
 
 > - *This is the simplest evaluation approach*
-results:
-Has a high training accuracy and low out of sample accuracy.
-Since the model knows all of the testing data from the trainings
 
-  Training accuracy - is the percentage of correct predicitons that the model makes when using the test data set.
-  caveats: High training accuracy is not necessarily a good thing as it can result in over fitting
-    -Over Fit: The model is overly trained to the dataset, which may capture noise and 
-    produce a non-generalized model.
+**results:**
 
-  Out of sample accuracy - The percentage of accurate predcitions that the model makes on data that it has not been trained on.
-    -Its important to obtain high out of sample accuracy because the purpose of our model is to make correct predictions
-    on unknown data.
+- Has a high training accuracy and low out of sample accuracy since the model knows all of the testing data from the trainings
+
+> Training accuracy 
+> - is the percentage of correct predicitons that the model makes when using the test data set.
+
+> Caveats: 
+> - High training accuracy is not necessarily a good thing as it can result in over fitting
+
+> Over Fit: 
+> - The model is overly trained to the dataset, which may capture noise and produce a non-generalized model.
+
+> Out of sample accuracy 
+> - The percentage of accurate predcitions that the model makes on data that it has not been trained on.
+> - Its important to obtain high out of sample accuracy because the purpose of our model is to make correct predictions on unknown data.
 
 
 2. Train/test split
-Involves splitting the data set into training and testing sets respectively, which are mutuall exclusive. After which
-you train with the training set and test with the testing set.
-This will provide a more accurate evaluation on out of sample accuracy because the testing data set is not part of 
-the data set that has been used to train the model.
 
-    -caveats: Highly dependent on the data sets by which the data was trained and tested.
+> Involves splitting the data set into training and testing sets respectively, which are mutually exclusive. 
+- After which you train with the training set and test with the testing set.
+- This will provide a more accurate evaluation on out of sample accuracy because the testing data set is not part of the data set that has been used to train the model.
 
-##K fold cross validation
-Resolves most of the issues with train/test split model evaluation method.
-How to fix a high variation which results from a dependency?..You avg it.
---Split the data up into 4 folds:
-    1st fold: Use the first 25% of the data for testing and the rest for training.The model is built using the training
-    set and is evaluated using the test set.
-    2nd fold: use the second 25% of the dataset for testing and the rest for training the model.
-    3rd fold: use the third 25% of the dataset........
-    4th fold: etc......
-  Finally: The result of all 4 evaluations are averaged.
-##Regression evaluation methods
+> Caveats: 
+- Highly dependent on the data sets by which the data was trained and tested.
 
-#Accuracy metrics for model evaluation(Evaluation metrics in regression models)
-Regression accuracy: Evaluation metrics are used to explain the performance of a model.
-Basically we can compare the actual values and predicted values to calculate the accuracy of a regression model. 
-##What is an error in the context of regression.
-    -The difference between the data points and the trend line generated by the algorithm.
-    Measure of how far the data is from the fitted regression line.
-    Since multiple data points exist an error can be determined in multiple ways.
-##MAE(Mean absolute error) -Easiest to understand since its just the avg error.
-    -The mean of the absolute evaluated of the errors
-##MSE(Mean squared error) -More popular than MAE cause focuse is geared more towards large errors.
-    -The mean of the squared error
+> K fold cross validation (In reference to Multiple Linear Regression)
+- Resolves most of the issues with train/test split model evaluation method.
 
-##RMSE(Root mean squared error)-Most popular
-Interpretable in the same units as the response vector or y units.
-    -The square root of the mean squared error
-##RAE(Relative absolute error/ residual sum of square)-Highly adopted in the datascience community because
-##it is used to calculate R^2
-    -takes the total absolute error and normalizes it by divind by the total absolute error of the simple predictor.
-##R squared (not an error persay)
-    -It represents how close the data values are to the fitted regression line. The higher the R squared the better the
-    model fits your data.
+> How to fix a high variation which results from a dependency?..You avg it.
+- Split the data up into 4 folds:
 
-#Types pf regression models:
-
-##Simple Linear regression
-    -When one independent variable is used to estimate a dependent variable.
-    Ex. Predict CO2 emission vs enginesize of all cars.
-      Independent Variable: (x) Engine Size
-      Dependent Variable:(y) CO2emissions
-
-##Multiple linear regression
-    -When more than one independent variable is used / when multiple independent variables are present.
-
-#Multiple linear regression:
-  Independent variables effectiveness on prediction
-    -Ex. Does revision time, test anxiety , lecture attendance and gender have any effect on the exam performance 
-    of the student.
-
-  Predicting impacts of changes:
-    -Understanding how the dependent variable changes when we change the independent variables.
+> - 1st fold: Use the first 25% of the data for testing and the rest for training.The model is built using the training set and is evaluated using the test set.
+> - 2nd fold: use the second 25% of the dataset for testing and the rest for training the model.
+> - 3rd fold: use the third 25% of the dataset........
+> - 4th fold: etc......
+> - Finally: The result of all 4 evaluations are averaged.
 
 
-______________________________________________________________________________________________________________________________
-#Classification
-*(A supervised learning approach, categorizing some unknown items into a discrete set of categories or "classes"
-classification attempts to learn the relationship between a set of featured variables and a target variable of interest.)*
-    -The target attribute in classification is a categorical variable with discrete values.
+**Regression evaluation methods**
 
-##How classification and classifiers work?
-Given a set of training data points along with the target labels classification
-determines the class label for an unlabeled test case.
 
-    Ex.
-    Loan default prediction:
-    Previous loan default data can be used to predict which customers are likely to have problems paying loans.
-    High risk customers can either be turned down or offered other products.
 
-    The goal of a loan default predictor is to use existing loan default data, which is, info about the customers
-    such as age, income and education to build a classifier, pass a new customer or a potential future defaulter to the model and 
-    then label it ie. the data points as defaulter or not defaulter or 0 or 1. This example is about a binary classifier
-    with two values. 
+> Accuracy metrics for model evaluation(Evaluation metrics in regression models)
 
-    We can also build classifier models for both binary and multi class classification.
+> Regression accuracy: 
+> - Evaluation metrics are used to explain the performance of a model.
+> - Basically we can compare the actual values and predicted values to calculate the accuracy of a regression model. 
+
+> What is an error in the context of regression ?
+> - The difference between the data points and the trend line generated by the algorithm.
+> - Measure of how far the data is from the fitted regression line.
+> - Since multiple data points exist an error can be determined in multiple ways.
+
+- [MAE (Mean Absolute Error)](#evalmets)
+- [MSE (Mean Squared Error)](#evalmets)
+- [MAE (Mean Absolute Error)](#evalmets)
+- [RMSE (Root Mean Squared Error)](#evalmets)
+- [R Squared](#evalmets)
+
+
+
+
+----------------------------------------
+
+## Classification
+
+*(A supervised learning approach, categorizing some unknown items into a discrete set of categories or "classes" classification attempts to learn the relationship between a set of featured variables and a target variable of interest.)*
+
+- The target attribute in classification is a categorical variable with discrete values.
+
+**How classification and classifiers work**
+
+> Given a set of training data points along with the target labels classification determines the class label for an unlabeled test case.
+
+- Ex.
+> Loan default prediction:
+> - Previous loan default data can be used to predict which customers are likely to have problems paying loans.
+> - High risk customers can either be turned down or offered other products.
+
+> The goal of a loan default predictor is to use existing loan default data, which is, info about the customers such as age, income and education to build a classifier, pass a new customer or a potential future defaulter to the model and then label it ie. the data points as defaulter or not defaulter or 0 or 1. 
+
+- This example is about a binary classifier with one of two values. 
+> We can also build classifier models for both binary and multi class classification.
     
 ##Multiclass classification
     ex.
