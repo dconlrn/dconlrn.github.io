@@ -1300,214 +1300,181 @@ Groups:
 
 **Different Clustering Algorithms**
 
-- Partition Based Clustering:
+- *Partition Based Clustering:*
 > - Group of clustering algorithms that produce sphere-like clusters.
 > These algorithms are relatively efficient and are used for medium and large sized databases.
+>
+> These methods partition the objects into k clusters and each partition forms one cluster. This method is used to optimize an objective criterion similarity function such as when the distance is a major parameter 
+> Examples: 
+> - K means,CLARANS (Clustering Large Applications based upon Randomized Search), etc.
 
-↓←←←←←←←←←←←←←←←←←←
-- **K-Means**
-↓←←←←←←←←←←←←←←←←←←
-↓       K-Medians (Fuzzy c-Means)
-↓   
-↓       Heirarchical Clustering Algorithms:
-↓       Produce Trees of Clusters.
-↓       This group of algorithms are very intuitive and are generally good
-↓       for use with small size datasets.
-↓           
-↓          Agglomerative
-↓          Divisive
-↓    
-↓       Density Based Algorithms:
-↓       Produce arbitrary shaped clusters.
-↓       Especially good when dealing with spatial clusters or when there is
-↓       noise in your data set.
-↓
-↓
-↓          DBSCAN: 
-↓               Density-based Spatial Clustering of Applications with Noise 
-↓               These data points are clustered by using the basic concept that the data
-↓               point lies within the given constraint from the cluster center. 
-↓               Various distance methods and techniques are used for the calculation of the outliers. 
-↓
-→>> → → Intro to K-Means: (Is an iterative algorithm)
-
-                    K-means clustering algorithm – It is the simplest unsupervised learning algorithm
-                    that solves clustering problems. K-means algorithm partitions n observations into k 
-                    clusters where each observation belongs to the cluster with the nearest mean serving 
-                    as a prototype of the cluster. 
-
-                    K-means divides the data into non-overlapping subsets
-                    (clusters) without any cluster internal structure.'
-                    Examples within a cluster are very similar.
-                    Objects across different clusters are very diffferent
-                    or dissimilar.
-                    Note:> This make sense since there are non-overlapping subsets.
-
-            Questions:
-                How can we fid similarity of samples in clustering?
-                How do we measure how similar two customers are with regard
-                to their demographics?
-
-            Answers:
-                Sometimes in order to do this we can, instead of measuring
-                how similar samples are. We can instead measure how different
-                they are or how dissimilar they are.
-
-           K-Means tries to minimize the amount of differences inside of a cluster
-           and maxamize the amount of differences for clusters outside of a cluster.
-           ie.  Intra cluster distances are minimized
-                Inter-cluster distances are maximized
-
-            In order to calculate the distance we use the Euclidean Distance or
-            the Minkowski distance
-            We can use this dame distance matrix for multidimensional vectors
-            after we normalize our feature set to get an accurate dissimilarity
-            measurement.
-
-            Other Dissimilarity measurements that can be used
-                Euclidean
-                Cosine Similarity
-                Average Distance
-#       The K-Means clustering process
-                (An iterative process for an iterative algorithm)
-            1. Initialize K (Decide the cluster size you want to set for K)
-                (Define the centroid of each cluster):
-
-                Centroids should be of same size as our feature set.
-                ie. How many clusters of groups the algorithm is going to group data into
-                    or how many groups you want it to group data into.
-                Centroids are really just central points within certain cluster groups
-                that are going to serve as a kind of model of what similar data needs
-                to be in order to be grouped in the same cluster as a specific centroid.
-
-                Two approaches to choose a centroid:
-                    1. Randomly choose observations out of the dataset
-                        then use these observations as the initial means (averages).
-                    2. Create random points as centroids of the clusters.
-
-            2. Distance Calculation:
-                Calculate the distance of each datapoint from the centroid points.
-                Ultimately this process is going to produce a matrix in where
-                each point will represent the distance of a data point from
-                each centroid aka (Distance Matrix).
-
-            3. Assign each point to the its closest centroid.
-            
-            K-Means Error is the total distance of each point from its centroid.
-            Sum of Squares error.
-
-            4. Compute the new centroids for each cluster. (To improve the error)
-               In this step each centroid gets updated to the mean for data points
-               in its cluster. Each centroid is going to move according to their
-               cluster members.
-
-               To break this down a little:
-                    based on all of the points within a cluster the algorithm is going
-                    to get an average of them and say ok this is the middle of all
-                    of those points in this neighborhood so actually this is
-                    a better centroid to use for this specific cluster.
-                    This process continues until the centroids stop
-                    moving or until the algorithm decides it has found'
-                    a solid enough central point on this graph between
-                    all these data points that live in this cluster.
-                    KEEEP IN MIND:
-                    Every time the centroid moves each point in relation
-                    to the centroid needs to be measured again.
-            5. Repeat the process untill there are no more changes. (Iteratively)
-                Steps 2-4 until the algorithm converges.
-
-            Caveat:
-                There is no guarantee that the algorithm is going to converge
-                to the global optimum and the results may depend on the initial
-                clusters. Which means the result of this algorithm
-                may not produce the best possible outcome.
-
-            Solution:
-                It is common to run the whole process multiple times with
-                different starting conditions. This means with randomized
-                starting centroids it may produce a better outcome.
-                Since this algorithm is usually very fast it should
-                not be a problem to run it multiple times.
-
-#       K-Means accuracy and characteristics
-            1. Works by randomly placing k centroids, one for each cluster.
-               The farther apart the clusters a placed the better.
-            2. Calculate the disance of each point from each centroid.
-            3. Assign each data point (object) to its closest centroid, creating
-               cluster or group.
-            4. Recalculate the position of the K centroid.
-
-        How can we evaluate the goodness of the clusters formed by K-means?
-
-            External Approach -
-                Compre the clusters with the ground truth if it is available.
-                However this is usually not the case since K-Means is an 
-                unsupervised algorithm.
-
-            Internal Approach -
-                Average distance between data points within a cluster.
-                Also average of the distance of data points from their
-                cluster centroids can be used as a metric of error
-                for the clustering algorithm.
-        Determing the value of K in K-Means clustering is a common problem in data clustering.
-        
-#<-     Choosing K:
-            The value of K is ambigous because it is dependent on the shape and scale
-            of the distributions of points in a dataset.
-            There are some solutions to this problem
-            One of them is creating different values for K and then getting an average
-            of all of the models ran with different values for K to see which value for
-            K fits the best. 
-            This metric can be mean, distance between data points and their clusters centroid.
-            So basically everytime you run a model with a different value for K
-            you then measure the distance between the different clusters centroids
-            and the points inside of the cluster. This is going to be the error.
-            Ultimately after having done this for different values of K you can
-            sort out which value for K had the least amount of error and then
-            go with that K value.
-
-            The problem is that with increasing the number of clusters the distance
-            of data points to centroids will always reduce.
-            This means that increasing the value of K will always decrease the error.
-            So, the value of the metric as a function of K is plotted and the elbow point
-            is determined where the rate of decrease sharply shifts.
-            In other words we repeat this process on a graph untill we see the margin
-            of error decrease drastically. We then choose the value of K based on this.
-            This method is called the elbow method.
-
-            Drawback is that we need to pre specify the number of clusters
-            which is ultimately not an easy task.
+- *Heirarchical Clustering Algorithms:*
+> Hierarchical clustering is a very useful way of segmentation. The advantage of not having to pre-define the number of clusters gives it quite an edge over k-Means. However, it doesn't work well when we have huge amount of data.
+> - Produce Trees of Clusters.
+> This group of algorithms are very intuitive and are generally good for use with small size datasets.
+- Agglomerative
+- Divisive
+>
+> The clusters formed in this method form a tree-type structure based on the hierarchy. 
+> - New clusters are formed using the previously formed one. 
+> - It is divided into two categories: 
+- Agglomerative (bottom-up approach)
+- Divisive (top-down approach)
+> Examples: 
+> - CURE (Clustering Using Representatives), BIRCH (Balanced Iterative Reducing Clustering and using Hierarchies), etc.
 
 
-#       More on:
-#   <-      Clustering Methods : 
+- *Density Based Algorithms:*
+> Produce arbitrary shaped clusters.
+> Especially good when dealing with spatial clusters or when there is noise in your data set.
+> - DBSCAN: 
+> Density-based Spatial Clustering of Applications with Noise 
+> - These data points are clustered by using the basic concept that the data point lies within the given constraint from the cluster center. 
+> - Various distance methods and techniques are used for the calculation of the outliers. 
+>
+> - These methods consider the clusters as the dense region having some similarities and differences from the lower dense region of the space. 
+> - These methods have good accuracy and the ability to merge two clusters. 
+> Examples: 
+> - DBSCAN (Density-Based Spatial Clustering of Applications with Noise),OPTICS (Ordering Points to Identify Clustering Structure), etc.
 
-##          Density-Based Methods: 
-                These methods consider the clusters as the dense 
-                region having some similarities and differences from the lower dense 
-                region of the space. These methods have good accuracy and the ability 
-                to merge two clusters. 
-                Example DBSCAN (Density-Based Spatial Clustering of Applications with Noise),
-                OPTICS (Ordering Points to Identify Clustering Structure), etc.
-##          Hierarchical Based Methods:
-                The clusters formed in this method form a 
-                tree-type structure based on the hierarchy. New clusters are formed using 
-                the previously formed one. It is divided into two category 
-                Agglomerative (bottom-up approach)
-                Divisive (top-down approach)
-                examples CURE (Clustering Using Representatives), 
-                BIRCH (Balanced Iterative Reducing Clustering and using Hierarchies), etc.
 
-##          Partitioning Methods:
-                These methods partition the objects into k clusters
-                and each partition forms one cluster. This method is used to optimize an 
-                objective criterion similarity function such as when the distance is a 
-                major parameter example K-means,
-                CLARANS (Clustering Large Applications based upon Randomized Search), etc.
-##          Grid-based Methods:
-                In this method, the data space is formulated into a 
-                finite number of cells that form a grid-like structure. 
-                All the clustering operations done on these grids are fast and independent
-                of the number of data objects example
-                STING (Statistical Information Grid), wave cluster, CLIQUE (CLustering In Quest), etc.
+
+
+- *Grid-based Algorithm Methods:*
+> In this method, the data space is formulated into a finite number of cells that form a grid-like structure. 
+> - All the clustering operations done on these grids are fast and independent of the number of data objects 
+> Examples:
+> - STING (Statistical Information Grid), wave cluster, CLIQUE (CLustering In Quest), etc.
+
+
+
+
+------------------------------------------
+
+## K-Means
+
+*(K-Medians (Fuzzy c-Means))*
+
+> Intro to K-Means: (Is an iterative algorithm)
+
+*K-means clustering algorithm*
+
+- It is the simplest unsupervised learning algorithm that solves clustering problems. 
+> K-means algorithm partitions n observations into k clusters where each observation belongs to the cluster with the nearest mean serving as a prototype of the cluster. 
+
+> K-means divides the data into non-overlapping subsets (clusters) without any cluster internal structure.
+- Examples within a cluster are very similar.
+- Objects across different clusters are very diffferent or dissimilar.
+- *Note: This make sense since there are non-overlapping subsets.*
+
+> Questions:
+- How can we fid similarity of samples in clustering?
+- How do we measure how similar two customers are with regard to their demographics?
+
+> Answers:
+- Sometimes in order to do this we can, instead of measuring how similar samples are. We can instead measure how different they are or how dissimilar they are.
+
+
+> K-Means tries to minimize the amount of differences inside of a cluster and maxamize the amount of differences for clusters outside of a cluster.
+- ie.  Intra cluster distances are minimized
+- Inter-cluster distances are maximized
+
+> In order to calculate the distance we use the Euclidean Distance or the Minkowski distance
+- We can use this dame distance matrix for multidimensional vectors after we normalize our feature set to get an accurate dissimilarity measurement.
+
+> Other Dissimilarity measurements that can be used
+- Euclidean
+- Cosine Similarity
+- Average Distance
+
+
+*The K-Means clustering process*
+- (An iterative process for an iterative algorithm)
+
+1. Initialize K (Decide the cluster size you want to set for K)
+*(Define the centroid of each cluster):*
+
+> Centroids should be of same size as our feature set.
+> - ie. How many clusters of groups the algorithm is going to group data into or how many groups you want it to group data into.
+> - Centroids are really just central points within certain cluster groups that are going to serve as a kind of model of what similar data needs to be in order to be grouped in the same cluster as a specific centroid.
+
+> Two approaches to choose a centroid:
+- i. Randomly choose observations out of the dataset then use these observations as the initial means (averages).
+- ii. Create random points as centroids of the clusters.
+
+2. Distance Calculation:
+> Calculate the distance of each datapoint from the centroid points.
+- Ultimately this process is going to produce a matrix in where each point will represent the distance of a data point from each centroid aka (Distance Matrix).
+
+3. Assign each point to the its closest centroid.
+> K-Means Error is the total distance of each point from its centroid.
+- Sum of Squares error.
+
+4. Compute the new centroids for each cluster. (To improve the error)
+> In this step each centroid gets updated to the mean for data points in its cluster. 
+- Each centroid is going to move according to their cluster members.
+
+*To break this down a little:*
+> Based on all of the points within a cluster 
+> - The algorithm is going to get an average of them 
+> - Say ok this is the middle of all of those points in this neighborhood so actually this is a better centroid to use for this specific cluster.
+- This process continues until the centroids stop moving or until the algorithm decides it has found a solid enough central point on this graph between all these data points that live in this cluster.
+> KEEEP IN MIND:
+- Every time the centroid moves each point in relation to the centroid needs to be measured again.
+
+
+5. Repeat the process untill there are no more changes. (Iteratively) Steps 2-4 until the algorithm converges.
+
+**Caveat:**
+
+> There is no guarantee that the algorithm is going to converge to the global optimum and the results may depend on the initial clusters. 
+>
+> Which means the result of this algorithm may not produce the best possible outcome.
+
+**Solution:**
+
+> It is common to run the whole process multiple times with different starting conditions. 
+> This means with randomized starting centroids it may produce a better outcome.
+> - Since this algorithm is usually very fast it should not be a problem to run it multiple times.
+
+**K-Means accuracy and characteristics**
+
+1. Works by randomly placing k centroids, one for each cluster.
+> The farther apart the clusters a placed the better.
+2. Calculate the disance of each point from each centroid.
+3. Assign each data point (object) to its closest centroid, creating clusters or groups.
+4. Recalculate the position of the K centroid.
+
+> How can we evaluate the goodness of the clusters formed by K-means?
+
+- External Approach
+> Compare the clusters with the ground truth if it is available. However this is usually not the case since K-Means is an unsupervised algorithm.
+
+- Internal Approach
+> Average distance between data points within a cluster.
+> Also average of the distance of data points from their cluster centroids can be used as a metric of error for the clustering algorithm.
+>
+> *Determing the value of K in K-Means clustering is a common problem in data clustering.*
+
+**Choosing K:**
+
+> The value of K is ambigous because it is dependent on the shape and scale of the distributions of points in a dataset.
+>
+> There are some solutions to this problem
+- One of them is creating different values for K and then get an average of all of the models ran with different values for K to see which value for K fits the best. 
+> This metric can be mean, distance between data points and their clusters centroid.
+
+*So basically everytime you run a model with a different value for K you then measure the distance between the different clusters centroids and the points inside of the cluster.* 
+
+- This is going to be the error.
+- Ultimately after having done this for different values of K you can sort out which value for K had the least amount of error and then go with that K value.
+
+> The problem is that with increasing the number of clusters the distance of data points to centroids will always reduce.
+- This means that increasing the value of K will always decrease the error.
+- So, the value of the metric as a function of K is plotted and the elbow point is determined where the rate of decrease sharply shifts.
+- In other words we repeat this process on a graph untill we see the margin of error decrease drastically. 
+- We then choose the value of K based on this. This method is called the elbow method.
+
+> Drawback is that we need to pre specify the number of clusters which is ultimately not an easy task.
+
 
