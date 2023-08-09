@@ -1392,6 +1392,7 @@ Groups:
 - (An iterative process for an iterative algorithm)
 
 1. Initialize K (Decide the cluster size you want to set for K)
+
 *(Define the centroid of each cluster):*
 
 > Centroids should be of same size as our feature set.
@@ -1403,14 +1404,17 @@ Groups:
 - ii. Create random points as centroids of the clusters.
 
 2. Distance Calculation:
+
 > Calculate the distance of each datapoint from the centroid points.
 - Ultimately this process is going to produce a matrix in where each point will represent the distance of a data point from each centroid aka (Distance Matrix).
 
 3. Assign each point to the its closest centroid.
+
 > K-Means Error is the total distance of each point from its centroid.
 - Sum of Squares error.
 
 4. Compute the new centroids for each cluster. (To improve the error)
+
 > In this step each centroid gets updated to the mean for data points in its cluster. 
 - Each centroid is going to move according to their cluster members.
 
