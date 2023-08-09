@@ -1142,201 +1142,194 @@ Age > 50 |
 
 - First: We look at the cost function and see what the relation is between the cost function and the parameters theta.
 
-        How do we find the best weights or parameters that minimize the cost function?
-        -Answer: We should calculate the minimum point of this cost function and it will show us the best parameters for our model.
-        Although we can find the minimum point of a function using the derivative of a function it may be too complicated or
-        too much of a process to do so. Which means we should find another cost function instead.
-        One that has the same behavior but is easier to find its min point.
+*Question*
+> How do we find the best weights or parameters that minimize the cost function?
 
-        Basically we are going to use the minus log function -log.
-        So the idea behind this is that suppose we want a value of 1 which is our desired output
-        this means we want need a cost function that wiil return us 0. -log(ŷ)
-        What this means is if our predicted output is 1 and our actual value is 1
-        than our cost function is 0 meaning there is no error basically. 
-        If our predicted value is less than 1 and our actual value is 1
-        than our cost function is going to give us a value greater than 0.
+*Answer* 
+> We should calculate the minimum point of this cost function and it will show us the best parameters for our model.
+
+- Although we can find the minimum point of a function using the derivative of a function it may be too complicated and too much of a process to do so. 
+- Which means we should find another cost function instead. One that has the same behavior but is easier to find its min point.
+
+> Basically we are going to use the minus log function -log.
+> So the idea behind this is
+>
+> - suppose we want a value of 1 which is our desired output
+> - this means we need a cost function that wiil return us 0. 
+> - -log(ŷ) What this means is if our predicted output is 1 and our actual value is 1 than our cost function is 0 meaning there is no error basically. 
+> - If our predicted value is less than 1 and our actual value is 1 than our cost function is going to give us a value greater than 0.
         
-        If desirable y = 1 then -log(ŷ)
-        If desirable y = 0 then -log(1 - ŷ)
-        This concept is part of the Logistic Regression cost function.
+- If desirable y = 1 then -log(ŷ)
+- If desirable y = 0 then -log(1 - ŷ)
+> This concept is part of the Logistic Regression cost function.
+> 
+>
+> - Remember that ŷ does not return a class but rather a value of either 0 or 1 which should be assumed as a probability.
 
-        Remember that ŷ does not return a class but rather a value of either 0 or 1 which should be assumed as a probability.
+**Minimizing the cost function of the model (recap)**
 
-##      Minimizing the cost function of the model (recap)
-        How to find the best parameters for our model?
-        -Minimize the cost function
+> How to find the best parameters for our model?
+- Minimize the cost function
 
-        How to minimize the cost function?
-        -Use gradient descent.
+> How to minimize the cost function?
+- Use gradient descent.
 
-        What is gradient descent?
-        -An iterative approach to finding the minimum of a function.
-        -A technique to use the deriviative of a cost function to change the parameter values,
-        -in order to minimize the cost.
-        
-        Using Gradient descent to minimize the cost.
-        How can gradient descent to this?
+> What is gradient descent?
+- An iterative approach to finding the minimum of a function.
+- A technique to use the deriviative of a cost function to change the parameter values, in order to minimize the cost.
 
-##      Training algorithm recap
+*Using Gradient descent to minimize the cost.*
 
-        1. Initialize the parameters randomly.
-        2. Feed the cost function with training set, and calculate the error.
-        3. Calculate the gradient of the cost function.
-        4. Update weights with new values.
-        5. Go to step 2 until the cost is small enough.
-#<-NOTE:   We continue this loop until we reach a short value of cost or some limited number of iterations.
-        6. Predict the new customer X. The parameter should be roughly found after some iterations.
+> How can gradient descent do this?
+>
+> Training algorithm recap
+>
+1. Initialize the parameters randomly.
+2. Feed the cost function with training set, and calculate the error.
+3. Calculate the gradient of the cost function.
+4. Update weights with new values.
+5. Go to step 2 until the cost is small enough.
+> We continue this loop until we reach a short value of cost or some limited number of iterations.
+6. Predict the new customer X. The parameter should be roughly found after some iterations.
 
+-------------------------------------------------
 
-
-#   Support Vector Machines
-
-
-
-
-
-#   Multi Class Prediction
+## Support Vector Machines
 
 
 
+--------------------------------------
 
-#   Clustering (Intro to clustering)
-
-##      <- ( Definition ) ->
-            Clustering is an unsupervied machine learning method of identifying and
-            grouping similar data points in large data sets without concern for the specific
-            outcome.
-            In other words clustering takes on the task of finding similarities between
-            groups of features and then based on those similarities it creates new groups.
-            Clustering (sometimes called cluster analysis) is usually used to
-            classify data into structures that are more easily understood and manipulated.
-
-##     <- (    Caveat   ) ->
-            The biggest issue that comes up with most cluster analysis methods is that 
-            while they're great at intially seperating data into subsets, the strategies
-            used are sometimes not necessarily related to the data itself, but to its
-            positioning in relation to other data points.
-
-#       Applications of Clustering in different fields  
-
-            Marketing: It can be used to characterize & discover customer 
-            segments for marketing purposes.
-
-            Biology: It can be used for classification among different species 
-            of plants and animals.
-
-            Libraries: It is used in clustering different books on the basis of
-            topics and information.
-
-            Insurance: It is used to acknowledge the customers, their policies 
-            and identifying the frauds.
-
-            City Planning: It is used to make groups of houses and to study 
-            their values based on their geographical locations and other 
-            factors present. 
-
-            Earthquake studies: By learning the earthquake-affected areas we can determine
-            the dangerous zones.
-
-            Image Recognition: It us used to train a model into recognizing or
-            distinguishing object from one another.
-
-            Cross selling strategies:
-
-            Customer Segmentation: ie. Splitting up customer groups or finding them
-            and labeling them.
+## Multi Class Prediction
 
 
-        Why Clustering? 
-        Clustering is very important as it determines the intrinsic grouping among 
-        the unlabelled data present. There are no criteria for good clustering. It depends 
-        on the user, what is the criteria they may use which satisfy their need. 
-        For instance, we could be interested in finding representatives for homogeneous 
-        groups (data reduction), in finding “natural clusters” and describe their unknown 
-        properties (“natural” data types), in finding useful and suitable groupings 
-        (“useful” data classes) or in finding unusual data objects (outlier detection). 
-        This algorithm must make some assumptions that constitute the similarity of 
-        points and each assumption make different and equally valid clusters. 
+------------------------------------------------
 
-        Customer Segmentation:
-            The practice of grouping customers based on similar attributes.
-                                            <- Caveat ->
-            A general segmentation process is not usually feasible for large volumes
-            of varied data, therefore you need an analytical approach to deriving 
-            segments and groups from large datasets.
+## Clustering (Intro to clustering)
+
+**Definition**
+
+> Clustering is an unsupervied machine learning method of identifying and grouping similar data points in large data sets without concern for the specific outcome.
+
+- In other words clustering takes on the task of finding similarities between groups of features and then based on those similarities it creates new groups.
+- Clustering (sometimes called cluster analysis) is usually used to classify data into structures that are more easily understood and manipulated.
+
+**Caveat**
+
+- The biggest issue that comes up with most cluster analysis methods is that while they're great at intially seperating data into subsets, the strategies used are sometimes not necessarily related to the data itself, but to its positioning in relation to other data points.
+
+**Applications of Clustering in different fields**  
+
+- Marketing: 
+> It can be used to characterize & discover customer segments for marketing purposes.
+
+- Biology: 
+> It can be used for classification among different species of plants and animals.
+
+- Libraries: 
+> It is used in clustering different books on the basis of topics and information.
+
+- Insurance:
+> It is used to acknowledge the customers, their policies and identifying the frauds.
+
+- City Planning: 
+> It is used to make groups of houses and to study their values based on their geographical locations and other factors present. 
+
+- Earthquake studies: 
+> By learning the earthquake-affected areas we can determine the dangerous zones.
+
+- Image Recognition: 
+> It us used to train a model into recognizing or distinguishing object from one another.
+
+- Cross selling strategies:
+
+- Customer Segmentation: 
+> ie. Splitting up customer groups or finding them and labeling them.
+> The practice of grouping customers based on similar attributes.
+>
+> Note:
+> A general segmentation process is not usually feasible for large volumes of varied data, therefore you need an analytical approach to deriving segments and groups from large datasets.
 
 
-#       A Practical Example:
+**Why Clustering?** 
+
+*Clustering is very important as it determines the intrinsic grouping among the unlabelled data present.* 
+
+- There are no criteria for good clustering. It depends on the user, what is the criteria they may use which satisfy their need. 
+> For instance: 
+> - Finding representatives for homogeneous groups (data reduction) 
+> - Finding “natural clusters” and describe their unknown properties (“natural” data types) 
+> - Finding useful and suitable groupings (“useful” data classes) 
+> - Finding unusual data objects (outlier detection). 
+> 
+> This algorithm must make some assumptions that constitute the similarity of points and each assumption make different and equally valid clusters. 
+
+
+**A Practical Example**
             
-            Suppose we have a customer data base and we want to find some
-            similarites between these customers.
-            Now suppose we create a machine learning model and apply
-            a clustering algorithm to the data we input into our model.
+> Suppose we have a customer data base and we want to find some similarites between these customers.
+> Now suppose we create a machine learning model and apply a clustering algorithm to the data we input into our model.
+>
+>
+>
+> The clustering algorithm might return three groups of customers that we see have been grouped by demographic data.
+Groups:
+- (A). Affluent Middle Aged People
+- (B). Young Educated, Mid Ranged Income People
+- (C). Young and Low Income People
 
-            The clustering algorithm might return three groups of customers
-            that we see have been grouped by demographic data.
-                Groups:
-                        (A). Affluent Middle Aged People
-                        (B). Young Educated, Mid Ranged Income People
-                        (C). Young and Low Income People
+> Clustering is often used to make recommendations to users based on similars users taste or based on similar habits.
+> 
+>
+> A clustering algorithm might recognize that you interacted with a particular add for 2 minutes and then based on other people who exhibited the same behaviour from its records it might also recommend you a shampoo or something because people that fall into the category of interacting with that specific add for that length of time typically bought this one shampoo shortly after.
 
-            Clustering is often used to make recommendations to users
-            based on similars users taste or based on similar habits.
-            A clustering algorithm might recognize that you interacted 
-            with a particular add for 2 minutes and then based on other
-            people who exhibited the same behaviour from its records
-            it might also recommend you a shampoo or something because
-            people that fall into the category of interacting with that
-            specific add for that length of time typically bought this
-            one shampoo shortly after.
+> So basically clustering algorithms be like:
+> 
+> - Hey bro I see you did like these other peeps, that like this one thing, who then after also like this other thing. Maybe you like this other thing too?
 
-            So basically clustering algorithm be like:
-                    Hey bro I see you did like these other peeps,
-                    that like this one thing, who then after also like
-                    this other thing. Maybe you like this other thing
-                    too?
+**Uses**
+
+> Generally clustering can be used for one of the following purposes:
+
+- Exploratory data analysis 
+- Summary Generation or Reducing The Scale
+- Outlier detection - especially to be used for fraud detection or noise removal
+- Finding Duplicates and Datasets 
+- As a pre-processing step for either prediction, other data mining tasks or as part of a complex system
 
 
-##      Generally clustering can be used for one of the following purposes:
+**Different Clustering Algorithms**
 
-            Exploratory data analysis 
-            Summary Generation or Reducing The Scale
-            Outlier detection - especially to be used for fraud detection or noise removal
-            Finding Duplicates and Datasets 
-            As a pre-processing step for either prediction, other data mining tasks or
-            as part of a complex system
+- Partition Based Clustering:
+> - Group of clustering algorithms that produce sphere-like clusters.
+> These algorithms are relatively efficient and are used for medium and large sized databases.
 
-#       Different Clustering Algorithms:
-            Partition Based Clustering:
-                Group of clustering algorithms that produce sphere-like clusters.
-                These algorithms are relatively efficient and are used for medium 
-                and large sized databases.
-        ↓←←←←←←←←←←←←←←←←←←
-#   ↓   ↓  < < <  K-Means <
-        ↓←←←←←←←←←←←←←←←←←←
-        ↓         K-Medians (Fuzzy c-Means)
-        ↓   
-        ↓       Heirarchical Clustering Algorithms:
-        ↓       Produce Trees of Clusters.
-        ↓       This group of algorithms are very intuitive and are generally good
-        ↓       for use with small size datasets.
-        ↓           
-        ↓          Agglomerative
-        ↓          Divisive
-        ↓    
-        ↓       Density Based Algorithms:
-        ↓       Produce arbitrary shaped clusters.
-        ↓       Especially good when dealing with spatial clusters or when there is
-        ↓      noise in your data set.
-        ↓
-        ↓
-        ↓          DBSCAN: 
-        ↓               Density-based Spatial Clustering of Applications with Noise 
-        ↓               These data points are clustered by using the basic concept that the data
-        ↓               point lies within the given constraint from the cluster center. 
-        ↓               Various distance methods and techniques are used for the calculation of the outliers. 
-        ↓
-#       →>> → → Intro to K-Means: (Is an iterative algorithm)
+↓←←←←←←←←←←←←←←←←←←
+- **K-Means**
+↓←←←←←←←←←←←←←←←←←←
+↓       K-Medians (Fuzzy c-Means)
+↓   
+↓       Heirarchical Clustering Algorithms:
+↓       Produce Trees of Clusters.
+↓       This group of algorithms are very intuitive and are generally good
+↓       for use with small size datasets.
+↓           
+↓          Agglomerative
+↓          Divisive
+↓    
+↓       Density Based Algorithms:
+↓       Produce arbitrary shaped clusters.
+↓       Especially good when dealing with spatial clusters or when there is
+↓       noise in your data set.
+↓
+↓
+↓          DBSCAN: 
+↓               Density-based Spatial Clustering of Applications with Noise 
+↓               These data points are clustered by using the basic concept that the data
+↓               point lies within the given constraint from the cluster center. 
+↓               Various distance methods and techniques are used for the calculation of the outliers. 
+↓
+→>> → → Intro to K-Means: (Is an iterative algorithm)
 
                     K-means clustering algorithm – It is the simplest unsupervised learning algorithm
                     that solves clustering problems. K-means algorithm partitions n observations into k 
