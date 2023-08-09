@@ -1069,40 +1069,53 @@ Age > 50 |
 
 -----------------------------------------------------------------------------------
 ## Intro to Logistic Regression
-        More often used in binary classification problems.
-        Can be more effective for these cases than linear regression.
+
+*More often used in binary classification problems. Can be more effective for these cases than linear regression.*
+
+**Sigmoid Function** 
+- Main part of Logistic Regression
         
-        Sigmoid Function - Main part of Logistic Regression
+**What is logistic regression?**
 
-        What is logistic regression?
-            -Logistic Regression is a statistical and machine learning technique for classifying
-            records of a dataset based on the values of the input fields.
-            -Logistic Regression is analogous to linear regression but tries to predict
-            a categorical or discrete target field instead of a numeric one.
-            ie. Something binary: (Yes, No), (True, False), (Success, Failure), (Pregnant, Not Pregnant),
-            (probability of heart attack: Yes, No), (chance of mortality in an injured patient),(Liklihood of a customer purchsing a product),
-            (liklihood of a customer cancelling a subscription based service)
-            Note: Notice that in all these examples not only do we predict the class of each case,
-            we also measure the probability of a case belonging to a specific class.
+- Logistic Regression is a statistical and machine learning technique for classifying records of a dataset based on the values of the input fields.
+> - Logistic Regression is analogous to linear regression but tries to predict a categorical or discrete target field instead of a numeric one.
+>
 
-        What kind of problems can be solved using it?
-        -Could be used in binary classification or
-        multi-class classification.
+- ie. Something binary
+> - (Yes, No) 
+> - (True, False) 
+> - (Success, Failure)
+> - (Pregnant, Not Pregnant)
+> - (Probability of heart attack: Yes, No) 
+> - (Chance of mortality in an injured patient)
+> - (Liklihood of a customer purchsing a product)
+> - (Liklihood of a customer cancelling a subscription based service)
 
-        In which situations should we use it?
-        First: When the target field is binary .
-        Second: When you need the probability of your prediction.
-        (Logistic Regression predicts the probability score between zero and one for a given sample of data)
+> Note: 
+- *Notice that in all these examples not only do we predict the class of each case,we also measure the probability of a case belonging to a specific Yes or No class.*
+
+> What kind of problems can be solved using it?
+- Could be used in binary classification
+- Multi-class classification.
+
+> In which situations should we use it?
+
+- First: When the target field is binary .
+- Second: When you need the probability of your prediction.
+
+*(Logistic Regression predicts the probability score between zero and one for a given sample of data)*
         
-        Y is the labels vector also called the actual values.
-        Y(hat) is the vector of the predicted values of our model.
+- Y is the labels vector also called the actual values.
+- Y(hat) is the vector of the predicted values of our model.
 
 
-    Parameters of Logistic Regression ( Things it needs to work)
-        -Independent variables need to be continuous or
-        if categorical they should be dummy or indicator coded.
-        ie. Transformed into continous data if not otherwise.
-## The training process
+> Parameters of Logistic Regression ( Things it needs to work)
+
+- Independent variables need to be continuous
+- If categorical they should be dummy or indicator coded.
+- ie. Transformed into continous data if not otherwise.
+
+**The training process**
 
 1. Initialize  Θ Theta
 2. Calculate ŷ = σ(ΘT X) for a customer
@@ -1111,19 +1124,23 @@ Age > 50 |
 5. Change the theta to reduce the cost.
 6. Go back to step 2.
 
-##  How can we change the value of theta so that the cost is reduced across iterations?
-There are different ways to change the value of theta but one of the most popular ways is gradient descent.
-##  When should we stop the iterations?
-By calculating the accuracy of your model and stop it when  its satisfactory
+> How can we change the value of theta so that the cost is reduced across iterations?
+- There are different ways to change the value of theta but one of the most popular ways is gradient descent.
 
-##      Training a logistic regression model and how to change the parameters of the model to better estimate the outcome.
-##      (The cost function: <- is the difference between the actual values of Y and our model output or predicted values Y-hat
-            -A general rule for most cost functions in machine learning: The cost function is basically the error.
+> When should we stop the iterations?
+- By calculating the accuracy of your model and stopping it when  its satisfactory
 
-        The main objective of training in logistic regression is to change the parameters of the model
-        so as to be the best estimation of the labels of the samples in the dataset.
+> Training a logistic regression model and how to change the parameters of the model to better estimate the outcome.
 
-        First: We look at the cost function and see what the relation is between the cost function and the parameters theta.
+- The cost function: 
+> Is the difference between the actual values of Y and our model output or predicted values Y-hat
+
+- A general rule for most cost functions in machine learning: 
+> - The cost function is basically the error.
+
+*The main objective of training in logistic regression is to change the parameters of the model so as to be the best estimation of the labels of the samples in the dataset.*
+
+- First: We look at the cost function and see what the relation is between the cost function and the parameters theta.
 
         How do we find the best weights or parameters that minimize the cost function?
         -Answer: We should calculate the minimum point of this cost function and it will show us the best parameters for our model.
