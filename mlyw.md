@@ -1023,41 +1023,52 @@ Age
 
 
 -----------------------------------------------------------------------------------------------------------
-#                                           Regression Trees
-Concept:    A regression tree is a decision tree that can take continuous values
-            as the target variable instead of a discrete value.
-            The basic idea behind regression trees is to split our data into groups
-            based on features, like in classification, and return a prediction that
-            is the average across the data we have already seen.
 
-Use Cases:  It seems like regression trees are good to use in situations where you
-            want to be able to predict the range of something or for problems
-            that deal with categorical sequences.
-            Truly though, regression trees are used for dependent varaibles with
-            continuous values and classification trees are used for dependent 
-            variables with discrete values.
-            Categorical Sequence: A sequence of something that has
-            categories like Dogs and dog breeds
+## Regression Trees
 
-        In a regression tree each leaf represents a numeric value.
-        In contrast classification trees have true or false in thier leaves
-        or some other discrete category.
+> A regression tree is a decision tree that can take continuous values as the target variable instead of a discrete value.
 
-        Ex.
-            Drug effectivness based on a few different categories
+- The basic idea behind regression trees is to split our data into groups based on features, like in classification, and return a prediction that is the average across the data we have already seen.
 
-                                [Age > 50 ]
-                                /               \
-                        [4.2% effective]    [Dosage >= 29]
-                                            /           \
-                                    [29% Effective]     [sex = Female]
-                                                        /            \
-                                            [100% Effective]    [50% Effective]
+**Use Cases** 
+
+> It seems like regression trees are good to use in situations where you want to be able to predict the range of something or for problemsthat deal with categorical sequences.
+> 
+> Truly though, regression trees are used for dependent varaibles with continuous values and classification trees are used for dependent variables with discrete values.
+
+- Categorical Sequence: A sequence of something that has
+- Categories like Dogs and dog breeds
+
+**A Leaf**
+
+> In a regression tree each leaf represents a numeric value.
+
+- In contrast classification trees have true or false in thier leaves or some other discrete category.
+
+**Ex.**
+
+
+> Drug effectivness based on different categories
+
+```bash
+
+Age > 50 |
+         ├──4.2% Effective]
+         |
+         ├──Dosage >= 29ml|
+                          ├──[29% Effective]
+                          |
+                          └──[Sex|
+                                 ├──[Male 100%]
+                                 |
+                                 └──[Female 50%]
+
+```
 
                                     
 
-#-----------------------------------------------------------------------------------
-#Intro to Logistic Regression
+-----------------------------------------------------------------------------------
+## Intro to Logistic Regression
         More often used in binary classification problems.
         Can be more effective for these cases than linear regression.
         
