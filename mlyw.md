@@ -122,6 +122,12 @@ In this section I do my best to organize terminology that your going to hear a l
 > - Something Binary ie. ( 0 or 1, yes or no etc..)
 
 
+- **Evalutation Metrics**
+> - Evaluation metrics provide insight into areas that might require improvement.
+> - Help us determine how accurate a given model is by comparing the actual values in a test set with the values predicted by the model.
+> - In plain english: They are ways of calcluating how well the ML model is performing.
+
+
 - **Feature(s):**
 
 > *Column(s) with the data in the column(s) including the column(s) name(s)*
@@ -818,10 +824,12 @@ Have any effect on the exam performance of a student ?
 
 - This example is about a binary classifier with one of two values. 
 > We can also build classifier models for both binary and multi class classification.
-    
-**Multiclass classification**
 
-*Example (Med)*
+---------------------------------------------
+
+## Multiclass classification
+
+*Example*
 
 > Data collected on a group of patients that had the same illness and responded to one of three different types of medications they took during the course of their treatment.
 - This kind of  labeled dataset can be used with a classification algorithm to build a classification model.
@@ -880,107 +888,141 @@ Have any effect on the exam performance of a student ?
 
 Yes, we can!
 
-**Evaluation Metrics (used for Classification)**
+---------------------------------------------------------
 
-- Evaluation metrics provide insight into areas that might require improvement.
-- Help us determine how accurate a given model is by comparing the actual values in a test set with the values predicted by the model.
+## Classification Evaluation Metrics
 
-- **Different kinds of model evaluation metrics**
 
-> Jaccard Index (Jaccard similarity coefficient)
+
+- **Jaccard Index (Jaccard similarity coefficient)**
+
 - Compares members of two data sets to see which members are shared and which are distinct.
 - It’s a measure of similarity for the two sets of data, with a range from 0% to 100%.
 - The higher the percentage, the more similar the two data sets are.
 
-> Steps ( J(X,Y) = |X∩Y| / |X∪Y| ) (Formula)
+> Steps ( J(X,Y)     = |X∩Y| / |X∪Y| ) (Formula)
 
 1. Count the number of members which are shared between both sets.
+
 2. Count the total number of members in both sets (shared and un-shared).
+
 3. Divide the number of shared members (1) by the total number of members (2).
+
 4. Multiply the number you found in (3) by 100.
 
 > - __This percentage tells you how similar the two sets are.__
 
-##          Caveat::
-                Although it’s easy to interpret, it is extremely sensitive to small samples
-                sizes and may give erroneous results,especially with very small samples or 
-                data sets with missing observations.
+> Jaccard Index Caveat
+>
+> Although it’s easy to interpret, it is extremely sensitive to small samples sizes and may give erroneous results,especially with very small samples or data sets with missing observations.
 
-###     F1 Score
-            An evaluation metric that measures a models accuracy. 
-            It combines the precision and recall scores of a model.
-            The accuracy metric computes how many times a model made a correct
-            prediction across the entire dataset.
+- **F1 Score**
 
-##          How to calculate F1 score?
-            To understand the calculation of the F1 score, we first need to look at a
-            -> Confusion Matrix. (A matrix of numbers that tell us where a model gets confused)
-                -a class-wise distribution of the predictive performance of a classification model
-                the confusion matrix is an organized way of mapping the predictions to the original 
-                classes to which the data belong.
+> - Combines the precision and recall scores of a model.
+> - The accuracy metric computes how many times a model made a correct prediction across the entire dataset.
 
-            For a binary class dataset (which consists of, suppose, “positive” and “negative” classes),
-            a confusion matrix has four essential components:
+- *How to calculate F1 score?*
 
-                1. True Positives (TP): Number of samples correctly predicted as “positive.”
-                2. False Positives (FP): Number of samples wrongly predicted as “positive.”
-                3. True Negatives (TN): Number of samples correctly predicted as “negative.”
-                4. False Negatives (FN): Number of samples wrongly predicted as “negative.”
+> To understand the calculation of the F1 score, we first need to look at a Confusion Matrix. 
+> - (A matrix of numbers that tell us where a model gets confused)
+> - a class-wise distribution of the predictive performance of a classification model 
+> - The confusion matrix is an organized way of mapping the predictions to the original classes to which the data belong.
 
-            The F1 score is defined based on the precision and recall scores,
-            which are mathematically defined as follows:
-                Precision = TP / TP + FP
-                Recall = TP / TP + FN
-            The F1 score is calculated as the harmonic mean of the precision and recall scores.
-                F1 Score = TP / TP + 1/2(FP + FN)
+> For a binary class dataset (which consists of, suppose, “positive” and “negative” classes), a confusion matrix has four essential components:
 
-##          Caveat::
-            This can be a reliable metric only if the dataset is class-balanced, meaning each class
-            of the dataset has the same number of samples.
+1. True Positives (TP): Number of samples correctly predicted as “positive.”
 
-##          Cross Entropy:
-                The difference between two probability distributions.
-###     Log Loss (cross entropy loss)
-            Log-loss is indicative of how close the prediction probability (Y hat) is to the corresponding
-            actual/true value (Y), (0 or 1 in case of binary classification).  The more the predicted 
-            probability diverges from the actual value, the higher is the log-loss value.
-#Decision Trees::::::::: <'How is one built based on the data' -> ?
-        Decision Trees are classification algorithms
-    Built using recursive partitioning (breaking up the data further and furter down the line)
-##        Ex.                <'Age'>
-##                     /        |         \
-##               <'Young'>  <'Mid-Aged'>  <'Senior'>
-    Decision trees are built by splitting the training set into distinct nodes.
-##          Realistic example:
-                Patients with a illness that have all recieved two types of medication
-                    Drug (A)
-                    Drug (B)
-                Feature sets or categories we can start looking at:
-                    Age (Young, Middle Aged, Senior)
-                     Sex (M, F)
-                      Blood Pressure (Normal, High, Low)
-                       Cholesterol (Normal, High, Low)
+2. False Positives (FP): Number of samples wrongly predicted as “positive.”
 
-                Basically all patients will have all of these attributes
-                and our target is the drug that they responded to meaning
-                since all of the patients were given both drugs we have
-                a list of which patients responded to either drug and we want
-                to group these patients to find out how likely someone not
-                in the sample set will respond to either of the medications.
+3. True Negatives (TN): Number of samples correctly predicted as “negative.”
 
-                Some examples of things we might find:
+4. False Negatives (FN): Number of samples wrongly predicted as “negative.”
+
+> The F1 score is defined based on the precision and recall scores, which are mathematically defined as follows:
+
+- Precision = TP / TP + FP
+- Recall = TP / TP + FN
+- The F1 score is calculated as the harmonic mean of the precision and recall scores.
+- F1 Score = TP / TP + 1/2(FP + FN)
+
+**Caveat**
+            
+> This can be a reliable metric only if the dataset is class-balanced, meaning each class of the dataset has the same number of samples.
+
+**Cross Entropy**
+
+> The difference between two probability distributions.
+
+
+**Log Loss (cross entropy loss)**
+
+- Indicative of how close the prediction probability (Y hat) is to the correspondingactual/true value (Y), (0 or 1 in case of binary classification).  
+- The more the predicted probability diverges from the actual value, the higher is the log-loss value.
+
+
+-------------------------------------------------------------
+
+## Decision Trees
+
+*'How is one built based on the data'?*
+
+> Decision Trees are classification algorithms Built using recursive partitioning (breaking up the data further and furter down the line)
+
+**Ex.**
+
+```bash
+
+Age
+├──Young
+├──Mid Aged
+└──Senior
+
+```
+
+> Decision trees are built by splitting the training set into distinct nodes.
+
+- Realistic example:
+                
+*Patients with a illness that have all recieved two types of medication*
+
+> - Drug (A)
+> - Drug (B)
+
+> Feature sets or categories we can start looking at:
+
+> - Age (Young, Middle Aged, Senior)
+> - Sex (M, F)
+> - Blood Pressure (Normal, High, Low)
+> - Cholesterol (Normal, High, Low)
+
+> Basically all patients will have all of these attributes and our target is the drug that they responded to meaning since all of the patients were given both drugs we have a list of which patients responded to either drug and we want to group these patients to find out how likely someone not in the sample set will respond to either of the medications.
+
+> Some examples of things we might find:
                                     
-                    Patient Age	Sex	BP	Cholesterol	Drug(Response)
-                        1	23	F	HIGH	HIGH	drug(A)
-                        2	47	M	LOW	    HIGH	drug(B)
-                        3	47	M	LOW	    HIGH	drug(B)
-                        4	28	F	NORMAL	HIGH	drug(A)
-                        5	61	F	LOW	    HIGH	drug(A)
-                        6	22	F	NORMAL	HIGH	drug(A)
-                        7	49	F	NORMAL	HIGH	drug(B)
-                        8	41	M	LOW	    HIGH	drug(B)
-                        9	60	M	NORMAL	HIGH	drug(B)
-#-----------------------------------------------------------------------------------------------------------
+
+| Patient | Age | Sex | BP   | Cholesterol | Drug Response |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    1    | 23  |  F  | High |     High    |    Drug(A)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    2    | 47  |  M  | Low  |     High    |    Drug(B)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    3    | 47  |  M  | Low  |     High    |    Drug(B)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    4    | 28  |  F  | Norm |     High    |    Drug(A)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    5    | 61  |  F  | Low  |     High    |    Drug(A)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    6    | 22  |  F  | Norm |     High    |    Drug(A)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    7    | 49  |  F  | Norm |     High    |    Drug(B)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    8    | 41  |  M  | Low  |     High    |    Drug(B)    |
+|:-------:|:---:|:---:|:----:|:-----------:|:-------------:|
+|    9    | 60  |  M  | Norm |     High    |    Drug(B)    |
+
+
+
+-----------------------------------------------------------------------------------------------------------
 #                                           Regression Trees
 Concept:    A regression tree is a decision tree that can take continuous values
             as the target variable instead of a discrete value.
