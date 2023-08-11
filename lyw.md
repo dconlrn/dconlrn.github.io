@@ -2,7 +2,7 @@
 <table rules=none>
  <tr>
 <td> <img src="https://i.imgur.com/GYIQg9q.png"></td>
-<td> <h2><a href="https://joshjetson.github.io">Linux<br>Your Welcome</a></h2><br>A Very Simple Linux Guide And Reference</td>
+<td> <h2><a href="https://joshjetson.github.io">Linux<br>You’re Welcome</a></h2><br>A Very Simple Linux Guide And Reference</td>
 </tr>
 </table>
 
@@ -45,7 +45,7 @@ This is a repository dedicated to all things Linux and aims to act as a referenc
 - Which means this repository is for anyone interested in either learning about Linux/Linux commands or simply anyone wanting a kind of cliff notes or (reference/one stop shop) for a bunch of different Linux commands, principals and concepts.
 
 *There are many explanations in this repository to either introduce you to concepts or clarify them in a calm simple way. 
-- Your Welcome.* 
+- You’re Welcome.* 
 
 
 

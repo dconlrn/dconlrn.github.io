@@ -1,7 +1,7 @@
 <table rules=none>
  <tr>
 <td> <img src="https://i.imgur.com/CfWaqUg.png"></td>
-<td> <h2><a href="https://joshjetson.github.io">Machine Learning<br>Your Welcome</a></h2><br>A Machine Learning Guide And Reference</td>
+<td> <h2><a href="https://joshjetson.github.io">Machine Learning<br>You’re Welcome</a></h2><br>A Machine Learning Guide And Reference</td>
 </tr>
 </table>
 
@@ -55,8 +55,8 @@
 > **The Model**
 
 > Once you have the above questions answered and based on them
-> - Import the dataset first or initialize the data your gonna feed into this model, get it ready.
-> - Decide which parts of the library code your going to use to create a model because the kind of model you are going to create is going to be dependent upon the answers to the above questions.
+> - Import the dataset first or initialize the data you're gonna feed into this model, get it ready.
+> - Decide which parts of the library code you're going to use to create a model because the kind of model you are going to create is going to be dependent upon the answers to the above questions.
 
 
 > **Training and Testing**
@@ -73,7 +73,7 @@
 
 > **Final Thoughts**
 
-> At this point your going to have to make a decision.
+> At this point you're going to have to make a decision.
 > - Do you need to run the data through the ML process again but this time tweak the way you did things ?
 
 
@@ -98,7 +98,7 @@ To get a more in depth understanding read-on!
 
 *In Machine learning there are alot of terms. Many times there are multiple terms for the same thing. This is something that makes understanding machine learning a pain and a big barrier*
 
-In this section I do my best to organize terminology that your going to hear a lot in machine learning talk.
+In this section I do my best to organize terminology that you're going to hear a lot in machine learning talk.
 
 
 - **Bias Variance Tradeoff**
@@ -216,7 +216,7 @@ It's a machine larning approach for working with data that already shares some k
 
 - Age and Health
 
-Age and health are linked (they have a relationship). As you get older your health gets worse, unless your not human or discovered some kind of magic your not sharing with the rest of us.
+Age and health are linked (they have a relationship). As you get older your health gets worse, unless you're not human or discovered some kind of magic you're not sharing with the rest of us.
 
 For the above example of age and health a data table might look something like this:
 
@@ -352,7 +352,7 @@ A kind of machine learning where a model must look for patterns in a dataset wit
 - Clustering Problems and association problems such as pattern recognition.
 
 **Accuracy:**
-- May provide less accurate results because many times its kind of a shot in the dark since you might not even know ballpark what your trying to find or what you want to find.
+- May provide less accurate results because many times its kind of a shot in the dark since you might not even know ballpark what you're trying to find or what you want to find.
 
 **Algorithms:**
 - K-Means
@@ -403,7 +403,7 @@ A kind of machine learning where a model must look for patterns in a dataset wit
 
 **Break Down:**
 
-- Variance is really how well the algorithm your using is learning from the data. Maybe certain data sets for whatever reason are just not good or effective at teaching the algorithm how to make predictions (low variance) 
+- Variance is really how well the algorithm you're using is learning from the data. Maybe certain data sets for whatever reason are just not good or effective at teaching the algorithm how to make predictions (low variance) 
 
 **Characteristics of a high variance model include:**
 
