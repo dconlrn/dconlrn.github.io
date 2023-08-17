@@ -18,6 +18,33 @@ Sometimes applying this system to certain things can be really tricky. Especiall
 It would be nice to have someone who is very knowledgable in specific disciplines break things down using DLS.
 Thankfully for, things in the computer world at least, I got you covered.
 
+
+
+
+## Navigation
+
+---------------------------------------------------------------------
+
+<table rules=none>
+
+
+
+<tr>
+<td> <img src="https://i.imgur.com/GYIQg9q.png"></td>
+<td> <h2><a href="https://dconlrn.github.io/lyw">Linux<br>You’re Welcome</a></h2><br>A Very Simple Linux Guide And Reference (In The Works)</td>
+</tr>
+<tr>
+<td> <img src="https://i.imgur.com/R596dvB.png"></td>
+<td> <h2><a href="https://joshjetson.github.io/pfapi">Azure PlayFab API Diagram</a></h2><br>A simple diagram to help understand Azure PlayFab API</td>
+ </tr>
+ <tr>
+<td> <img src="https://i.imgur.com/CfWaqUg.png"></td>
+<td> <h2><a href="https://dconlrn.github.io/mlyw">Machine Learning<br>You’re Welcome</a></h2><br>A Machine Learning Guide And Reference (In The Works)</td>
+</tr>
+
+
+</table>
+
 ------------------------------------------------
 
 ## The System
