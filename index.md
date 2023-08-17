@@ -29,69 +29,38 @@ Lets call this process "**Core Identification.**"
 
 
 
-Lets apply the system to learning about a couple things to give you two examples of how you can use the system on something.
 
-- A car
-- The Python Programming Language
 
 
 **1. Define The Basics:**
 
-*A car*
-
-- A body
-- Doors
-- Wheels
-- Something that makes the car go (an engine)
-- Something that makes the car stop
-- A steering wheel
-- Electronic components
-- Something that makes the steering wheel work and, for arguments sake we will pretend, we have no clue how.
-
-
-
-*Python*
-
-This is going to be the same for any programming language.
-
-
-
-
+> Take whatever it is you are trying to learn and write out all of the basic essential things that define it or make it work.
 
 
 **2. Simplify**
 
-
-Core Identification:
-
-
-Ex.
-
-- A car:
-> A car is really just a kind of vehicle with four wheels on a frame and a motor
-
+> Take a closer examination of the basics in an attempt to try and find the core most important concept, object, item, building block, thing which can be argued as the cornerstone without which everything else will crumble or not work properly.item
 
 **3. Unravel The Simplification**
 
-Ask some questions about the different parts of whatever has been simplified in an effort to identify the cornerstone.
-
-- A car: 
-> - Is a car still a car without a motor ?
-> Answer: Kind of, you might be able to get somewhere by someone pushing you or maybe having a hill.
-> - Is a car still a car without wheels on a frame ?
-> Answer: No, it's not a car without at least a certain amount of wheels on a frame.
-
-
-- A thing that takes you from point A to point B
-
-
+> Sometimes once you have identfied what the core or cornerstone is, there may be many moving parts so just simplify again if need be.
 
 **4. Examine The Simplification**
 
+> Study the core learn the core understand it very well. Read about it in detail to a point you feel comfortable teaching someone else about it.
+
+
+**5. Advance**
+
+> After you understand the core or cornerstone really well and can teach it, start to choose a slightly more advanced or extra feature of whatever it is your trying to learn. Run the new feature through the system untill you get through all of the original basics that your wrote down. Then do the same thing with more advanced topics that would be considered outside of the realm of basic.
 
 
 
+**Final Thoughts**
+
+> You might not be able to visualise the system in your head right now or fully understand how it works because in order to do so it needs to be applied to something so that it becomes clear. I make an attempt at applying this system to different topics in the realm of computer science which you can checkout by clicking on the links in the navigation section.
 
 
+*I wish you the greatest of luck in your pursuit of knowledge and understanding. May your best of fate be your worst of luck! Sincerely -Josh*
 
 
