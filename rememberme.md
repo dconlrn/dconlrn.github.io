@@ -83,5 +83,57 @@ The contract will have the following traits:
 It's is very important to me that people and or families own their sensitive personal data.
 It is important to me that this data can not be stolen or accessed by anyone other than those by whom the data belongs to.
 I have an understanding of how this can be achieved and I want to make this a very large immutable focal point for this project as I consider it paramount. 
+Someone will accomplish something similar or identical to this project, it is going to happen. I highly doubt that they are going to care as much about the security of your sensitive data as I do.
 
 
+## Concerns
+
+> This project and concept is very controversial, largely due to the lack of understanding of how AI models work. I want to highlight some concerns and give my thoughts on them in an effort to direct peoples minds away from misconseptions regarding AI and shed some light on some ideas they may have never considered. 
+
+**Preface**
+
+Consider a photograph now a days. Not a picture on your phone but just a simple printed photograph.
+If you took a photograph of a person with you as you traveled back in time 700 years ago and then showed a random adult the photograph they might think all kind's of wild thing's such as:
+
+- What an incredible painting !
+- Oh my that poor soul is trapped in this piece of paper etc..
+
+Both of these thoughts are very far from the truth of the matter as to what the photograph actually is.
+If you conducted the same experiment but this time instead of a photograph you used actual live video played from a modern device the results of what someone would think would be even more wild.
+
+> What does of photograph and a video of someone have in common ?
+
+- They are both visual encapsulations of a moment in time. One, that is dynamic with motion and perhaps audio , the other static containing purely visual aspects. 
+
+**Something to consider**
+
+An AI model which has been modeled after a real live person has more in common with a digital video than it does with an actual living breathing person.
+It is pure entertainment and in fact a new form of it and nothing else.
+People 700 years ago could easily be fooled by a picture into thinking the person that was in the photo is actually alive and trapped inside of it. This is a similar mindset that some people fall into when considering AI. 
+
+AI is becoming really good at tricking people into making them believe it is just like them and alive somewhere with feelings and thoughts of it's own. In reality it is just a set of instructions that can get good at finding and presenting similar items.
+For anyone who has any kind of idea about anything, your perception on something should be based on what you know about it and not what you don't. This presents a problem because often what happens now a days is that people hear things through social media and think they know something. We are bombarded with headlines which are engineered in a very calculated manner to get you to click on something and often times what you click on will form your mind around what something is. 
+I can not give you an in depth lesson on what AI is and how it works exactly but what I can say is this.
+
+AI is:
+
+- A bunch of math or computer instructions built to average or group things in order to find similarites between data points.
+- Entertainment with utility like your smart phone
+
+RememberMeAI is:
+
+- An abstraction.
+- Entertainment
+- Not Real
+- Fun
+- Sad
+- Nostalgic
+- Like taking a picture of someone when they are 25 and then another when the person is 60 . The photos may look dramatically different. This is a similar idea to an AI model which has been modeled around a person. The model is a representation or an encapsulation of the person at that moment in time but it is not the actual person and honestly will pale in comparrison.
+
+
+RememberMEAI is not:
+
+- The actual person it was modeled after.
+- Gonna call you at 1am because it has a problem and needs your advice.
+- Ever going to be hungry and need food.
+- Ever truly going to replace anyone.
