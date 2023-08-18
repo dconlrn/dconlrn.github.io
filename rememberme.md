@@ -1,5 +1,25 @@
 # RememberMe
 
+
+<table rules=none>
+
+
+
+<tr>
+<td> <img src="https://i.imgur.com/W0ZGUKU.jpeg"></td>
+<td> <h2><a href="https://joshjetson.github.io/rememberme">RememberMe</a></h2><br>An AI modeled after a loved one that you can interact with (Prelim Stages)</td>
+</tr>
+
+
+
+
+</table>
+
+
+
+
+------------------------------------
+
 ## What is RememberMe ?
 
 RememberMe is a paid participatory service in which friends and family members of a chosen subject assist in a process and effort to create an AI model which can think and answer prompts in a very similar fashion to the chosen subject in their own voice or in a voice that sounds nearly identical to the subjects.  
