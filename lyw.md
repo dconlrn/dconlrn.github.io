@@ -636,6 +636,30 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub username@192.168.5.38
 
 **Apache**
 
+
+#### Apache SSL Certificate using Certbot on Arch Linux
+
+```bash
+
+sudo pacman -S certbot
+sudo pacman -S letsencrypt
+sudo pacman -S certbot-apache
+sudo certbot install --cert-name mywebsite.net
+sudo certbot install --cert-name 23.113.172.68
+sudo certbot --apache
+sudo certbot renew
+sudo certbot certificates
+cd /etc/letsencrypt/
+sudo chmod 755 /etc/letsencrypt/live/
+cd live
+sudo chmod -R -v 755 /etc/letsencrypt/live/mywebsite.net/
+mv fullchain.pem old.fullchain
+sudo cat /etc/letsencrypt/live/mywebsite.net/fullchain.pem > fullchain.pem
+mv privkey.pem old.privkey
+sudo cat /etc/letsencrypt/live/mywebsite.net/privkey.pem > privkey.pem
+rm cert.pem old.fullchain old.privkey
+
+```
 **Nginx**
 
 #### Cool useful commands
