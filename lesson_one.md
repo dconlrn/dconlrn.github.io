@@ -63,9 +63,11 @@ print(students)
 print(grades)
 
 ```
+
 - The input function
 
 ```python
+
 # Tying all the concepts in lesson 1 together
 
 
@@ -87,12 +89,17 @@ else:
 - Data Types
 
 > - Strings
+
 ```python
 
 # This is a string
+
 word = 'Hello'
+
 # This is also a string
+
 word = "Hello"
+
 # You choose single or double quotes
 
 ```
@@ -105,6 +112,7 @@ word = "Hello"
 > - else
 
 ```python
+
 this = 500
 that = 'Nice number bro!'
 other_thing = ' Not as cool as 500 bro'
@@ -157,6 +165,5 @@ False
 
 4 != 55
 False
-
 
 ```
