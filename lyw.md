@@ -296,6 +296,119 @@ The entire graphical user interface or command line interface can be completely 
 > - If I want I could also invite others to work on a project and just create a seperate user accounts for them on my server.
 
 
+## The Linux file structure
+
+<a id="linux-file-structure"></a>
+
+
+
+**bin: Binaries Folder**
+
+- Most basic binaries or "programs" live here. cat, ls, chown, cp, ssh, telnet, etc....
+
+**sbin: System Binaries Folder**
+
+- Files a system admin would use. Standard users would have no access. 
+
+> Both of these folders contain the files that need to be accessible in single user mode as opposed to multi-user mode.
+> > Single user mode
+> > - A special mode which boots you in as a root user to do system repairs, upgrades or testing. 
+> > - Programs are not typically installed in these directories unless they are system programs.
+
+**boot: Boot Folder**
+
+- Contains all of the files required for the system to boot including the boot loader itself.
+
+**dev: Devices Folder**
+
+- Files which describe your hardware to the os and the hardware locations. ex. sda <-disk sda1 <-partition
+> Typically a folder that applications and drivers will access. Atypical for users to be modifying things in this folder.
+
+**etc: Etc.. Folder**
+
+- Configurations for system wide applications reside here. Ex. Package manager configs, repository lists,
+- etc..
+
+**lib\lib32\lib64: Library Folders**
+
+- Libraries are files that applications can use to perform various functions.
+> These files are required by the binaries in bin and sbin.
+
+**media: Media Folder**
+
+- Typically contains automatically mounted media like external devices such as thumb drives.
+> Best left to the OS to manage.
+
+**mnt: Mount Folder**
+
+- Typically reserved for manually mounted drives. Ex. Network drives etc..
+
+**opt: Optional Folder**
+
+- Usually where manually installed software from vendors resides. Sublime-Text, google-chrome etc..
+> If a gpg key is added to the package managers list of trusted sources in order to install a specific third party
+> application. The package manager will likely then install the application in the Optional Directory.
+> It is possible that some software packages found in the normal repository can find themselves installed in this directory.
+
+**proc: Process Folder**
+
+- A directory for pseudo files that contain information on system processes and resources.
+> every process will have its own directory in this folder which contains information on that process.
+> You can get a pid and navigate to its corresponding folder located within the proc folder.
+> You can also find information on the cpu. Ex. cat /proc/cpuinfo or cat /proc/uptime.
+
+**root: Root Folder**
+
+- Root users home directory.
+
+**run: Run Folder**
+
+- Everything in this folder is gone when the system reboots or shuts down. Its used for processes that start
+> early in the boot procedure to store runtime information that they use to function.
+
+**srv: Service Folder**
+
+- Service data is stored here. If you are running any kind of server, ftp, apache, sql, ssh.
+> you would store files that will be accessed by external users here. This allows for better security and ease of mounting.
+
+**sys: System Folder**
+
+- Similar to the run directory and is not physically written to the disk. It is created every time the system
+> boots up.
+
+**tmp: Temporary Folder**
+
+- Where files are temporarily stored by applications that can be used during a session. Many programs
+> Use this directory in order to create temporary save files just in case a program gets interrupted and you want to recover
+> what you were working on. The program will look here to find those temporary saves.
+
+**usr: User Application Space**
+
+- Where applications will be installed that are used by the user as opposed to the bin directories
+> used by the system and sys admin. Also known as the Unix System Resource folder. Any application installed here would be
+> considered non-essential for basic system operation. Installed applications will reside in several locations here.
+> usr/sbin, usr/bin, usr/local <-Installed from source code, usr/share <-larger applications are installed here.
+> Any installed source code will find it self in usr/src.
+
+**var: Variable Folder**
+
+- Contains files and directories that are expected to grow in size. var/log contains log files for
+> both the system and many different applications which will constantly grow. Temp storage for printer queues `-> var/spool`
+
+**home: Home Folder**
+
+- Contains folders and setting specific to each user. Hidden files which deal with different programs
+> configurations can be found often in .config. There are many hidden files that all start with a .<--
+> Alternatively this folder can be installed and mounted from an external drive source in order to keep all settings
+> away from other users or away from the operating system outside of the time you want to use it. 
+
+**THE INITRAMFS{What is it?}:**
+
+> An initramfs is a filesystem that is embedded into the kernel and loaded at boot time. It is used to mount the real root filesystem and to provide early userspace with the necessary drivers and tools to boot the system. The initramfs is usually generated by the kernel build system and contains all the necessary files and drivers to boot the system. However, it can also be generated by the user and loaded into the kernel manually. Initramfs is an important part of the Linux boot process and is essential for systems that require special boot configurations or that need to load additional drivers or modules at boot time.
+
+
+
+
 
 ## What is a shell ?
 A shell is a Linux command line interpreter. What the hell does that mean ?
@@ -511,6 +624,16 @@ exporting stuff
 ## User related
 
 ## Git related
+
+Need to push to multiple repositories from your machine using different ssh keys
+
+```sh
+
+GIT_SSH_COMMAND='ssh -i ~/.ssh/dconlrn' git push origin main
+
+```
+
+
 
 Show if your local repository is up to date ahead or behind a remote repo.
 
