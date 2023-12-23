@@ -1,8 +1,17 @@
-# Data Structures w/Python
+<table rules=none align="center">
+ <tr>
+<td> <img src="https://i.imgur.com/WEdpB9F.jpeg"></td>
+<td> <h2><a href="https://joshjetson.github.io">Data
+Structures<br>w/Python</a></h2><br>An Educational Reference for Data Stuctures
+in Python</td>
+</tr>
+</table>
+
 
 
 
 ## Hash Maps
+
 
 
 ```python
