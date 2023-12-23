@@ -2,16 +2,32 @@
  <tr>
 <td> <img src="https://i.imgur.com/WEdpB9F.jpeg"></td>
 <td> <h2><a href="https://joshjetson.github.io">Data
-Structures<br>w/Python</a></h2><br>An Educational Reference for Data Stuctures
+Structures<br>w/Python</a></h2><br>An Educational Reference for Data Structures
 in Python</td>
 </tr>
 </table>
 
 
+<p align="center">
+
+There are a couple algorithms included in this reference just because many
+times you need some type of algorithm to help search through a data structure in
+an efficient way. Also when you code a data structure many times you write some
+type of search algorithm into the data structure itself as like an object
+property.
+
+</p>
+----------------------------
 
 
 ## Hash Maps
 
+> Hash Maps or (Hash Tables) as some call them are all about the hashing
+function.
+> The hashing function is the algorithm used to generate a hash value for the
+element we are trying to store.
+> Think of a Hash like a lock.
+> Well if a Hash is the lock what is the key ?
 
 
 ```python
@@ -77,11 +93,11 @@ class HashTable:
 
 
 
+## Breadth First Search (BFS) Algorithm
 
 ```python
 
 
-#THIS IS SIMPLY A PRACTICE FILE FOR MESSING AROUD WITH BFS
 graph = {'5':['3', '7'],
         '3':['2', '4'],
         '7':['8'],
