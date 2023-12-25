@@ -28,18 +28,181 @@ function.
 element we are trying to store.
 > Think of a Hash like a lock.
 > Well if a Hash is the lock what is the key ?
+> The key is the element we use to generate the hash.
+>
+> This is a pretty interesting concept. Let's explore it a little bit more.
+>
+> Concept Exploration:
+>
+> Lets start with an element for our key.
+> - We create the element, doesn't matter what it is but just pick a name or
+number or whatever.
+>
+> For this example lets use the word secret for our key.
+> We are going to create a hash value from the word secret using each letter in
+the word.
+> We take each letter and then find its
+[unicode](https://unicode.org/standard/WhatIsUnicode.html) equivalent value.
+>
+> Lets use the python ord function and a simple for loop to help us. 
+> Here are the unicode values for the letters in the word secret
+
+```python
+
+for unicode in 'secret':
+    print(f'{unicode} = {ord(unicode)}')
+
+s = 115
+e = 101
+c = 99
+r = 114
+e = 101
+t = 116
+
+
+```
+
+> COOL !
+>
+> Alright now that we have all that let's create our hash value.
+>
+> - Add up all of the numerical values.
+
+```python
+
+sum([115, 101, 99, 114, 101, 116])
+
+646
+
+```
+
+*Note: I am teaching you one of many ways to do this simply because this is
+simple and hopefully by the end of it you will understand the concept behind it
+all. So just hold on to your questions till the end and hopefully it will all
+make sense.*
+
+
+> Now I am going to do something that will not immediately make sense.
+>
+> Lets take the number we got 646 and divide it by 100 and then use the
+remainder of that calculation for our hash value.
+> In python we can do the following.
+
+```python
+
+646 % 100
+
+46
+
+```
+
+> Alright .....
+> So now what ?
+
+
+>
+> In python Lets create a list with 100 lightweight things in it
+>
+> Chill out you will understand why later.
+>
+
+```python
+
+hash_table = [None for _ in range(100)]
+
+```
+
+> Now lets start using our hash table, (hash map) whatever..
+>
+> Lets take some quick inventory.
+> - We have this list/array with 100 lightweight useless things in it
+> - We have this number 46 that we got after a process.
+> - We know that lists/arrays have indices for each element stored in them.
+>
+> Now lets use this understanding to store something in the list using our hash
+value as the index for the list.
+>
+> At this point you might be thinking, ahhhhhh *kind of*.. 
+> If not stick around.
+
+```python
+
+hash_table[46] = 'My not so secret thing'
+
+```
+
+> Ok, Now that we got all that jazz out of the way.
+> We can start to understand how a hash map works.
+>
+> Recap:
+> - We started with the word "secret"
+> - From secret we got the number 646
+> - and so on ...
+>
+> Ok, Now we need the word secret again to use in collaboration with our
+hash_table.
+
+> Because, a hash map is really about having a thing that lets you store
+elements associated by a key and not an index.
+> This is called a key, value pair.
+> A key you can call whatever you want and use it in ways that are more
+versatile and practical then an index.
+
+*The Clever Part*
+
+> Concept Explained:
+> - In order to know the index of where your element is stored in the hash_table
+list. We need to know the key. Right now we think, no. We just need the number
+46 and we already know that number, but if you think that your missing the
+point.
+> The whole point is to make use of these key value pair things because later
+on as we program more it gets really annoying to just be using indices all the
+time.
+> We often times need to associate two things together and a list will just not cut
+it.
+> Also by understanding hash maps we can create things like blockchains which
+use cryptographic hash functions to secure elements stored on the chain.
+> So like really complicated hash values are going to be needed to access
+something on the chain. Not simple hash values like 46
+> Alright man look...
 
 
 ```python
 
-#Simple hash map that does not factor in collision
+get_hash = lambda key: sum([ord(char) for char in key]) % 100
+
+
+```
+
+> We take our word "secret" which we are using as our key and we chuck it in
+the above function.
+
+
+```python
+
+get_hash('secret')
+
+
+```
+
+> And now we can get our thing.
+> Wait ...
+> We can't get our thing because our thing is in the hash_table list. Alright
+then how do we get our thing ?
+>
+> Finally, lets write a real basic hash map using the above concepts to really
+drive the point and utility home.
+
+```python
+
+# Simple hash map that does not factor in collision
+# We will learn what collision is later, you may have already considered it.
 
 
 class HashTable:
 	def __init__(self):
-		self.MAX = 100
-		self.arr = [None for x in range(self.MAX)]
-	get_hash = lambda self, key: sum([ord(char) for char in key]) % self.MAX
+		self.arr = [None for _ in range(100)]
+	get_hash = lambda self, key: sum([ord(char) for char in key]) % 100
 
 	def __setitem__(self, key, val):
 		h = self.get_hash(key)
@@ -53,12 +216,19 @@ class HashTable:
 		h = self.get_hash(key)
 		self.arr[h] = None
 
-# A hashmap that does factor in collision
+```
+
+
+
+
+```python
+
+# A hash map that does factor in collision
 
 class HashTable:
 	def __init__(self):
 		self.MAX = 100
-		self.arr = [[] for x in range(self.MAX)]
+		self.arr = [[] for _ in range(self.MAX)]
 	get_hash = lambda self, key: sum([ord(char) for char in key]) % self.MAX
 
 	def __setitem__(self, key, val):
