@@ -70,14 +70,14 @@ my_hash['secret'] = 'My not so secret thing'
 > - We create the element, doesn't matter what it is but just pick a name or
 number or whatever.
 >
-> For this example lets use the word secret for our key.
-> We are going to create a hash value from the word secret using each letter in
+> For this example lets use the word "secret" for our key.
+> We are going to create a hash value from the word "secret" using each letter in
 the word.
 > We take each letter and then find its
 [unicode](https://unicode.org/standard/WhatIsUnicode.html) equivalent value.
 >
 > Lets use the python ord function and a simple for loop to help us. 
-> Here are the unicode values for the letters in the word secret
+> Here are the unicode values for the letters in the word "secret"
 
 ```python
 
