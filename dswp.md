@@ -199,7 +199,7 @@ hash_table[46] = 'My not so secret thing'
 > Recap:
 > - We started with the word "secret"
 > - From secret we got the number 646
-> - and so on ...
+> - We divided 646 by 100 and used the remainder as our hash value.
 >
 > Ok, Now we need the word secret again to use in collaboration with our
 hash_table.
