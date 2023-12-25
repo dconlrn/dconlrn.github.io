@@ -110,6 +110,36 @@ remainder of that calculation for our hash value.
 
 hash_table = [None for _ in range(100)]
 
+print(hash_table)
+
+[
+None,
+None,
+None,
+None,
+None,
+None,
+None,
+None,
+None,
+None,
+...
+]
+# A bunch of None's
+# We need these None things to be created just so there is something
+# at each index of this list 0 - 99 so later on we can set the thing
+# equal to something else more useful
+# 
+# If we tried to do something like this:
+
+hash_table[4] = 'Josh'
+
+# And there was nothing at index 4 or there was nothing in the list
+# we would get an IndexError because the index does not exist
+# So we need to create a list with just a bunch of something in it
+# that way when we finally do set something at a certain index equal to
+# something else, we don't get an IndexError
+
 ```
 
 > Now lets start using our hash table, (hash map) whatever..
@@ -191,7 +221,10 @@ get_hash('secret')
 then how do we get our thing ?
 >
 > Finally, lets write a real basic hash map using the above concepts to really
-drive the point and utility home.
+drive the point and utility  of a hash map home.
+
+
+- Lets create a class to handle our hash map.
 
 ```python
 
@@ -202,34 +235,106 @@ drive the point and utility home.
 class HashTable:
 	def __init__(self):
 		self.arr = [None for _ in range(100)]
+        # Our hash function or hash algorithm
 	get_hash = lambda self, key: sum([ord(char) for char in key]) % 100
 
+        # When we want to set or create a new element to be stored
 	def __setitem__(self, key, val):
 		h = self.get_hash(key)
 		self.arr[h] = val
 
+        # When we want to get an element stored in our hash map
 	def __getitem__(self, key):
 		h = self.get_hash(key)
 		return self.arr[h]
 
+        # When we want to delete an element in our hash map
 	def __del__(self, key):
 		h = self.get_hash(key)
 		self.arr[h] = None
 
 ```
 
+- A list is created upon this object being instantiated.
 
+```python 
+
+# This is how we would create an instance of the above object.
+my_hashmap = HashTable() 
+
+
+```
+
+- When we want to add a new item to our hash map:
+> NOTE:
+> This is only possible because we have implemented the dunder set item method
+
+```python
+
+my_hashmap['secret'] = 'My not so secret thing'
+
+
+```
+
+> When we create the above key value pair in our hash map lets check out what
+is going on under the hood.
 
 
 ```python
 
-# A hash map that does factor in collision
+class HashTable:
+	def __init__(self):
+		self.arr = [None for _ in range(100)]
+	get_hash = lambda self, key: sum([ord(char) for char in key]) % 100
+
+	def __setitem__(self, key, val):
+		h = self.get_hash(key)
+		self.arr[h] = val
+
+
+# When we do this
+my_hashmap['secret'] = 'My not so secret thing'
+
+# This function gets called and the code block inside the function is executed.
+def __setitem__(self, key, val):
+        # This gets the hash by using the key, "secret",
+        # which ends up being used as the index of 
+        # where to place the value, "My not so secret thing",
+        # in the list.
+        h = self.get_hash(key)
+        # h is equal to 46 in this example
+        # So we know that the element is being placed
+        # as the lists 46th element. 
+        self.arr[h] = val
+
+```
+
+> Imagine if we used a key like '%##@s#i'
+> In order to get the value we would have to know the key.
+> If you stop and use your imagination you could dream up all kinds of stuff
+that you could use this concept for.
+>
+>
+
+*We have a caveat though.*
+
+> Suppose we start using the above hash map regularly.
+> Eventually what is going to happen is we will run into a situation
+> where one of our keys is going to give us the value of 46
+> this is called "collision"
+>
+> A hash map that factors in collision is a little more sophisticated.
+> Let's take a look at one I coded up.
+
+
+```python
+
+# A hash map that factors for collision
 
 class HashTable:
 	def __init__(self):
-		self.MAX = 100
-		self.arr = [[] for _ in range(self.MAX)]
-	get_hash = lambda self, key: sum([ord(char) for char in key]) % self.MAX
+		self.arr = [[] for _ in range(100)]
+	get_hash = lambda self, key: sum([ord(char) for char in key]) % 100
 
 	def __setitem__(self, key, val):
 		h = self.get_hash(key)
