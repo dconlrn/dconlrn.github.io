@@ -29,6 +29,38 @@ element we are trying to store.
 > Think of a Hash like a lock.
 > Well if a Hash is the lock what is the key ?
 > The key is the element we use to generate the hash.
+> The thing stored in the hash map is the thing you get back after
+> the right key is given which generates the correct hash
+
+
+> Example:
+
+```sh
+# In this example our key is the word secret
+
+my_hash['secret'] = 'My not so secret thing'
+
+
+# Key gets sent to the hash algorithm
+
+
+['secret'] --> (hash algorithm)
+
+# Hash algorithm somehow gives us back a number based on the key it gets
+46
+
+# Hash map stores our value 'My not so secret thing' in a list at the 46th position
+
+[1]
+[2]
+[3]
+[4]
+...
+[46] 'My not so secret thing'
+
+
+```
+
 >
 > This is a pretty interesting concept. Let's explore it a little bit more.
 >
