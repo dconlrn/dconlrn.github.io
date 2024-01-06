@@ -27,7 +27,7 @@
 
 ## Resources
 
-> I would first like to provide a list of alternaive solutions for deploying a Django application.
+> I would first like to provide a list of alternative solutions for deploying a Django application.
 
 
 > [Django Friendly](https://djangofriendly.com/index.html)
@@ -77,10 +77,18 @@
 - Domain name purchasing
 > - Namecheap
 > - Google (Now Squarespace)
+> - Ionos
+> - Any other cheap solution
 - Associating the application with the domain name
 > - [Heroku](https://docs.opalstack.com/user-guide/domains/)
+> Generally:
+> - Navigate to your DNS provider
+> - Add a new DNS record in your DNS Configuration or Settings
+> - The record should be type A and the ip should be the ip of the server where Django is deployed
+> - The name could be blank
+
+> Why ?
 - ease of use
-- limitations
 - performance
 - accessibility
 - scalability
@@ -131,7 +139,9 @@
 - How to SSH into a remote server and how to use SSH
 - How to use Git
 
-**START**
+**Version Control**
+
+(*and accessibility*)
 
 -------------------------
 
@@ -177,10 +187,165 @@ Initialized empty Git repository in /home/josh/git/myproject.git/
 
 ```
 
-- `/home/josh/git/myproject.git/` = Default Example git
+- `/home/josh/git/myproject.git/` = Default Example Local Git Repo
+
+- `$ cd`
+- `$ git clone /home/josh/git/myproject.git`
+
+> You will see this
+
+```sh
+
+Cloning into 'myproject'...
+warning: You appear to have cloned an empty repository.
+done.
 
 
+```
 
+- `$ cd myproject`
+- `$ touch requirements.txt .gitignore`
+> In the requirements.txt file copy the following in it.
+
+```sh
+django
+psycopg
+gunicorn
+supervisor
+whitenoise
+validate-email
+six
+django-environ
+django-cors-headers
+
+
+```
+> In the .gitignore copy the following
+
+
+```sh
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+# C extensions
+*.so
+staticfiles/
+# Distribution / packaging
+.Python
+.dns
+.creds.json
+creds.json
+build/
+/venv
+venv
+venv/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+creds.json
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+# PyBuilder
+target/
+.pdm.toml
+
+__pypackages__/
+# pyenv
+.python-version
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+
+```
 
 - **Route B** (Remote Public Git)
 
