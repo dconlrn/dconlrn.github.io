@@ -1,44 +1,36 @@
 ## SCRIPT INTERACTION FLOW CHART
 
-<pre><code class="language-mermaid">graph LR
-  A--&gt;B
-  </code>
-</pre>
-
-<div class="mermaid">graph LR
-    A--&gt;B
-</div>
-    
+ 
 
 ```mermaid
 
-  graph LR;
-      A-->B;
-      A-->C;
-      B-->D;
-      C-->D;
+graph LR;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 
 ```
 
 ```mermaid
 
-  flowchart TD
-      A[PareidoliaNet.cs] --> B{PF_PLAYFAB.cs};
-      A --> C[PF_IAP.cs];
-      D[PareidoliaNet_Admin.cs] --> B;
-      subgraph O[LOGIC];
-      B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| J>METHOD CALL:<br>PlayFabAdminAPI.'MethodName'];
-      J -->|GENERAL STRUCTURE<br> OF ARGUMENTS| L((new 'MethodNameRequest'<br>ie. PlayFabId = VAR <br>Response/Result =><br> Error Lambda =>));
-      B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| K>METHOD CALL:<br>PlayFabClientAPI.'MethodName'];
-      K --> |GENERAL STRUCTURE<br> OF ARGUMENTS| L;
-      end;
-      L --> |METHOD CALL| E[PlayFabAdminAPI.cs];
-      L --> |METHOD CALL| F[PlayFabClientAPI.cs];
-      E[PlayFabAdminAPI.cs] -->  G[PlayFabAdminModels.cs];
-      F[PlayFabClientAPI.cs] --> H[PlayFabClientModels.cs];
-      G --> |CALL CONVERTED TO <br> API REQUEST| g[PlayFabHttp.MakeApiCall];
-      H --> |CALL CONVERTED TO <br> API REQUEST| g;
-      C[PF_IAP.cs] --> I[Unity.EnginePurchasing];
+flowchart TD
+    A[PareidoliaNet.cs] --> B{PF_PLAYFAB.cs};
+    A --> C[PF_IAP.cs];
+    D[PareidoliaNet_Admin.cs] --> B;
+    subgraph O[LOGIC];
+    B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| J>METHOD CALL:<br>PlayFabAdminAPI.'MethodName'];
+    J -->|GENERAL STRUCTURE<br> OF ARGUMENTS| L((new 'MethodNameRequest'<br>ie. PlayFabId = VAR <br>Response/Result =><br> Error Lambda =>));
+    B --> |METHOD CALL<br>AND ARGUMENTS<br>IF REQUIRED| K>METHOD CALL:<br>PlayFabClientAPI.'MethodName'];
+    K --> |GENERAL STRUCTURE<br> OF ARGUMENTS| L;
+    end;
+    L --> |METHOD CALL| E[PlayFabAdminAPI.cs];
+    L --> |METHOD CALL| F[PlayFabClientAPI.cs];
+    E[PlayFabAdminAPI.cs] -->  G[PlayFabAdminModels.cs];
+    F[PlayFabClientAPI.cs] --> H[PlayFabClientModels.cs];
+    G --> |CALL CONVERTED TO <br> API REQUEST| g[PlayFabHttp.MakeApiCall];
+    H --> |CALL CONVERTED TO <br> API REQUEST| g;
+    C[PF_IAP.cs] --> I[Unity.EnginePurchasing];
 
 ```
 
@@ -81,16 +73,16 @@
 
 ```cs
 
-                           // THE PlayFabUserRequest ARGUMENT GENERATES A HEADER BASED ON THE PARAMETERS WE PUT IN IT FROM THE FUNCTION CALL IN THE ABOVE CODE BLOCK WHICH WAS IN A DIFFERENT NAMESPACE. IT ALSO AUTOMATICALLY RETURNS THE TITLEID AND AUTHENTICATION CREDENTIALS, PROVIDED PLAYFAB WAS SETUP PROPERLY, THAT WILL MAKE THE API WORK.
+// THE PlayFabUserRequest ARGUMENT GENERATES A HEADER BASED ON THE PARAMETERS WE PUT IN IT FROM THE FUNCTION CALL IN THE ABOVE CODE BLOCK WHICH WAS IN A DIFFERENT NAMESPACE. IT ALSO AUTOMATICALLY RETURNS THE TITLEID AND AUTHENTICATION CREDENTIALS, PROVIDED PLAYFAB WAS SETUP PROPERLY, THAT WILL MAKE THE API WORK.
        
-       //NOTE: The PlayFabUserRequest argument is also a seperate namespace part of the ClientModels namespace in this ex.
+//NOTE: The PlayFabUserRequest argument is also a seperate namespace part of the ClientModels namespace in this ex.
         public static void RegisterPlayFabUser(RegisterPlayFabUserRequest request, Action<RegisterPlayFabUserResult> resultCallback, Action<PlayFabError> errorCallback, object customData = null, Dictionary<string, string> extraHeaders = null)
          {
             var context = (request == null ? null : request.AuthenticationContext) ?? PlayFabSettings.staticPlayer;
             var callSettings = PlayFabSettings.staticSettings;
             request.TitleId = request.TitleId ?? callSettings.TitleId;
 
-           // THIS IS THE PART THAT MAKES THE ACTUAL API REQUEST
+// THIS IS THE PART THAT MAKES THE ACTUAL API REQUEST
  
             PlayFabHttp.MakeApiCall("/Client/RegisterPlayFabUser", request, AuthType.None, resultCallback, errorCallback, customData, extraHeaders, context, callSettings);
         }
