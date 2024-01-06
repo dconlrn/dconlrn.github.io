@@ -66,8 +66,8 @@ my_hash['secret'] = 'My not so secret thing'
 >
 > Concept Exploration:
 >
-> Lets start with an element for our key.
-> - We create the element, doesn't matter what it is but just pick a name or
+> Lets start with a "something" for our key.
+> - We create the "something", doesn't matter what it is but just pick a name or
 number or whatever.
 >
 > For this example lets use the word "secret" for our key.
