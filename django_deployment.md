@@ -7,6 +7,7 @@
 
 
 <a id="nav"></a>
+
 ---------------------------------
 
 ## Navigation
@@ -20,24 +21,23 @@
 
 
 <a id="resources"></a>
+
 ----------------------------------
 
 
 ## Resources
 
-I would first like to provide a list of alternaive solutions for deploying a Django application.
+> I would first like to provide a list of alternaive solutions for deploying a Django application.
 
-*Maybe the best resource available for Django deployment options*
 
-[Django Friendly](https://djangofriendly.com/index.html)
+> [Django Friendly](https://djangofriendly.com/index.html)
+> - *Maybe the best resource available for Django deployment options*
 
-*Another resource that discusses deployment options*
+> [Deploying Django into production](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment)
+> - *Another resource that discusses deployment options*
 
-[Deploying Django into production](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Deployment)
-
-*Django official deployment documentation*
-
-[How to deploy Django](https://docs.djangoproject.com/en/4.2/howto/deployment/)
+> [How to deploy Django](https://docs.djangoproject.com/en/4.2/howto/deployment/)
+> - *Django official deployment documentation*
 
 
 
@@ -87,32 +87,6 @@ I would first like to provide a list of alternaive solutions for deploying a Dja
 - resources (Databases, OS tools, programming libraries and tools)
 
 
-
-------------------------------------
-
-## Pricing and Comparison
-
-
-
-
-| Option | Price | RAM | CPUs | EOS | 
-|:-:|:-:|:---:|:------:|:---:|
-| Heroku | 3 |  4  |   6    |  
-|:-:|:-:|:---:|:------:|:---:|
-| Python Anywhere | 7 | 16  |   28   |  
-|:-:|:-:|:---:|:------:|:---:|
-| Digital Ocean | 5 | 36  |   30   |  
-|:-:|:-:|:---:|:------:|:---:|
-| AWS |10 | 64  |   80   |  
-|:-:|:-:|:---:|:------:|:---:|
-| Railway |25 | 120 |   144  |  Σ  |
-|:-:|:-:|:---:|:------:|:---:|
-| Opalstack |25 | 120 |   144  |  Σ  |
-|:-:|:-:|:---:|:------:|:---:|
-| Linode |25 | 120 |   144  |  Σ  |
-| Google |25 | 120 |   144  |  Σ  |
-
-
 <a id="building"></a>
 
 ## Building the application
@@ -156,6 +130,59 @@ I would first like to provide a list of alternaive solutions for deploying a Dja
 - A brief understanding of Nginx web server side setup and configuration
 - How to SSH into a remote server and how to use SSH
 - How to use Git
+
+**START**
+
+-------------------------
+
+- OPTIONAL (Good Option though)
+> If you do not have a static ip address and do not have dynamic DNS setup
+> Consider Using No-IP to:
+> - Create a free Domain Name ie. mywebsite.ddns.net
+> - Forward requests from your free Domain Name to your home machine using their Free Dynamic DNS
+> [No-IP](https://www.noip.com/remote-access?utm_source=google&utm_medium=cpc&utm_term=no-ip%20com&utm_campaign=brand-us&gclid=Cj0KCQiAkeSsBhDUARIsAK3tiedyZUJJGBCd6qm8gC3FeLFjgsbT0WAhT5QxcFCusa8lhxtn14pmKRwaAoF5EALw_wcB)
+
+- **Route A** (Local Private Git):
+> This route assumes:
+> - Your local machine is accessible via SSH ie. `$ ssh username@mywebsite.ddns.net` or @ your home ip address
+> - You will or already have open up access to port 22 on your router
+
+- Make sure you have openssh installed on your machine
+> If you don't here are some tutorials:
+> - [Arch Linux](https://medium.com/@pythonaugust/enable-ssh-on-arch-linux-8f1ede0d9c88)
+> - [Ubuntu Linux](https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/)
+> - [Mac](https://osxdaily.com/2022/07/08/turn-on-ssh-mac/)
+> - [Windows](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui)
+
+- In a terminal:
+> `$ mkdir ~/A Directory of your choice/yourprojectname.git`
+> `$ cd ~/The directory of your choice/yourprojectname.git`
+> `/yourprojectname.git/ $ git init --bare`
+> You should see this now
+
+```sh
+
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/josh/git/myproject.git/
+
+
+```
+
+- `/home/josh/git/myproject.git/` = Default Example git
+
+
+
+
+- **Route B** (Remote Public Git)
 
 
 - [Back to navigation](#nav)
