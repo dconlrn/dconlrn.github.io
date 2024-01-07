@@ -121,9 +121,7 @@ string
 </tr>
 </tbody>
 </table>
-</div>
 
-**Request Body**
 
 <div class=""><table class="" aria-label="Table 2">
 <tbody>
@@ -274,4 +272,4 @@ string
 <td>
 <p>PlayFab username for the account (3-20 characters)</p>
 </td>
-</tr>		</tbody></table></div>
+</tr>		</tbody></table></div></div>
