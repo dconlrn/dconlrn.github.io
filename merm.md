@@ -98,8 +98,10 @@ graph TD;
 
 ## Request Header
 
-<div class=""><table class="" aria-label="Table 1">
-<tbody><tr>
+<div class="">
+<table class="" aria-label="Table 1">
+<tbody>
+<tr>
   <th class="">Name</th>
   <th class="">Required</th>
   <th class="">Type</th>
@@ -113,10 +115,10 @@ None
   True
 </td>
 <td>
-<td>
 string
 </td>
-<td>	This API requires no authentication headers (usually provides one to other calls).
+<td>
+This API requires no authentication headers (usually provides one to other calls).
 </td>
 </tr>
 </tbody>
