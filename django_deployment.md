@@ -375,6 +375,24 @@ dmypy.json
 
 </details>
 
+*Depending on your Linux distribution or OS*
+
+- `$ python -m venv venv`
+or
+- `$ python3 -m venv venv`
+
+
+- `$ pip install -r requirements.txt`
+or
+- `$ pip3 install -r requirements.txt`
+
+- `$ touch .env`
+
+- `$ django-admin startproject nameofproject`
+- `$ python manage.py startapp appname`
+
+
+
 - **Route B** (Remote Public Git)
 
 
