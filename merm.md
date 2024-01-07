@@ -28,9 +28,6 @@ graph LR;
     A-->|STUFF with a space|C[TESTING];
     B-->D((circle here));
     C-->D;
-    subgraph O[LOGIC];
-    E-->F
-    end;
 
 
 </div> 
@@ -42,12 +39,10 @@ flowchart TD;
     A[PareidoliaNet.cs]-->B{PF_PLAYFAB.cs};
     A-->C[PF_IAP.cs];
     D[MyAdmin.cs]-->B;
-    subgraph O[LOGIC];
     B-->|METHOD CALLAND ARGUMENTS IF REQUIRED|J[METHOD CALL PlayFabAdminAPI.'MethodName'];
     J-->|GENERAL STRUCTURE OF ARGUMENTS|L((new 'MethodNameRequest'ie. PlayFabId VAR Response Result Error Lambda));
     B-->|METHOD CALLAND ARGUMENTSIF REQUIRED|K[METHOD CALL PlayFabClientAPI.'MethodName'];
     K-->|GENERAL STRUCTURE OF ARGUMENTS|L;
-    end;
     L-->|METHOD CALL|E[PlayFabAdminAPI.cs];
     L-->|METHOD CALL|F[PlayFabClientAPI.cs];
     E[PlayFabAdminAPI.cs]-->G[PlayFabAdminModels.cs];
