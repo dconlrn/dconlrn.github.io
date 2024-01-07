@@ -217,7 +217,7 @@ requirements.txt
 </summary>
 
 
-{% highlight bash %}
+{% highlight sh %}
 
 django
 psycopg
@@ -243,7 +243,7 @@ django-cors-headers
 </b>
 </summary>
 
-{% highlight python %}
+{% highlight py %}
 
 
 ### Python ###
