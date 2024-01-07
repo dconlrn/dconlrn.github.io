@@ -1,8 +1,14 @@
+---
+mermaid: true
+---
+
+
+
 ## SCRIPT INTERACTION FLOW CHART
 
- 
 
-```mermaid
+<div class="mermaid"> 
+
 
 graph LR;
     A-->B;
@@ -10,9 +16,11 @@ graph LR;
     B-->D;
     C-->D;
 
-```
 
-```mermaid
+</div> 
+
+<div class="mermaid"> 
+
 
 flowchart TD
     A[PareidoliaNet.cs] --> B{PF_PLAYFAB.cs};
@@ -32,12 +40,14 @@ flowchart TD
     H --> |CALL CONVERTED TO <br> API REQUEST| g;
     C[PF_IAP.cs] --> I[Unity.EnginePurchasing];
 
-```
+</div> 
 
 ## PLAYFAB API NAMESPACE METHOD CALL EXAMPLE
-### THIS IS NOT A REQUEST YET. PLAYFAB CREATES THE REQUEST FOR US AFTER WE CALL A METHOD AND SUPPLY THE PROPER ARGUMENTS
 
- ```cs
+-------------------------------
+
+{% highlight java %}
+
 
      public void REGISTER(string username, string emailAddress, string password)
    {   // ACCESING THE PLAYFABCLIENTAPI NAMESPACE
@@ -65,13 +75,15 @@ flowchart TD
         );
     }
 
- ```
+
+{% endhighlight %}
 
 ## ONCE THIS METHOD IS CALLED ALL OF THIS STUFF GETS SENT TO THE API NAMESPACE METHOD
 
-## BELOW :
+---------------------------
 
-```cs
+
+{% highlight java %}
 
 // THE PlayFabUserRequest ARGUMENT GENERATES A HEADER BASED ON THE PARAMETERS WE PUT IN IT FROM THE FUNCTION CALL IN THE ABOVE CODE BLOCK WHICH WAS IN A DIFFERENT NAMESPACE. IT ALSO AUTOMATICALLY RETURNS THE TITLEID AND AUTHENTICATION CREDENTIALS, PROVIDED PLAYFAB WAS SETUP PROPERLY, THAT WILL MAKE THE API WORK.
        
@@ -87,7 +99,7 @@ flowchart TD
             PlayFabHttp.MakeApiCall("/Client/RegisterPlayFabUser", request, AuthType.None, resultCallback, errorCallback, customData, extraHeaders, context, callSettings);
         }
 
-```
+{% endhighlight %}
 
 
 
@@ -99,12 +111,12 @@ flowchart TD
 
 ## Request Header
 
-<table class="parameters request table" aria-label="Table 1">
+<table class="" aria-label="Table 1">
 <tbody><tr>
-  <th class="has-text-subtle">Name</th>
-  <th class="has-text-subtle">Required</th>
-  <th class="has-text-subtle">Type</th>
-  <th class="has-text-subtle">Description</th>
+  <th class="">Name</th>
+  <th class="">Required</th>
+  <th class="">Type</th>
+  <th class="">Description</th>
 </tr>
 <tr>
 <td>
@@ -123,13 +135,13 @@ string
 
 ## Request Body
 
-<div class="has-inner-focus"><table class="parameters table" aria-label="Table 2">
+<div class=""><table class="" aria-label="Table 2">
 <tbody>
 <tr>
-<th class="has-text-subtle">Name</th>
-<th class="has-text-subtle">Required</th>
-<th class="has-text-subtle">Type</th>
-<th class="has-text-subtle">Description</th>
+<th class="">Name</th>
+<th class="">Required</th>
+<th class="">Type</th>
+<th class="">Description</th>
 </tr>
 <tr>
 <td>
@@ -210,7 +222,7 @@ InfoRequestParameters
 </td>
 <td>
 <p>
-<a href="#getplayercombinedinforequestparams" data-linktype="self-bookmark">Get<wbr>Player<wbr>Combined<wbr>Info<wbr>Request<wbr>Params</a>
+<a href="" data-linktype="">Get<wbr>Player<wbr>Combined<wbr>Info<wbr>Request<wbr>Params</a>
 </p>
 </td>
 <td>
