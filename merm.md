@@ -22,7 +22,7 @@ graph LR;
 <div class="mermaid"> 
 
 
-flowchart TD;
+graph TD;
     A[PareidoliaNet.cs] --> B{PF_PLAYFAB.cs};
     A --> C[PF_IAP.cs];
     D[PareidoliaNet_Admin.cs] --> B;
