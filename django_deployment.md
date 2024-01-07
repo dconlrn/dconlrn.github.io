@@ -223,9 +223,13 @@ django-cors-headers
 > In the .gitignore copy the following
 
 <details>
+
 <summary>
-Here
+<b>
+HERE
+</b>
 </summary>
+
 
 ```sh
 
