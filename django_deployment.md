@@ -232,6 +232,7 @@ django-cors-headers
 
 {% endhighlight  %}
 
+</details>
 
 > In the .gitignore copy the following
 
