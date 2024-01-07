@@ -205,6 +205,8 @@ done.
 
 - `$ cd myproject`
 - `$ touch requirements.txt .gitignore`
+
+
 > In the requirements.txt file copy the following in it.
 
 
