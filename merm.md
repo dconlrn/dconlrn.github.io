@@ -11,8 +11,21 @@ mermaid: true
 
 
 graph LR;
-    A-->B;
+    A[game.cs]-->B{stuff};
     A-->C;
+    B-->D;
+    C-->D;
+
+
+</div> 
+
+
+<div class="mermaid"> 
+
+
+graph LR;
+    A[game.cs]-->B{stuff};
+    A-->|STUFF|-->C;
     B-->D;
     C-->D;
 
@@ -23,22 +36,22 @@ graph LR;
 
 
 graph TD;
-    A[PareidoliaNet.cs] --> B{PF_PLAYFAB.cs};
-    A --> C[PF_IAP.cs];
-    D[PareidoliaNet_Admin.cs] --> B;
+    A[PareidoliaNet.cs]-->B{PF_PLAYFAB.cs};
+    A-->C[PF_IAP.cs];
+    D[PareidoliaNet_Admin.cs]-->B;
     subgraph O[LOGIC];
-    B --> |METHOD CALLAND ARGUMENTS IF REQUIRED| J>METHOD CALL:PlayFabAdminAPI.'MethodName'];
-    J -->|GENERAL STRUCTURE OF ARGUMENTS| L((new 'MethodNameRequest'ie. PlayFabId = VAR Response/Result => Error Lambda =>));
-    B --> |METHOD CALLAND ARGUMENTSIF REQUIRED| K>METHOD CALL:PlayFabClientAPI.'MethodName'];
-    K --> |GENERAL STRUCTURE OF ARGUMENTS| L;
+    B-->|METHOD CALLAND ARGUMENTS IF REQUIRED| J>METHOD CALL:PlayFabAdminAPI.'MethodName'];
+    J-->|GENERAL STRUCTURE OF ARGUMENTS| L((new 'MethodNameRequest'ie. PlayFabId = VAR Response/Result => Error Lambda =>));
+    B-->|METHOD CALLAND ARGUMENTSIF REQUIRED| K>METHOD CALL:PlayFabClientAPI.'MethodName'];
+    K-->|GENERAL STRUCTURE OF ARGUMENTS| L;
     end;
-    L --> |METHOD CALL| E[PlayFabAdminAPI.cs];
-    L --> |METHOD CALL| F[PlayFabClientAPI.cs];
-    E[PlayFabAdminAPI.cs] -->  G[PlayFabAdminModels.cs];
-    F[PlayFabClientAPI.cs] --> H[PlayFabClientModels.cs];
-    G --> |CALL CONVERTED TO  API REQUEST| g[PlayFabHttp.MakeApiCall];
-    H --> |CALL CONVERTED TO  API REQUEST| g;
-    C[PF_IAP.cs] --> I[Unity.EnginePurchasing];
+    L-->|METHOD CALL| E[PlayFabAdminAPI.cs];
+    L-->|METHOD CALL| F[PlayFabClientAPI.cs];
+    E[PlayFabAdminAPI.cs]-->G[PlayFabAdminModels.cs];
+    F[PlayFabClientAPI.cs]-->H[PlayFabClientModels.cs];
+    G-->|CALL CONVERTED TO  API REQUEST| g[PlayFabHttp.MakeApiCall];
+    H-->|CALL CONVERTED TO  API REQUEST| g;
+    C[PF_IAP.cs]-->I[Unity.EnginePurchasing];
 
 </div> 
 
