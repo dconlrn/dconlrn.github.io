@@ -207,7 +207,18 @@ done.
 - `$ touch requirements.txt .gitignore`
 > In the requirements.txt file copy the following in it.
 
-```sh
+
+<details>
+
+<summary>
+<b>
+requirements.txt
+</b>
+</summary>
+
+
+{% highlight bash %}
+
 django
 psycopg
 gunicorn
@@ -219,20 +230,21 @@ django-environ
 django-cors-headers
 
 
-```
+{% endhighlight  %}
+
+
 > In the .gitignore copy the following
 
 <details>
 
 <summary>
 <b>
-HERE
+.gitignore
 </b>
 </summary>
 
-{% highlight ruby %}
+{% highlight python %}
 
-```sh
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -354,7 +366,6 @@ dmypy.json
 .pyre/
 
 
-```
 
 
 {% endhighlight %}
