@@ -230,6 +230,7 @@ HERE
 </b>
 </summary>
 
+{% highlight ruby %}
 
 ```sh
 
@@ -354,6 +355,9 @@ dmypy.json
 
 
 ```
+
+
+{% endhighlight %}
 
 </details>
 
