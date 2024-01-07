@@ -28,6 +28,9 @@ graph LR;
     A-->|STUFF with a space|C[TESTING];
     B-->D((circle here));
     C-->D;
+    subgraph O[LOGIC];
+    E-->F
+    end;
 
 
 </div> 
