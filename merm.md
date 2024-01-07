@@ -11,7 +11,7 @@ mermaid: true
 
 
 graph LR;
-    A[game.cs]-->B{stuff};
+    A[game.cs]-->B{'stuff'};
     A-->|STUFF|C;
     B-->D;
     C-->D;
@@ -26,7 +26,7 @@ graph LR;
 graph LR;
     A[game.cs]-->B{stuff};
     A-->|STUFF|C[TESTING];
-    B-->D;
+    B-->D((circle here));
     C-->D;
 
 
@@ -144,9 +144,11 @@ string
 </td>
 <td>	This API requires no authentication headers (usually provides one to other calls).
 </td>
-</tr>	</tbody></table>
+</tr>
+</tbody>
+</table>
 
-Request Body
+**Request Body**
 
 <div class=""><table class="" aria-label="Table 2">
 <tbody>
