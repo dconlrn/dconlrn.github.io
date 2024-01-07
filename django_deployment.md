@@ -222,6 +222,10 @@ django-cors-headers
 ```
 > In the .gitignore copy the following
 
+<details>
+<summary>
+Here
+</summary>
 
 ```sh
 
@@ -346,6 +350,8 @@ dmypy.json
 
 
 ```
+
+</details>
 
 - **Route B** (Remote Public Git)
 
