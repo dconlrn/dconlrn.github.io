@@ -7,30 +7,6 @@ mermaid: true
 ## SCRIPT INTERACTION FLOW CHART
 
 
-<div class="mermaid"> 
-
-
-graph LR;
-    A[game.cs]-->B{'stuff'};
-    A-->|STUFF|C;
-    B-->D;
-    C-->D;
-
-
-</div> 
-
-
-<div class="mermaid"> 
-
-
-graph LR;
-    A[game.cs]-->B{stuff};
-    A-->|STUFF with a space|C[TESTING];
-    B-->D((circle here));
-    C-->D;
-
-
-</div> 
 
 <div class="mermaid"> 
 
@@ -122,7 +98,7 @@ graph TD;
 
 ## Request Header
 
-<table class="" aria-label="Table 1">
+<div class=""><table class="" aria-label="Table 1">
 <tbody><tr>
   <th class="">Name</th>
   <th class="">Required</th>
@@ -145,6 +121,7 @@ string
 </tr>
 </tbody>
 </table>
+</div>
 
 **Request Body**
 
