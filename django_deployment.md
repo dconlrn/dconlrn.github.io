@@ -18,6 +18,56 @@
 - [Building a Django Application](#building)
 - [Deploying a Django Application w/Google Cloud](#google)
 
+## Pre-Breakdown
+
+--------------------------------------
+
+> This breakdown is meant to just prime your brain on certain concepts you might not already be familiar with and to give you a quick broken down understanding of Django in general.
+> The content in this section is going to be redundant but this is by design.
+
+
+**House Keeping (Things you need to start)**
+
+*$ <-- This dollar sign represents a terminal line. Its the symbol for a bash shell, whatever that is.*
+
+- **You need python installed in your system**
+- **You need the python, "pip", package manager installed in your system**
+> **For both python and pip:**
+> - [MacOS](https://brew.sh/) <- Install homebrew for MacOS first
+> - Install python, Then in a terminal type: `$ brew install python@3.9`
+> - Then in the terminal type `$ brew unlink python && brew link python`
+> - **Linux Ubuntu**: `$ sudo apt-get install python3` 
+> - **All other Linux Distros:** Install python and pip with your package managers in your terminal
+- **You may need to `$ sudo apt-get install python3-venv`**
+
+**Installing Django**
+
+- **(For security reasons) You need to get a virtual environment going**
+> Make a directory and call it whatever you want to name your project
+> - `$ mkdir myproject`
+> - `$ cd myproject`
+> - `$ cd python3 -m venv venv`
+> - `$ source venv/bin/activate`
+> - `$ pip3 install django`
+- **Now Run `$ django-admin startproject nameofproject`**
+
+**Django file and project structure**
+
+*After you successfully install Django in your virtual environment a bunch of files and folders will be created.*
+
+
+```bash
+
+├── myprojectname <----[FOLDER / PROJECT NAME]
+│   ├── __init__.py  ──│
+│   ├── asgi.py        │
+│   ├── settings.py    │ FILES
+│   ├── urls.py        │
+│   └── wsgi.py      ──│
+
+```
+
+
 
 
 <a id="resources"></a>
