@@ -108,8 +108,6 @@
 
 > To get out of all this default stuff.
 - We need to make a new sub application.
-- We also need to make some new files and directories.
-- We then will have to modify our settings.py file to tell it where all of our new stuff is located.
 
 <a id="resources"></a>
 
