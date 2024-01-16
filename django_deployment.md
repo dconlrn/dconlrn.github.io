@@ -56,14 +56,28 @@
 *After you successfully install Django in your virtual environment a bunch of files and folders will be created.*
 
 
-```bash
 
-├── myprojectname <----[FOLDER / PROJECT NAME]
+
+```bash
+p
+r
+o
+j
+e
+c
+t
+├──manage.py
+│
+├── projectname <----[FOLDER / PROJECT NAME]
 │   ├── __init__.py  ──│
 │   ├── asgi.py        │
 │   ├── settings.py    │ FILES
 │   ├── urls.py        │
 │   └── wsgi.py      ──│
+n
+a
+m
+e
 
 ```
 
@@ -110,6 +124,16 @@
 - We need to make a new sub application.
 - We also need to make some new files and directories.
 - We then will have to modify our settings.py file to tell it where all of our new stuff is located.
+
+
+
+
+> Ultimately the file and folder structure is going to look very similar to the below image.
+> After we make some new files and folder that are necessary
+
+
+<img src="https://imgur.com/hzOMBjw.png">
+
 
 <a id="resources"></a>
 
