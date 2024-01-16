@@ -33,6 +33,16 @@ Thankfully for, things in the computer world at least, I got you covered.
 <td> <img src="https://i.imgur.com/GYIQg9q.png"></td>
 <td> <h2><a href="https://dconlrn.github.io/lyw">Linux<br>You’re Welcome</a></h2><br>A Very Simple Linux Guide And Reference (In The Works)</td>
 </tr>
+ <tr>
+<td> <img src="https://i.imgur.com/WEdpB9F.jpeg"></td>
+<td> <h2><a href="https://dconlrn.github.io/dswp">Data
+Structures<br>w/Python</a></h2><br>An Educational Reference for Data Structures
+in Python</td>
+</tr>
+ <tr>
+<td> <img src="https://i.imgur.com/vQrcNy3.jpeg"></td>
+<td> <h2><a href="https://dconlrn.github.io/django_deployment">Django:<br>From Start<br>to Deployment</a></h2><br>A tutorial on how to take a Django application from a test environment to a production environment</td>
+</tr>
 <tr>
 <td> <img src="https://i.imgur.com/R596dvB.png"></td>
 <td> <h2><a href="https://joshjetson.github.io/pfapi">Azure PlayFab API Diagram</a></h2><br>A simple diagram to help understand Azure PlayFab API</td>
