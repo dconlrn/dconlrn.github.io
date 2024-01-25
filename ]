@@ -633,14 +633,6 @@ sudo useradd -m newusername
 
 ```
 
-Create a new password for the new user after the new user is created.
-
-```sh
-
-sudo passwd newusername
-
-```
-
 ## Git related
 
 Need to push to multiple repositories from your machine using different ssh keys
