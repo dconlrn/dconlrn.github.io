@@ -30,10 +30,19 @@
 
 *$ <-- This dollar sign represents a terminal line. Its the symbol for a bash shell, whatever that is.*
 
+*Note: If you already have python and pip setup in a windows
+environment feel free to attempt this tutorial using your preferred setup*
+
 - **You need python installed in your system**
 - **You need the python, "pip", package manager installed in your system**
 > **For both python and pip:**
-> - [MacOS](https://brew.sh/) <- Install homebrew for MacOS first
+- Windows users: I recommend installing the Windows subsystem for Linux:
+> I recommend it because it will help you become familiar with a Linux system
+> which will in turn help you many areas of development.
+> [Click Here Windows subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/install)
+> By default it will install the Ubuntu Distribution of Linux which is what we want
+> After you get it installed follow along with the rest of this tutorial.
+- [MacOS Homebrew Install click here](https://brew.sh/) <- Install homebrew for MacOS first
 > - Install python, Then in a terminal type: `$ brew install python@3.9`
 > - Then in the terminal type `$ brew unlink python && brew link python`
 > - **Linux Ubuntu**: `$ sudo apt-get install python3`
