@@ -167,3 +167,48 @@
 <img src="https://imgur.com/utbOHkK.png">
 
 </p>
+
+
+<p align="center">
+
+Most web frameworks use HTML out the box for web pages.<br>Grails uses .gsp files which are located in the views folder
+
+<img src="https://imgur.com/fBUOgf4.png">
+
+.gsp files are almost equivalent to HTML files
+
+</p>
+
+> If the URL doesnt contain a /
+- Ex.
+- coolsite.com and not coolsite.com/about
+
+
+<p align="center">
+
+Grails looks in the UrlMappings.groovy file for an entry that matches the URL in the request.
+<br> In this case if the url does not contain anything extra after .com <br>
+Grails associates that as single forward slash <b>/</b><br>
+So it looks for an entry with a single forward slash
+<br>
+<img src="https://imgur.com/XwS4931.png">
+
+
+</p>
+
+
+> Then once Grails finds a match:
+- Grails looks at the thing next to the match
+- In this case the thing next to the forward slash
+
+
+<p align="center">
+
+
+<img src="https://imgur.com/ACDujoz.png">
+
+<br> Then Grails understands it needs to look inside of the views folder for a .gsp file named index
+
+</p>
+
+> Once Grails finds the .gsp file it renders it to the browser.
