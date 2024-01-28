@@ -1,3 +1,7 @@
+---
+mermaid: true
+---
+
 <table rules=none>
  <tr>
 <td> <img src="https://i.imgur.com/vQrcNy3.jpeg"></td>
@@ -515,10 +519,26 @@ or
 - `$ django-admin startproject nameofproject`
 - `$ python manage.py startapp appname`
 
+<div class="mermaid"> 
 
+
+flowchart TD
+  A[fa:fa-terminal Supervisord fa:fa-ellipsis-h] -->|fa:fa-refresh Hey Gunicorn, run!| B(fa:fa-terminal Gunicorn fa:fa-gear fa:fa-server)
+  B --> |fa:fa-cogs Running based on supervisord.conf| C{fa:fa-heart Django fa:fa-code}
+  C <-->|<br>HTML<br>CSS<br>JavaScript| ABC
+  subgraph Linux System fa:fa-home Everything lives here
+    A <--> |fa:fa-refresh Also, how you doing?| B
+    B --> |fa:fa-handshake Let me run Django!|C
+  subgraph NGINX fa:fa-server
+  ABC[NGINX Proxy Pass]
+  end
+  end
+  ABC --> |fa:fa-window-maximize| D((fa:fa-cloud WWW))
+                                                                    
+
+</div> 
 
 - **Route B** (Remote Public Git)
-
 
 - [Back to navigation](#nav)
 
