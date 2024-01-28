@@ -138,3 +138,32 @@
 > If all goes well you should be able to open a web browser
 > and navigate to http://localhost:8080 or whatever port
 > you used in place of 8080
+
+
+**Lets break some stuff down real quick**
+
+
+
+<p align="center">
+
+<img src="https://imgur.com/T1NTbyT.png">
+
+</p>
+
+
+> In terms of Grails once it recieves a request:
+> - The application looks here in this file:
+
+<p align="center">
+
+<img src="https://imgur.com/enqQjYg.png">
+
+</p>
+
+> Which will look something like this:
+
+<p align="center">
+
+<img src="https://imgur.com/utbOHkK.png">
+
+</p>
