@@ -105,6 +105,9 @@
 > > This concept drastically decreases the amount of time you
 > > can get an application up and running while it is being developed.
 
+
+
+
 **The Grails Interactive Console**
 
 *Just in case you ever need to access it for whatever reason*
@@ -142,6 +145,25 @@
 
 **Lets break some stuff down real quick**
 
+<p align="center">
+<br><b>After you create a Grails app these files and folders get created</b><br>
+
+<img src="https://imgur.com/fcwUGyQ.png">
+
+</p>
+
+**The bulk of your development in Grails**
+
+> As a Grails developer:
+> - Your work will largely be focused in the grails-app folder.
+> > **So lets unpack it a bit**
+
+
+<p align="center">
+<br><b>These are the folders inside the grails-app folder</b><br>
+<img src="https://imgur.com/Da60kNo.png">
+
+</p>
 
 
 <p align="center">
@@ -172,9 +194,10 @@
 <p align="center">
 
 Most web frameworks use HTML out the box for web pages.<br>Grails uses .gsp files which are located in the views folder
-
+<br>
 <img src="https://imgur.com/fBUOgf4.png">
 
+<br>
 .gsp files are almost equivalent to HTML files
 
 </p>
@@ -212,3 +235,8 @@ So it looks for an entry with a single forward slash
 </p>
 
 > Once Grails finds the .gsp file it renders it to the browser.
+
+**Make more pages**
+
+- **Navigate to grails-app/views**
+- **Make a new file with the extension .gsp**
