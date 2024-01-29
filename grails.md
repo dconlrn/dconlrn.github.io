@@ -143,33 +143,137 @@
 > you used in place of 8080
 
 
-**Lets break some stuff down real quick**
+**At a glance**
 
 <p align="center">
 <br><b>After you create a Grails app these files and folders get created</b><br>
 
 <img src="https://imgur.com/fcwUGyQ.png">
+<br>
 
 </p>
 
 **The bulk of your development in Grails**
 
-> As a Grails developer:
 > - Your work will largely be focused in the grails-app folder.
-> > **So lets unpack it a bit**
 
 
 <p align="center">
 <br><b>These are the folders inside the grails-app folder</b><br>
 <img src="https://imgur.com/Da60kNo.png">
+<br>
 
 </p>
 
+> > **To start simple**
+> > **We will start by focusing on the:**
+> > - **Assets Folder**
+> > - **Controllers Folder**
+> > - **Views Folder**
+
+<p align="center">
+<br><b>The assets folder</b><br>
+<img src="https://imgur.com/gGPBkCd.png">
+<br>
+
+</p>
+
+> **Contains what are commonly referred to as static files**
+- **This is where you are going to put your CSS, JavaScript and Images associated with your application**
+- **Grails is going to know to look here when you reference this stuff in your HTML/(.gsp) files**
+
+<p align="center">
+<br><b>This is how you reference your CSS in your HTML/(.gsp) files</b><br>
+<img src="https://imgur.com/7hTmTbA.png">
+<br>
+
+</p>
+
+<p align="center">
+<br><b>This is how you reference your JavaScript in your HTML/(.gsp) files</b><br>
+<img src="https://imgur.com/J2s4nRf.png">
+<br>
+
+</p>
+
+<p align="center">
+<br><b>The controllers folder</b><br>
+<img src="https://imgur.com/886Bnju.png">
+<br>
+
+</p>
+
+> **Controllers deal with**
+- **Requests**
+> - **This is where you can create logic responsible for handling data to and from the browser**
+> - **Controllers render data that can be used in .gsp files through a language that is called "view tags" which we will get into later**
+
+To create a new controller enter the Grails interactive console
+
+```sh
+$ grails
+
+
+```
+
+Then from inside the interactive console:
+
+```sh
+
+$ create-controller greeting
+
+```
+<p align="center">
+<br><b>The views folder</b><br>
+<img src="https://imgur.com/8lL43YB.png">
+<br>
+
+</p>
+
+> **Views contains**
+- All of your applications HTML inside of individual .gsp files
+- To create a new .gsp file
+- Go into the views folder and create a new file with the .gsp extension.
+- Then add some html in it
+
+**Layouts**
+
+> The layouts folder inside of the views folder:
+> - This is where you keep .gsp/HTML files which contain reusable code you want to be able to access in other .gsp/HTML files
+> - The concept of the layouts folder is similar to the idea of HTML partials.
+
+
+**Database Interaction**
+
+(Still fuzzy on this need to work on this section later)
+
+> Grails Domain Class:
+- A way of creating data models which interact with a database.
+
+- From inside of an interactive console
+
+```sh
+$ grails
+
+
+```
+
+- Run this to create a new Domain Class
+
+```sh
+
+$ create-domain-class yourmodelname
+
+```
+
+------------------------
 
 <p align="center">
 
+<br>
 <img src="https://imgur.com/T1NTbyT.png">
 
+<br>
 </p>
 
 
@@ -191,16 +295,6 @@
 </p>
 
 
-<p align="center">
-
-Most web frameworks use HTML out the box for web pages.<br>Grails uses .gsp files which are located in the views folder
-<br>
-<img src="https://imgur.com/fBUOgf4.png">
-
-<br>
-.gsp files are almost equivalent to HTML files
-
-</p>
 
 > If the URL doesnt contain a /
 - Ex.
@@ -236,7 +330,36 @@ So it looks for an entry with a single forward slash
 
 > Once Grails finds the .gsp file it renders it to the browser.
 
+<p align="center">
+
+Most web frameworks use HTML out the box for web pages.<br>Grails uses .gsp files which are located in the views folder
+<br>
+<img src="https://imgur.com/fBUOgf4.png">
+
+<br>
+.gsp files are almost equivalent to HTML files<br>They contain regular HTML but also have the ability to interpret other syntax which we will get into later.<br> If you wanted to stick with regular HTML inside a .gsp file you could though, without an issue.
+<br>
+
+</p>
+
 **Make more pages**
 
 - **Navigate to grails-app/views**
 - **Make a new file with the extension .gsp**
+> **EX.**
+> - **views/test.gsp**
+
+**Navigate to controllers/myapp/**
+- **Open the UrlMappings.groovy file in an editor**
+- **Add line 14 from the following image:**
+
+
+<p align="center">
+<img src="https://imgur.com/Ql3smqW.png">
+<br>
+</p>
+
+**You just successfully registered a new view**
+- **What this means is that after running the app you can now navigate to coolsite.com/test**
+
+
