@@ -43,6 +43,10 @@ in Python</td>
 <td> <img src="https://i.imgur.com/vQrcNy3.jpeg"></td>
 <td> <h2><a href="https://dconlrn.github.io/django_deployment">Django:<br>From Start<br>to Deployment</a></h2><br>A tutorial on how to take a Django application from a test environment to a production environment</td>
 </tr>
+ <tr>
+<td> <img src="https://imgur.com/VWqWfMh.png"></td>
+<td> <h2><a href="https://dconlrn.github.io/grails">A quicker guide to the Grails framework</a></h2><br>Get started building web apps with Grails, quicker!</td>
+</tr>
 <tr>
 <td> <img src="https://i.imgur.com/R596dvB.png"></td>
 <td> <h2><a href="https://joshjetson.github.io/pfapi">Azure PlayFab API Diagram</a></h2><br>A simple diagram to help understand Azure PlayFab API</td>
