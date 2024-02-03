@@ -127,8 +127,113 @@ class MyClass{
 
 }
 
+
+// The Groovy self equivalent
+
+class Person {
+    String name
+
+    Person(String name) {
+        this.name = name
+    }
+
+    void printName() {
+    println "My name is ${this.name}"
+    }
+}
+
+def person = new Person("John")
+person.printName() // Output: My name is John
+
+
+
 ```
 
+## Lists (aka Arrays)
+
+--------------------
+
+```groovy
+
+
+// Lists hold a list of elements and create an index for each of them
+
+  // Simple list creation
+
+  def primes = [2,3,5,7,11,13];
+
+  // Explicit type based list creation
+
+  List<Integer> myInts = [3,5,1,6]
+  List<String> myStrings = ["Groovy","Java","Python","nodeJS"]
+
+  // Gettting from a list
+  primes[1]
+  primes.get(2)
+    
+    // Slicing: Gettinga range from a list
+  primes[0..2]
+
+  // Setting or adding to a list
+
+  primes + [29,31];
+  def arg = ["Groovy","Java","Python","nodeJS"]
+
+  arg.add("Ruby")
+  arg << "Smalltalk"
+  arg[6] = "C++"
+  arg += "C"
+
+      // Removing from a list
+  def primes = [2,3,5,7,11,13,29,31];
+  primes - [31];
+
+      // Remove the last element
+  primes.pop()
+  
+  // Descriptive Actions on a list
+
+      // Check if empty
+  primes.isEmpty()
+
+      // Get the length
+  primes.size()
+     // Check if the list shares common elements with another list
+  primes.intersect([2,3,7])
+
+  // They can hold anything
+  def employee = ['Derek', 40, 6.25, [1,2,3]];
+
+  println("2nd Number " + employee[3][1]);
+
+  // List Manipulation
+
+      // Reverse
+  primes.reverse()
+  primes.reverse()[1]
+
+      // Sorted
+  primes.sort()
+  primes.sort()[0]
+
+  def numbers = [1, 2, 3, 4, 5]
+
+  // List automation
+
+      // List comprehension-like construct using collect
+  def squares = numbers.collect { it * it }
+
+  println squares // Output: [1, 4, 9, 16, 25]
+
+     // Create a list of x amount of empty lists
+
+  def listOfLists = (1..10).collect { [] }
+
+  println listOfLists // Output: [[], [], [], [], [], [], [], [], [], []]
+
+
+
+```
 
 
 ## Helper Methods & Concepts
@@ -265,6 +370,10 @@ static void main(String[] args){
 
   def name = "Derek";
 
+    // Get the unicode from a string
+  def codePoint = 'a'.charAt(0) as int
+  println codePoint
+
   // A string surrounded by single quotes is taken literally
   // but backslashed characters are recognized
   println('I am ${name}\n');
@@ -358,54 +467,6 @@ static void main(String[] args){
   */
 
   // ---------- LISTS ----------
-  // Lists hold a list of objects with an index
-
-  def primes = [2,3,5,7,11,13];
-
-  // Get a value at an index
-  println("2nd Prime " + primes[1]);
-  println("3rd Prime " + primes.get(2));
-
-  // They can hold anything
-  def employee = ['Derek', 40, 6.25, [1,2,3]];
-
-  println("2nd Number " + employee[3][1]);
-
-  // Get the length
-  println("Length " + primes.size());
-
-  // Add an index
-  primes.add(17);
-
-  // Append to the right
-  primes<<19;
-  primes.add(23);
-
-  // Concatenate 2 Lists
-  primes + [29,31];
-
-  // Remove the last item
-  primes - [31];
-
-  // Check if empty
-  println("Is empty " + primes.isEmpty());
-
-  // Get 1st 3
-  println("1st 3 " + primes[0..2]);
-
-  println(primes);
-
-  // Get matches
-  println("Matches " + primes.intersect([2,3,7]));
-
-  // Reverse
-  println("Reverse " + primes.reverse());
-
-  // Sorted
-  println("Sorted " + primes.sort());
-
-  // Pop last item
-  println("Last " + primes.pop());
 
   // ---------- MAPS ----------
   // List of objects with keys versus indexes
@@ -518,6 +579,7 @@ static void main(String[] args){
   }
 
   // Normal for loop
+  // Structure(create the variable, give the condition, given the condition do this to the variable)
   for (i = 0; i < 5; i++) {
     println(i);
   }
@@ -533,6 +595,15 @@ static void main(String[] args){
   for(j in randList){
     println(j);
   }
+
+  // For loop with a string
+  def str = "Hello, World!"
+
+  for (char c in str) {
+          println c
+  }
+
+      }
 
   // for loop with a map
   def custs = [
