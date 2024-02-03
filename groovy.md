@@ -1,30 +1,144 @@
-```groovy
+<p align="center">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Groovy-logo.svg">
+
+</p>
 
 
-/*
-Install Groovy on Mac
+<h2 align="center"> Groovy Lang Quick Reference</h2>
+
+<div id="top" align="center">
+<p align="center">Just a simple quick reference for most of the stuff you need to know in groovy</p>
+
+</div>
+
+--------------------------------
+
+
+
+## Install
+
+-------------------
+
+
+**Install Groovy on Mac**
+
 1. Update Java to at least Java 7 in the System Preferences Java Control Panel
 
-2. Type in Terminal /usr/libexec/java_home -V
-to get something like
-1.7.0_55, x86_64:	"Java SE 7"	/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home
+2. Type in Terminal 
 
-3. Type in terminal export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_55, x86_64`
+- `/usr/libexec/java_home -V`
+> to get something like
+> - `1.7.0_55, x86_64:	"Java SE 7"	/Library/Java/JavaVirtualMachines/jdk1.7.0_55.jdk/Contents/Home`
 
-4. Type in terminal java -version and make sure you have at least Java 7
+3. Type in terminal
+
+> - `export JAVA_HOME="/usr/libexec/java_home -v 1.7.0_55, x86_64" `
+
+4. Type in terminal 
+
+> - `java -version and make sure you have at least Java 7`
 
 5. Install HomeBrew at http://brew.sh/
 
-6. Type in terminal brew install groovy
+6. Type in terminal 
 
-7. In Atom Open Command Palette -> Install Packages Themes -> Type language-groovy and install
+> - `brew install groovy`
 
-Install Groovy on Windows
+
+**Install Groovy on Windows**
 
 1. Go here http://groovy-lang.org/download.html
 
 2. Click Windows Installer and click next a bunch of times until it is installed.
-*/
+
+
+## DataTypes
+
+----------------------------------
+
+
+```groovy
+
+
+//The following code example showcases how the different built-in data types can be used
+
+
+// A class
+
+class MyClass{
+
+
+}
+
+
+// A class with a static method
+
+
+class MyClass{
+    static void main(Strings[] args){
+
+    }
+
+
+}
+
+// Declaring variables explicitly based on type
+
+
+class DataTypes {
+   static void main(String[] args) {
+      //Example of a int datatype
+      int x = 5;
+
+      //Example of a long datatype
+      long y = 100L;
+
+      //Example of a floating point datatype
+      float a = 10.56f;
+
+      //Example of a double datatype
+      double b = 10.5e40;
+
+      //Example of a BigInteger datatype
+      BigInteger bi = 30g;
+
+      //Example of a BigDecimal datatype
+      BigDecimal bd = 3.5g;
+
+// Simple print line to console
+
+      println(x);
+      println(y);
+      println(a);
+      println(b);
+      println(bi);
+      println(bd);
+   }
+}
+
+```
+
+```groovy
+
+class Printing {
+     static void main(String[] args) {
+             // Using a simple println statement to print output to the console
+             println('Hello World');
+                }
+}
+
+//A variable declaration tells the compiler where and how much to create the storage for the variable.
+class VarDeclar {
+   static void main(String[] args) {
+      // x is defined as a variable
+      String x = "Hello";
+
+      // The value of the variable is printed to the console
+      println(x);
+   }
+}
+
 
 class GroovyTut {
 
