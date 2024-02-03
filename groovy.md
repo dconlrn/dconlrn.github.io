@@ -52,38 +52,14 @@
 
 2. Click Windows Installer and click next a bunch of times until it is installed.
 
+## Primitive Types
 
-## DataTypes
-
-----------------------------------
+---------------------------
 
 
 ```groovy
 
-
-//The following code example showcases how the different built-in data types can be used
-
-
-// A class
-
-class MyClass{
-
-
-}
-
-
-// A class with a static method
-
-
-class MyClass{
-    static void main(Strings[] args){
-
-    }
-
-
-}
-
-// Declaring variables explicitly based on type
+// Declaring variables explicitly based on  prmitive type
 
 
 class DataTypes {
@@ -116,6 +92,64 @@ class DataTypes {
       println(bd);
    }
 }
+
+```
+
+
+
+## DataTypes
+
+----------------------------------
+
+
+```groovy
+
+
+//The following code example showcases how the different built-in data types can be used
+
+
+// A class
+
+class MyClass{
+
+
+}
+
+
+// A class with a static method
+
+
+class MyClass{
+    static void main(Strings[] args){
+
+    }
+
+
+}
+
+```
+
+
+
+## Helper Methods & Concepts
+
+
+
+```groovy
+
+// Find the type of object or class an element is
+
+def myList = ["Groovy","Java","Python","nodeJS"]
+println myList.class
+
+
+// Check a class attribute data type or "class type"
+
+class myClass {
+    static int i
+}
+
+println Foo.class.getDeclaredField('i').type == int.class
 
 ```
 
