@@ -32,9 +32,15 @@ Multi-line comments  : /* comment here */
 
 **Variables in JavaScript**
 
-- var   : Common variable, scoped to function.
-- const : Immutable variable.
-- let   : Mutable variable.
+<div>
+<h4>
+
+var   : Common variable, scoped to function.
+const : Immutable variable.
+let   : Mutable variable.
+
+</h4>
+</div>
 
 **Data Types**
 
@@ -58,3 +64,10 @@ var person = {
 }
 
 ```
+
+## Array Methods :
+
+--------------------------
+
+- concat()      : Combines arrays.
+- indexOf()     :
