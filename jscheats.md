@@ -33,13 +33,42 @@ Multi-line comments  : /* comment here */
 **Variables in JavaScript**
 
 <div>
-<h4>
+<table class="" aria-label="Table 1">
+<tbody>
+<tr>
+  <th class="">Variable</th>
+  <th class="">Explanation</th>
+</tr>
+<tr>
+<td>
+var
+</td>
+<td>
+: Common variable, scoped to function.
+</td>
+</tr>
+</tr>
+<tr>
+<td>
+const
+</td>
+<td>
+: Immutable variable.
+</td>
+</tr>
+</tr>
+<tr>
+<td>
+let
+</td>
+<td>
+: Mutable variable.
+</td>
+</tr>
+</tbody>
+</table>
 
-var   : Common variable, scoped to function.
-const : Immutable variable.
-let   : Mutable variable.
 
-</h4>
 </div>
 
 **Data Types**
