@@ -33,20 +33,19 @@ Multi-line comments  : /* comment here */
 **Variables in JavaScript**
 
 <div>
-<table class="" aria-label="Table 1">
-<tbody>
-<tr>
-  <th class="">Variable</th>
-  <th class="">Explanation</th>
-</tr>
-<tr>
+    <table class="" aria-label="Table 1">
+    <tbody>
+    <tr>
+      <th class="">Variable</th>
+      <th class="">Explanation</th>
+    </tr>
+    <tr>
 <td>
 var
 </td>
 <td>
 : Common variable, scoped to function.
 </td>
-</tr>
 </tr>
 <tr>
 <td>
@@ -55,7 +54,6 @@ const
 <td>
 : Immutable variable.
 </td>
-</tr>
 </tr>
 <tr>
 <td>
