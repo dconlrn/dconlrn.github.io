@@ -71,7 +71,41 @@ let
 
 **Data Types**
 
-- Numbers           :var age = 23
+<div>
+    <table class="" aria-label="Table 1">
+    <tbody>
+    <tr>
+      <th class="">Variable</th>
+      <th class="">Explanation</th>
+    </tr>
+    <tr>
+<td>
+Numbers
+</td>
+<td>
+:var age = 23
+</td>
+</tr>
+<tr>
+<td>
+Variables
+</td>
+<td>
+: var x
+</td>
+</tr>
+<tr>
+<td>
+Text (Strings)
+</td>
+<td>
+var a = "init"
+</td>
+</tr>
+</tbody>
+</table>
+
+- Numbers           
 - Variables         :var X
 - Text (strings)    :var a = "init"
 - Operations        :var b = 1 + 2 + 3

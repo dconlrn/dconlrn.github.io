@@ -363,3 +363,29 @@ Most web frameworks use HTML out the box for web pages.<br>Grails uses .gsp file
 - **What this means is that after running the app you can now navigate to coolsite.com/test**
 
 
+**Consider the following** 
+
+- Your website name is: mycoolsite.come
+
+> When you create a new controller in grails
+> - You give the controller a name: ie. ContactList
+> - However you create the controller, it should be located:
+> - appname/grails-app/controllers/contactlist/ContactList.groovy
+
+
+```groovy
+
+package contactlist
+
+    def index() {
+    }
+
+```
+
+> The controller should have a couple things inside of it
+- A package which should be the same name of the directory that the file is sitting in
+- A default index method
+
+*def index*
+
+> The index method is saying whenever someone navigates to mycoolsite
